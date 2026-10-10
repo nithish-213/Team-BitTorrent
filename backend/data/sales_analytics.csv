@@ -1,0 +1,301 @@
+id,tier,region,period,mrr,deal_status
+DEAL-900,Mid-Market,EMEA,Q3 2025,15023,Closed Won
+DEAL-901,Enterprise,APAC,Q1 2025,35579,Closed Won
+DEAL-902,SMB,LATAM,Q3 2025,5011,Closed Won
+DEAL-903,Mid-Market,EMEA,Q2 2025,13103,Prospecting
+DEAL-904,Enterprise,North America,Q2 2025,38214,Closed Won
+DEAL-905,Enterprise,APAC,Q2 2025,37571,Prospecting
+DEAL-906,Mid-Market,LATAM,Q1 2025,13478,Prospecting
+DEAL-907,SMB,LATAM,Q2 2025,2476,Closed Won
+DEAL-908,Enterprise,EMEA,Q1 2025,38066,Closed Won
+DEAL-909,Enterprise,LATAM,Q2 2025,36309,Under Negotiation
+DEAL-910,Enterprise,North America,Q3 2025,37577,Closed Won
+DEAL-911,SMB,LATAM,Q2 2025,6764,Under Negotiation
+DEAL-912,Mid-Market,North America,Q1 2025,17585,Closed Won
+DEAL-913,Mid-Market,EMEA,Q3 2025,19453,Closed Won
+DEAL-914,Enterprise,LATAM,Q1 2025,34954,Under Negotiation
+DEAL-915,Mid-Market,EMEA,Q1 2025,8670,Under Negotiation
+DEAL-916,Enterprise,LATAM,Q3 2025,38115,Closed Won
+DEAL-917,Mid-Market,EMEA,Q2 2025,12084,Closed Won
+DEAL-918,Mid-Market,North America,Q2 2025,16219,Prospecting
+DEAL-919,Enterprise,North America,Q3 2025,35340,Prospecting
+DEAL-920,Enterprise,EMEA,Q1 2025,39019,Closed Won
+DEAL-921,Mid-Market,APAC,Q3 2025,14731,Closed Won
+DEAL-922,Enterprise,LATAM,Q2 2025,40229,Closed Won
+DEAL-923,Enterprise,North America,Q2 2025,41463,Closed Won
+DEAL-924,Enterprise,APAC,Q2 2025,32093,Closed Won
+DEAL-925,Enterprise,LATAM,Q2 2025,42000,Under Negotiation
+DEAL-926,Mid-Market,LATAM,Q1 2025,18391,Under Negotiation
+DEAL-927,Enterprise,APAC,Q1 2025,38115,Closed Won
+DEAL-928,SMB,APAC,Q1 2025,871,Prospecting
+DEAL-929,Mid-Market,LATAM,Q1 2025,11186,Prospecting
+DEAL-930,Enterprise,EMEA,Q3 2025,43165,Under Negotiation
+DEAL-931,Mid-Market,APAC,Q3 2025,16136,Closed Won
+DEAL-932,Enterprise,North America,Q2 2025,38249,Closed Won
+DEAL-933,Enterprise,APAC,Q2 2025,41564,Prospecting
+DEAL-934,Enterprise,LATAM,Q1 2025,36334,Under Negotiation
+DEAL-935,Mid-Market,EMEA,Q3 2025,17892,Prospecting
+DEAL-936,Mid-Market,APAC,Q2 2025,15646,Closed Won
+DEAL-937,Mid-Market,APAC,Q3 2025,19535,Closed Won
+DEAL-938,Enterprise,EMEA,Q2 2025,36095,Prospecting
+DEAL-939,Enterprise,North America,Q2 2025,36961,Under Negotiation
+DEAL-940,Enterprise,North America,Q3 2025,36822,Closed Won
+DEAL-941,Enterprise,North America,Q3 2025,33220,Closed Won
+DEAL-942,Mid-Market,LATAM,Q3 2025,12688,Closed Won
+DEAL-943,Enterprise,APAC,Q3 2025,37059,Under Negotiation
+DEAL-944,Enterprise,LATAM,Q3 2025,35019,Prospecting
+DEAL-945,Enterprise,LATAM,Q3 2025,37391,Closed Won
+DEAL-946,Enterprise,North America,Q1 2025,34679,Under Negotiation
+DEAL-947,Enterprise,APAC,Q1 2025,42573,Prospecting
+DEAL-948,SMB,APAC,Q1 2025,3409,Closed Won
+DEAL-949,Enterprise,EMEA,Q1 2025,38125,Closed Won
+DEAL-950,Enterprise,APAC,Q3 2025,35433,Closed Won
+DEAL-951,Mid-Market,LATAM,Q1 2025,15643,Closed Won
+DEAL-952,Enterprise,APAC,Q2 2025,38619,Closed Won
+DEAL-953,Mid-Market,North America,Q3 2025,16775,Closed Won
+DEAL-954,Enterprise,APAC,Q3 2025,32159,Closed Won
+DEAL-955,SMB,LATAM,Q1 2025,3550,Closed Won
+DEAL-956,SMB,LATAM,Q1 2025,5910,Under Negotiation
+DEAL-957,Enterprise,APAC,Q1 2025,34488,Prospecting
+DEAL-958,Mid-Market,LATAM,Q3 2025,15349,Under Negotiation
+DEAL-959,Mid-Market,APAC,Q3 2025,18254,Closed Won
+DEAL-960,Enterprise,North America,Q3 2025,36833,Prospecting
+DEAL-961,Mid-Market,LATAM,Q1 2025,17382,Closed Won
+DEAL-962,Enterprise,EMEA,Q1 2025,32800,Under Negotiation
+DEAL-963,Mid-Market,North America,Q1 2025,13868,Under Negotiation
+DEAL-964,Mid-Market,LATAM,Q3 2025,12207,Closed Won
+DEAL-965,Mid-Market,North America,Q3 2025,19043,Under Negotiation
+DEAL-966,Enterprise,North America,Q2 2025,37112,Closed Won
+DEAL-967,Mid-Market,LATAM,Q1 2025,19762,Closed Won
+DEAL-968,Enterprise,North America,Q3 2025,36851,Under Negotiation
+DEAL-969,Enterprise,LATAM,Q2 2025,39011,Prospecting
+DEAL-970,Enterprise,LATAM,Q2 2025,37851,Under Negotiation
+DEAL-971,Enterprise,LATAM,Q2 2025,34919,Closed Won
+DEAL-972,SMB,APAC,Q1 2025,500,Under Negotiation
+DEAL-973,Mid-Market,North America,Q2 2025,17560,Closed Won
+DEAL-974,Mid-Market,North America,Q3 2025,16159,Under Negotiation
+DEAL-975,Enterprise,North America,Q2 2025,37535,Under Negotiation
+DEAL-976,Enterprise,EMEA,Q2 2025,37693,Under Negotiation
+DEAL-977,Enterprise,North America,Q3 2025,37882,Prospecting
+DEAL-978,Mid-Market,LATAM,Q2 2025,9580,Closed Won
+DEAL-979,Enterprise,LATAM,Q3 2025,33426,Under Negotiation
+DEAL-980,Mid-Market,LATAM,Q3 2025,16138,Closed Won
+DEAL-981,Enterprise,EMEA,Q1 2025,35733,Closed Won
+DEAL-982,SMB,APAC,Q2 2025,500,Closed Won
+DEAL-983,Mid-Market,LATAM,Q3 2025,15731,Closed Won
+DEAL-984,Enterprise,EMEA,Q3 2025,43724,Under Negotiation
+DEAL-985,Enterprise,North America,Q3 2025,34204,Closed Won
+DEAL-986,Enterprise,LATAM,Q2 2025,40461,Prospecting
+DEAL-987,Enterprise,LATAM,Q3 2025,42173,Closed Won
+DEAL-988,Enterprise,EMEA,Q1 2025,41121,Under Negotiation
+DEAL-989,Mid-Market,APAC,Q1 2025,12068,Prospecting
+DEAL-990,Enterprise,North America,Q1 2025,35389,Closed Won
+DEAL-991,Mid-Market,EMEA,Q2 2025,14747,Closed Won
+DEAL-992,Enterprise,North America,Q2 2025,37883,Closed Won
+DEAL-993,SMB,EMEA,Q1 2025,1701,Closed Won
+DEAL-994,Enterprise,APAC,Q2 2025,37824,Under Negotiation
+DEAL-995,Enterprise,North America,Q1 2025,38750,Under Negotiation
+DEAL-996,Enterprise,LATAM,Q3 2025,37288,Under Negotiation
+DEAL-997,Mid-Market,EMEA,Q3 2025,10913,Closed Won
+DEAL-998,Enterprise,North America,Q2 2025,37116,Closed Won
+DEAL-999,Mid-Market,EMEA,Q1 2025,14525,Closed Won
+DEAL-1000,Enterprise,LATAM,Q3 2025,37190,Closed Won
+DEAL-1001,Enterprise,LATAM,Q2 2025,38706,Closed Won
+DEAL-1002,Enterprise,North America,Q1 2025,36682,Closed Won
+DEAL-1003,Mid-Market,North America,Q2 2025,15729,Prospecting
+DEAL-1004,Enterprise,APAC,Q3 2025,37221,Under Negotiation
+DEAL-1005,Enterprise,North America,Q2 2025,33457,Under Negotiation
+DEAL-1006,Enterprise,North America,Q3 2025,38701,Closed Won
+DEAL-1007,Enterprise,EMEA,Q1 2025,30402,Prospecting
+DEAL-1008,SMB,EMEA,Q2 2025,2095,Under Negotiation
+DEAL-1009,Mid-Market,North America,Q3 2025,20243,Closed Won
+DEAL-1010,Enterprise,EMEA,Q1 2025,34217,Under Negotiation
+DEAL-1011,Enterprise,APAC,Q3 2025,38330,Closed Won
+DEAL-1012,Enterprise,EMEA,Q1 2025,40193,Closed Won
+DEAL-1013,Enterprise,APAC,Q3 2025,37071,Prospecting
+DEAL-1014,Mid-Market,EMEA,Q3 2025,16742,Closed Won
+DEAL-1015,Mid-Market,LATAM,Q1 2025,13904,Under Negotiation
+DEAL-1016,Mid-Market,LATAM,Q1 2025,13995,Prospecting
+DEAL-1017,Enterprise,APAC,Q3 2025,37955,Prospecting
+DEAL-1018,Enterprise,LATAM,Q2 2025,39629,Under Negotiation
+DEAL-1019,Mid-Market,APAC,Q1 2025,15937,Under Negotiation
+DEAL-1020,Mid-Market,LATAM,Q1 2025,14879,Closed Won
+DEAL-1021,SMB,LATAM,Q1 2025,3854,Under Negotiation
+DEAL-1022,Mid-Market,North America,Q2 2025,19408,Under Negotiation
+DEAL-1023,Enterprise,North America,Q1 2025,40359,Under Negotiation
+DEAL-1024,Enterprise,LATAM,Q3 2025,39010,Closed Won
+DEAL-1025,SMB,EMEA,Q2 2025,5481,Closed Won
+DEAL-1026,Enterprise,LATAM,Q1 2025,37280,Closed Won
+DEAL-1027,Enterprise,LATAM,Q2 2025,38613,Under Negotiation
+DEAL-1028,SMB,APAC,Q1 2025,1231,Under Negotiation
+DEAL-1029,Enterprise,EMEA,Q1 2025,38641,Closed Won
+DEAL-1030,Mid-Market,EMEA,Q1 2025,18633,Prospecting
+DEAL-1031,SMB,North America,Q1 2025,4656,Closed Won
+DEAL-1032,Mid-Market,LATAM,Q1 2025,15350,Prospecting
+DEAL-1033,Enterprise,LATAM,Q2 2025,33689,Closed Won
+DEAL-1034,Enterprise,APAC,Q2 2025,38637,Closed Won
+DEAL-1035,Mid-Market,North America,Q3 2025,12329,Under Negotiation
+DEAL-1036,Enterprise,APAC,Q2 2025,37918,Under Negotiation
+DEAL-1037,Mid-Market,LATAM,Q2 2025,17101,Under Negotiation
+DEAL-1038,Enterprise,North America,Q1 2025,45596,Prospecting
+DEAL-1039,Enterprise,LATAM,Q2 2025,44172,Closed Won
+DEAL-1040,Enterprise,LATAM,Q2 2025,39482,Under Negotiation
+DEAL-1041,Mid-Market,North America,Q1 2025,20128,Prospecting
+DEAL-1042,Enterprise,EMEA,Q1 2025,35843,Prospecting
+DEAL-1043,SMB,APAC,Q1 2025,6047,Closed Won
+DEAL-1044,Enterprise,EMEA,Q3 2025,35775,Closed Won
+DEAL-1045,Enterprise,LATAM,Q2 2025,31071,Closed Won
+DEAL-1046,Enterprise,LATAM,Q2 2025,43939,Under Negotiation
+DEAL-1047,Enterprise,EMEA,Q3 2025,34379,Under Negotiation
+DEAL-1048,Enterprise,EMEA,Q3 2025,39027,Closed Won
+DEAL-1049,Mid-Market,North America,Q2 2025,14059,Closed Won
+DEAL-1050,Enterprise,LATAM,Q1 2025,32951,Closed Won
+DEAL-1051,Enterprise,North America,Q2 2025,41965,Closed Won
+DEAL-1052,Enterprise,EMEA,Q1 2025,37831,Closed Won
+DEAL-1053,Enterprise,EMEA,Q3 2025,36694,Prospecting
+DEAL-1054,SMB,EMEA,Q1 2025,10841,Closed Won
+DEAL-1055,Enterprise,LATAM,Q2 2025,40124,Prospecting
+DEAL-1056,Enterprise,EMEA,Q3 2025,38809,Closed Won
+DEAL-1057,SMB,North America,Q3 2025,4248,Prospecting
+DEAL-1058,Enterprise,APAC,Q1 2025,35989,Prospecting
+DEAL-1059,Enterprise,EMEA,Q3 2025,42185,Closed Won
+DEAL-1060,Mid-Market,LATAM,Q2 2025,13003,Under Negotiation
+DEAL-1061,Mid-Market,APAC,Q3 2025,13889,Prospecting
+DEAL-1062,Enterprise,APAC,Q3 2025,38935,Prospecting
+DEAL-1063,Enterprise,North America,Q2 2025,35731,Prospecting
+DEAL-1064,Enterprise,EMEA,Q3 2025,36064,Closed Won
+DEAL-1065,Mid-Market,North America,Q2 2025,17090,Closed Won
+DEAL-1066,Enterprise,APAC,Q1 2025,39894,Under Negotiation
+DEAL-1067,Mid-Market,EMEA,Q3 2025,16176,Closed Won
+DEAL-1068,Enterprise,APAC,Q1 2025,37222,Under Negotiation
+DEAL-1069,Enterprise,EMEA,Q1 2025,38313,Closed Won
+DEAL-1070,Enterprise,LATAM,Q3 2025,37730,Closed Won
+DEAL-1071,Mid-Market,APAC,Q1 2025,16654,Under Negotiation
+DEAL-1072,Enterprise,APAC,Q2 2025,45715,Under Negotiation
+DEAL-1073,Enterprise,North America,Q3 2025,40352,Prospecting
+DEAL-1074,Enterprise,APAC,Q1 2025,35063,Prospecting
+DEAL-1075,Enterprise,EMEA,Q2 2025,33663,Prospecting
+DEAL-1076,Enterprise,LATAM,Q2 2025,32678,Under Negotiation
+DEAL-1077,Enterprise,APAC,Q1 2025,37763,Closed Won
+DEAL-1078,Mid-Market,North America,Q1 2025,11492,Closed Won
+DEAL-1079,Enterprise,APAC,Q1 2025,41477,Closed Won
+DEAL-1080,Enterprise,APAC,Q3 2025,37527,Closed Won
+DEAL-1081,SMB,APAC,Q3 2025,3745,Closed Won
+DEAL-1082,Enterprise,EMEA,Q1 2025,32776,Closed Won
+DEAL-1083,Enterprise,APAC,Q2 2025,41950,Closed Won
+DEAL-1084,SMB,EMEA,Q2 2025,6603,Closed Won
+DEAL-1085,Mid-Market,APAC,Q3 2025,15461,Under Negotiation
+DEAL-1086,Enterprise,LATAM,Q1 2025,39380,Prospecting
+DEAL-1087,Mid-Market,LATAM,Q2 2025,14166,Closed Won
+DEAL-1088,SMB,EMEA,Q1 2025,3936,Under Negotiation
+DEAL-1089,Mid-Market,LATAM,Q3 2025,16994,Closed Won
+DEAL-1090,Enterprise,North America,Q3 2025,41403,Closed Won
+DEAL-1091,SMB,LATAM,Q2 2025,6220,Under Negotiation
+DEAL-1092,Enterprise,APAC,Q2 2025,34042,Under Negotiation
+DEAL-1093,Enterprise,APAC,Q3 2025,38561,Closed Won
+DEAL-1094,Enterprise,LATAM,Q3 2025,38107,Closed Won
+DEAL-1095,Enterprise,EMEA,Q3 2025,40700,Closed Won
+DEAL-1096,Enterprise,North America,Q2 2025,41108,Prospecting
+DEAL-1097,SMB,North America,Q1 2025,4924,Closed Won
+DEAL-1098,Mid-Market,LATAM,Q2 2025,18575,Under Negotiation
+DEAL-1099,Enterprise,EMEA,Q3 2025,37709,Under Negotiation
+DEAL-1100,Enterprise,EMEA,Q2 2025,41576,Under Negotiation
+DEAL-1101,Enterprise,EMEA,Q2 2025,36066,Closed Won
+DEAL-1102,Enterprise,APAC,Q1 2025,36523,Closed Won
+DEAL-1103,Enterprise,LATAM,Q1 2025,36722,Closed Won
+DEAL-1104,SMB,North America,Q3 2025,7605,Closed Won
+DEAL-1105,SMB,APAC,Q1 2025,6425,Closed Won
+DEAL-1106,Mid-Market,APAC,Q2 2025,9137,Prospecting
+DEAL-1107,Enterprise,EMEA,Q3 2025,40209,Closed Won
+DEAL-1108,Enterprise,LATAM,Q1 2025,37766,Under Negotiation
+DEAL-1109,Enterprise,APAC,Q3 2025,34897,Prospecting
+DEAL-1110,SMB,APAC,Q3 2025,5121,Prospecting
+DEAL-1111,Enterprise,APAC,Q3 2025,37919,Under Negotiation
+DEAL-1112,Enterprise,APAC,Q1 2025,37574,Closed Won
+DEAL-1113,Enterprise,EMEA,Q1 2025,39720,Prospecting
+DEAL-1114,Enterprise,LATAM,Q1 2025,37517,Closed Won
+DEAL-1115,Enterprise,LATAM,Q2 2025,36798,Closed Won
+DEAL-1116,Enterprise,LATAM,Q2 2025,39174,Closed Won
+DEAL-1117,Enterprise,APAC,Q3 2025,43330,Under Negotiation
+DEAL-1118,Enterprise,APAC,Q3 2025,39308,Under Negotiation
+DEAL-1119,SMB,APAC,Q3 2025,500,Closed Won
+DEAL-1120,SMB,EMEA,Q1 2025,1821,Prospecting
+DEAL-1121,Enterprise,APAC,Q1 2025,33703,Closed Won
+DEAL-1122,Enterprise,APAC,Q2 2025,35099,Closed Won
+DEAL-1123,Mid-Market,APAC,Q3 2025,10885,Closed Won
+DEAL-1124,Enterprise,North America,Q2 2025,39706,Prospecting
+DEAL-1125,Enterprise,LATAM,Q2 2025,35079,Under Negotiation
+DEAL-1126,Mid-Market,APAC,Q3 2025,14868,Prospecting
+DEAL-1127,Mid-Market,LATAM,Q2 2025,17644,Under Negotiation
+DEAL-1128,Enterprise,LATAM,Q2 2025,33860,Under Negotiation
+DEAL-1129,SMB,APAC,Q2 2025,672,Closed Won
+DEAL-1130,SMB,LATAM,Q1 2025,1535,Closed Won
+DEAL-1131,SMB,LATAM,Q3 2025,2878,Prospecting
+DEAL-1132,Mid-Market,EMEA,Q1 2025,8308,Closed Won
+DEAL-1133,Enterprise,LATAM,Q1 2025,43604,Closed Won
+DEAL-1134,Mid-Market,North America,Q3 2025,18473,Closed Won
+DEAL-1135,Mid-Market,EMEA,Q1 2025,10195,Prospecting
+DEAL-1136,Enterprise,EMEA,Q3 2025,37191,Closed Won
+DEAL-1137,Mid-Market,LATAM,Q1 2025,14359,Closed Won
+DEAL-1138,Enterprise,EMEA,Q3 2025,35856,Closed Won
+DEAL-1139,Enterprise,North America,Q1 2025,36077,Under Negotiation
+DEAL-1140,SMB,APAC,Q1 2025,10119,Prospecting
+DEAL-1141,Enterprise,North America,Q3 2025,45526,Prospecting
+DEAL-1142,Mid-Market,APAC,Q3 2025,14375,Prospecting
+DEAL-1143,Enterprise,North America,Q3 2025,40234,Closed Won
+DEAL-1144,Enterprise,APAC,Q2 2025,37851,Prospecting
+DEAL-1145,Enterprise,EMEA,Q1 2025,39097,Prospecting
+DEAL-1146,Enterprise,EMEA,Q2 2025,37618,Under Negotiation
+DEAL-1147,Enterprise,APAC,Q1 2025,42022,Prospecting
+DEAL-1148,Mid-Market,APAC,Q1 2025,12969,Closed Won
+DEAL-1149,Mid-Market,EMEA,Q2 2025,12655,Closed Won
+DEAL-1150,Enterprise,EMEA,Q2 2025,37880,Under Negotiation
+DEAL-1151,Enterprise,APAC,Q3 2025,35713,Prospecting
+DEAL-1152,Enterprise,North America,Q1 2025,36469,Closed Won
+DEAL-1153,Mid-Market,North America,Q2 2025,15418,Closed Won
+DEAL-1154,Mid-Market,EMEA,Q1 2025,11823,Prospecting
+DEAL-1155,Enterprise,North America,Q1 2025,38288,Closed Won
+DEAL-1156,Enterprise,EMEA,Q2 2025,35446,Closed Won
+DEAL-1157,Mid-Market,APAC,Q3 2025,18140,Closed Won
+DEAL-1158,Enterprise,LATAM,Q2 2025,35221,Closed Won
+DEAL-1159,Enterprise,EMEA,Q3 2025,36881,Closed Won
+DEAL-1160,Mid-Market,APAC,Q1 2025,14248,Closed Won
+DEAL-1161,Enterprise,APAC,Q1 2025,31435,Closed Won
+DEAL-1162,SMB,EMEA,Q3 2025,1575,Closed Won
+DEAL-1163,Enterprise,EMEA,Q2 2025,32366,Under Negotiation
+DEAL-1164,Enterprise,EMEA,Q3 2025,38680,Prospecting
+DEAL-1165,Mid-Market,APAC,Q3 2025,17772,Closed Won
+DEAL-1166,Enterprise,EMEA,Q3 2025,37562,Closed Won
+DEAL-1167,SMB,North America,Q2 2025,4628,Prospecting
+DEAL-1168,Enterprise,EMEA,Q3 2025,36265,Closed Won
+DEAL-1169,Enterprise,LATAM,Q1 2025,40665,Closed Won
+DEAL-1170,Enterprise,LATAM,Q3 2025,35507,Under Negotiation
+DEAL-1171,Mid-Market,North America,Q1 2025,16817,Closed Won
+DEAL-1172,Enterprise,North America,Q2 2025,33507,Under Negotiation
+DEAL-1173,Mid-Market,APAC,Q1 2025,18915,Prospecting
+DEAL-1174,Enterprise,LATAM,Q2 2025,41781,Prospecting
+DEAL-1175,Enterprise,APAC,Q2 2025,38853,Under Negotiation
+DEAL-1176,SMB,EMEA,Q3 2025,7556,Closed Won
+DEAL-1177,Mid-Market,LATAM,Q3 2025,14607,Under Negotiation
+DEAL-1178,Enterprise,EMEA,Q2 2025,36919,Under Negotiation
+DEAL-1179,SMB,EMEA,Q3 2025,4657,Under Negotiation
+DEAL-1180,Enterprise,APAC,Q2 2025,30627,Closed Won
+DEAL-1181,Enterprise,EMEA,Q1 2025,38596,Closed Won
+DEAL-1182,Enterprise,LATAM,Q3 2025,44084,Closed Won
+DEAL-1183,Mid-Market,North America,Q3 2025,16277,Under Negotiation
+DEAL-1184,Enterprise,APAC,Q2 2025,35231,Closed Won
+DEAL-1185,SMB,LATAM,Q2 2025,4991,Under Negotiation
+DEAL-1186,SMB,APAC,Q1 2025,8152,Closed Won
+DEAL-1187,Enterprise,EMEA,Q3 2025,40681,Closed Won
+DEAL-1188,Mid-Market,North America,Q3 2025,13387,Closed Won
+DEAL-1189,Mid-Market,APAC,Q1 2025,16255,Under Negotiation
+DEAL-1190,Mid-Market,North America,Q2 2025,10543,Under Negotiation
+DEAL-1191,Enterprise,North America,Q3 2025,35457,Closed Won
+DEAL-1192,Enterprise,APAC,Q2 2025,41009,Prospecting
+DEAL-1193,Enterprise,North America,Q3 2025,38525,Under Negotiation
+DEAL-1194,Enterprise,EMEA,Q1 2025,32893,Under Negotiation
+DEAL-1195,Mid-Market,North America,Q2 2025,17519,Closed Won
+DEAL-1196,Mid-Market,EMEA,Q2 2025,18320,Closed Won
+DEAL-1197,Mid-Market,APAC,Q1 2025,7243,Closed Won
+DEAL-1198,Enterprise,EMEA,Q1 2025,38861,Prospecting
+DEAL-1199,Enterprise,North America,Q1 2025,43421,Closed Won

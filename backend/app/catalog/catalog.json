@@ -1,0 +1,1516 @@
+{
+ "directories": [
+  {
+   "id": "REVENUE AGENT",
+   "title": "REVENUE AGENT",
+   "description": "Core monetization & usage agents"
+  },
+  {
+   "id": "BILLING",
+   "title": "BILLING",
+   "description": "Invoicing, receivables & tokenomics"
+  },
+  {
+   "id": "PRODUCT & SERVICES",
+   "title": "PRODUCT & SERVICES",
+   "description": "Compute, token & pricing models"
+  },
+  {
+   "id": "DEAL MANAGER",
+   "title": "DEAL MANAGER",
+   "description": "Enterprise deal pipeline & approvals"
+  },
+  {
+   "id": "CUSTOMERS",
+   "title": "CUSTOMERS",
+   "description": "Customer accounts & tier management"
+  },
+  {
+   "id": "USERS & ROLES",
+   "title": "USERS & ROLES",
+   "description": "Access control & RBAC permissions"
+  },
+  {
+   "id": "INTELLIGENCE HUB",
+   "title": "INTELLIGENCE HUB",
+   "description": "AI provider keys & workload metrics"
+  }
+ ],
+ "navigation": [
+  {
+   "id": "revenue_agent",
+   "title": "REVENUE AGENT",
+   "pages": [
+    {
+     "id": "dashboard",
+     "pageId": "P-101",
+     "title": "Executive Overview",
+     "path": "/overview/dashboard",
+     "description": "Company-wide billed revenue, active services, usage events, and customer health at a glance."
+    },
+    {
+     "id": "service_inventory",
+     "pageId": "P-102",
+     "title": "Service Inventory",
+     "path": "/revenue/services",
+     "description": "Active, inactive, and draft monetization service inventory list."
+    },
+    {
+     "id": "usage_events",
+     "pageId": "P-103",
+     "title": "Usage Events Log",
+     "path": "/revenue/events",
+     "description": "Real-time usage metering events stream and raw consumption logs."
+    },
+    {
+     "id": "token_factory",
+     "pageId": "P-104",
+     "title": "Token Factory & Model Provisioning",
+     "path": "/revenue/token-factory",
+     "description": "LLM token generation, unit cost provisioning, and model rate cards."
+    }
+   ]
+  },
+  {
+   "id": "billing",
+   "title": "BILLING",
+   "pages": [
+    {
+     "id": "usage_metering",
+     "pageId": "P-201",
+     "title": "Usage & Metering Dashboard",
+     "path": "/billing/usage",
+     "description": "Aggregated usage metering, volume rates, and billing units per tier."
+    },
+    {
+     "id": "billing_dashboard",
+     "pageId": "P-202",
+     "title": "Billing Overview",
+     "path": "/billing/overview",
+     "description": "Recurring billing schedules, monthly collections, and account ledger."
+    },
+    {
+     "id": "invoices",
+     "pageId": "P-203",
+     "title": "Invoices & Receivables",
+     "path": "/billing/invoices",
+     "description": "Customer invoice statements, payment statuses, and aging receivables."
+    },
+    {
+     "id": "tokenomics_config",
+     "pageId": "P-204",
+     "title": "Tokenomics Configuration",
+     "path": "/billing/tokenomics",
+     "description": "Token pricing multipliers, credit burn rates, and margin settings."
+    },
+    {
+     "id": "executive_billing",
+     "pageId": "P-205",
+     "title": "Executive Billing Summary",
+     "path": "/billing/executive",
+     "description": "High-level summary of billing collections, net revenue retention, and gross margins."
+    }
+   ]
+  },
+  {
+   "id": "product_and_services",
+   "title": "PRODUCT & SERVICES",
+   "pages": [
+    {
+     "id": "services_dashboard",
+     "pageId": "P-301",
+     "title": "Services Overview",
+     "path": "/products/services",
+     "description": "Catalog of monetized API, Token, Subscription, and GPU services."
+    },
+    {
+     "id": "gpu_services",
+     "pageId": "P-302",
+     "title": "GPU Services Management",
+     "path": "/products/gpu",
+     "description": "GPU cluster allocation, hourly compute rate cards, and instance provisioning."
+    },
+    {
+     "id": "token_services",
+     "pageId": "P-303",
+     "title": "Token Services & Consumption",
+     "path": "/products/tokens",
+     "description": "LLM token consumption metrics, provider volume splits, and drop analysis."
+    },
+    {
+     "id": "pricing_simulator",
+     "pageId": "P-304",
+     "title": "Pricing Simulator & Model",
+     "path": "/products/pricing-simulator",
+     "description": "Simulate rate changes, tiered volume discounts, and propose new pricing models."
+    }
+   ]
+  },
+  {
+   "id": "deal_manager",
+   "title": "DEAL MANAGER",
+   "pages": [
+    {
+     "id": "deals_pipeline",
+     "pageId": "P-401",
+     "title": "Deals Pipeline",
+     "path": "/deals/pipeline",
+     "description": "Enterprise sales deals, deal stages, and contract value pipeline."
+    },
+    {
+     "id": "deal_approvals",
+     "pageId": "P-402",
+     "title": "Deal Approvals & Provisioning",
+     "path": "/deals/approvals",
+     "description": "Pending deal discount approvals, custom SLA terms, and contract provisioning."
+    }
+   ]
+  },
+  {
+   "id": "customers",
+   "title": "CUSTOMERS",
+   "pages": [
+    {
+     "id": "customer_dashboard",
+     "pageId": "P-501",
+     "title": "Customer Overview",
+     "path": "/customers/overview",
+     "description": "Customer tier distribution, churn risk, and account spend analysis."
+    },
+    {
+     "id": "customer_accounts",
+     "pageId": "P-502",
+     "title": "Customer Accounts Directory",
+     "path": "/customers/accounts",
+     "description": "Complete list of customer accounts, signup dates, and assigned regions."
+    }
+   ]
+  },
+  {
+   "id": "users_and_roles",
+   "title": "USERS & ROLES",
+   "pages": [
+    {
+     "id": "users_list",
+     "pageId": "P-601",
+     "title": "Users Management",
+     "path": "/settings/users",
+     "description": "System user accounts, email addresses, and assigned access roles."
+    },
+    {
+     "id": "roles_permissions",
+     "pageId": "P-602",
+     "title": "Roles & Permissions",
+     "path": "/settings/roles",
+     "description": "Role-based access control (RBAC) matrix and API endpoint permissions."
+    }
+   ]
+  },
+  {
+   "id": "intelligence_hub",
+   "title": "INTELLIGENCE HUB",
+   "pages": [
+    {
+     "id": "model_providers",
+     "pageId": "P-701",
+     "title": "Model Provider Setup",
+     "path": "/intelligence/providers",
+     "description": "Configure LLM provider API credentials, rate limits, and fallback priority."
+    },
+    {
+     "id": "virtual_keys",
+     "pageId": "P-702",
+     "title": "Virtual Keys Management",
+     "path": "/intelligence/virtual-keys",
+     "description": "Provision and manage virtual API keys, token quotas, and rate limiting."
+    },
+    {
+     "id": "usage_analytics",
+     "pageId": "P-703",
+     "title": "Intelligence Usage Analytics",
+     "path": "/intelligence/analytics",
+     "description": "Model latency, token efficiency, and AI workload cost performance."
+    }
+   ]
+  }
+ ],
+ "pages": {
+  "dashboard": {
+   "id": "dashboard",
+   "pageId": "P-101",
+   "title": "Executive Overview",
+   "directory": "REVENUE AGENT",
+   "route": "/overview/dashboard",
+   "description": "Company-wide billed revenue, active services, usage events, and customer health at a glance.",
+   "keywords": [
+    "executive",
+    "overview",
+    "dashboard",
+    "revenue",
+    "billed revenue",
+    "active services",
+    "arr"
+   ],
+   "synonyms": [
+    "executive dashboard",
+    "overview",
+    "main dashboard",
+    "home"
+   ],
+   "availableFilters": {
+    "period": {
+     "key": "period",
+     "label": "Period Scope",
+     "type": "select",
+     "options": [
+      "Last 12 months",
+      "Last 6 months",
+      "Q3 2026",
+      "Q2 2026",
+      "Q1 2026",
+      "This Year"
+     ],
+     "default": "Q3 2026",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "period_desc",
+     "label": "Period (Newest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-101",
+     "type": "kpi",
+     "title": "BILLED REVENUE",
+     "value": "$1,450,000",
+     "change": "+14.2% QoQ",
+     "code": "W-101"
+    },
+    {
+     "id": "W-102",
+     "type": "kpi",
+     "title": "ACTIVE SERVICES",
+     "value": "112 Services",
+     "change": "+8 New",
+     "code": "W-102"
+    },
+    {
+     "id": "W-103",
+     "type": "kpi",
+     "title": "TOKEN CONSUMPTION",
+     "value": "45.2M Tokens",
+     "change": "-12.5% YoY",
+     "code": "W-103"
+    },
+    {
+     "id": "W-104",
+     "type": "kpi",
+     "title": "OVERDUE INVOICES",
+     "value": "$84,500",
+     "change": "12 Accounts",
+     "code": "W-104"
+    },
+    {
+     "id": "W-105",
+     "type": "chart",
+     "title": "Monthly Billed Revenue Trend",
+     "chartType": "bar",
+     "code": "W-105"
+    },
+    {
+     "id": "W-106",
+     "type": "grid",
+     "title": "Recent High-Value Invoices",
+     "code": "W-106"
+    }
+   ]
+  },
+  "service_inventory": {
+   "id": "service_inventory",
+   "pageId": "P-102",
+   "title": "Service Inventory",
+   "directory": "REVENUE AGENT",
+   "route": "/revenue/services",
+   "description": "Active, inactive, and draft monetization service inventory list.",
+   "keywords": [
+    "service",
+    "inventory",
+    "draft services",
+    "active services",
+    "gpu",
+    "token"
+   ],
+   "synonyms": [
+    "services list",
+    "monetization services",
+    "service catalog"
+   ],
+   "availableFilters": {
+    "status": {
+     "key": "status",
+     "label": "Service Status",
+     "type": "select",
+     "options": [
+      "Active",
+      "InActive",
+      "Draft"
+     ],
+     "default": "Active",
+     "required": true
+    },
+    "type": {
+     "key": "type",
+     "label": "Service Type",
+     "type": "select",
+     "options": [
+      "Usage",
+      "Subscription",
+      "Token",
+      "GPU"
+     ],
+     "default": "All",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "created_desc",
+     "label": "Created (Newest First)"
+    },
+    {
+     "value": "name_asc",
+     "label": "Name (A-Z)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-107",
+     "type": "kpi",
+     "title": "TOTAL SERVICES",
+     "value": "148 Services",
+     "change": "+15 YTD",
+     "code": "W-107"
+    },
+    {
+     "id": "W-108",
+     "type": "kpi",
+     "title": "DRAFT SERVICES",
+     "value": "34 Services",
+     "change": "+18 Surge in Mar",
+     "code": "W-108"
+    },
+    {
+     "id": "W-109",
+     "type": "chart",
+     "title": "Services by Type Breakdown",
+     "chartType": "donut",
+     "code": "W-109"
+    },
+    {
+     "id": "W-110",
+     "type": "grid",
+     "title": "Monetization Service Inventory",
+     "code": "W-110"
+    }
+   ]
+  },
+  "usage_events": {
+   "id": "usage_events",
+   "pageId": "P-103",
+   "title": "Usage Events Log",
+   "directory": "REVENUE AGENT",
+   "route": "/revenue/events",
+   "description": "Real-time usage metering events stream and raw consumption logs.",
+   "keywords": [
+    "usage",
+    "metering",
+    "events",
+    "units",
+    "consumption"
+   ],
+   "synonyms": [
+    "usage log",
+    "metering events",
+    "raw usage"
+   ],
+   "availableFilters": {
+    "unit_type": {
+     "key": "unit_type",
+     "label": "Unit Type",
+     "type": "select",
+     "options": [
+      "API Calls",
+      "GPU Hours",
+      "Tokens",
+      "GB Stored"
+     ],
+     "default": "All",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "time_desc",
+     "label": "Timestamp (Latest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-111",
+     "type": "kpi",
+     "title": "TOTAL USAGE EVENTS",
+     "value": "1,240,000",
+     "change": "+22% MoM",
+     "code": "W-111"
+    },
+    {
+     "id": "W-112",
+     "type": "grid",
+     "title": "Real-Time Metered Usage Stream",
+     "code": "W-112"
+    }
+   ]
+  },
+  "token_factory": {
+   "id": "token_factory",
+   "pageId": "P-104",
+   "title": "Token Factory & Model Provisioning",
+   "directory": "REVENUE AGENT",
+   "route": "/revenue/token-factory",
+   "description": "LLM token generation, unit cost provisioning, and model rate cards.",
+   "keywords": [
+    "token",
+    "model",
+    "factory",
+    "rate card",
+    "provider"
+   ],
+   "synonyms": [
+    "token provisioning",
+    "llm rate cards"
+   ],
+   "availableFilters": {
+    "provider": {
+     "key": "provider",
+     "label": "Model Provider",
+     "type": "select",
+     "options": [
+      "Provider X",
+      "Provider Y",
+      "Provider Z",
+      "OpenAI"
+     ],
+     "default": "All",
+     "required": true
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "cost_desc",
+     "label": "Unit Cost (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-113",
+     "type": "kpi",
+     "title": "PROVISIONED MODELS",
+     "value": "12 Models",
+     "change": "4 Active Providers",
+     "code": "W-113"
+    },
+    {
+     "id": "W-114",
+     "type": "grid",
+     "title": "LLM Model Rate Cards",
+     "code": "W-114"
+    }
+   ]
+  },
+  "usage_metering": {
+   "id": "usage_metering",
+   "pageId": "P-201",
+   "title": "Usage & Metering Dashboard",
+   "directory": "BILLING",
+   "route": "/billing/usage",
+   "description": "Aggregated usage metering, volume rates, and billing units per tier.",
+   "keywords": [
+    "usage",
+    "metering",
+    "billing units",
+    "consumption"
+   ],
+   "synonyms": [
+    "usage metering",
+    "metered billing"
+   ],
+   "availableFilters": {
+    "tier": {
+     "key": "tier",
+     "label": "Customer Tier",
+     "type": "select",
+     "options": [
+      "Enterprise",
+      "Mid-Market",
+      "SMB"
+     ],
+     "default": "All",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "units_desc",
+     "label": "Total Units (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-201",
+     "type": "kpi",
+     "title": "METERED UNITS",
+     "value": "845,000 Units",
+     "change": "+12.4% MoM",
+     "code": "W-201"
+    },
+    {
+     "id": "W-202",
+     "type": "chart",
+     "title": "Monthly Metered Usage by Tier",
+     "chartType": "bar",
+     "code": "W-202"
+    }
+   ]
+  },
+  "billing_dashboard": {
+   "id": "billing_dashboard",
+   "pageId": "P-202",
+   "title": "Billing Overview",
+   "directory": "BILLING",
+   "route": "/billing/overview",
+   "description": "Recurring billing schedules, monthly collections, and account ledger.",
+   "keywords": [
+    "billing",
+    "collections",
+    "mrr",
+    "ledger",
+    "recurring"
+   ],
+   "synonyms": [
+    "billing overview",
+    "billing dashboard",
+    "monetization overview"
+   ],
+   "availableFilters": {
+    "region": {
+     "key": "region",
+     "label": "Geographic Region",
+     "type": "select",
+     "options": [
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ],
+     "default": "All",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "amount_desc",
+     "label": "Billed Amount (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-203",
+     "type": "kpi",
+     "title": "TOTAL BILLED REVENUE",
+     "value": "$3,240,000",
+     "change": "Dip in Q2 (-18.5%)",
+     "code": "W-203"
+    },
+    {
+     "id": "W-204",
+     "type": "chart",
+     "title": "Quarterly Billed Revenue Comparison",
+     "chartType": "bar",
+     "code": "W-204"
+    }
+   ]
+  },
+  "invoices": {
+   "id": "invoices",
+   "pageId": "P-203",
+   "title": "Invoices & Receivables",
+   "directory": "BILLING",
+   "route": "/billing/invoices",
+   "description": "Customer invoice statements, payment statuses, and aging receivables.",
+   "keywords": [
+    "invoices",
+    "bills",
+    "receivables",
+    "overdue",
+    "paid",
+    "due"
+   ],
+   "synonyms": [
+    "invoices",
+    "customer bills",
+    "receivables aging"
+   ],
+   "availableFilters": {
+    "status": {
+     "key": "status",
+     "label": "Payment Status",
+     "type": "select",
+     "options": [
+      "Paid",
+      "Due",
+      "Overdue"
+     ],
+     "default": "Overdue",
+     "required": true
+    },
+    "region": {
+     "key": "region",
+     "label": "Region",
+     "type": "select",
+     "options": [
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ],
+     "default": "All",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "amount_desc",
+     "label": "Invoice Amount (Highest First)"
+    },
+    {
+     "value": "due_date_asc",
+     "label": "Due Date (Oldest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-205",
+     "type": "kpi",
+     "title": "TOTAL INVOICED",
+     "value": "$1,890,000",
+     "change": "210 Statements",
+     "code": "W-205"
+    },
+    {
+     "id": "W-206",
+     "type": "kpi",
+     "title": "OVERDUE RECEIVABLES",
+     "value": "$142,000",
+     "change": "Spike in August (EMEA)",
+     "code": "W-206"
+    },
+    {
+     "id": "W-207",
+     "type": "grid",
+     "title": "Customer Invoices Ledger",
+     "code": "W-207"
+    }
+   ]
+  },
+  "tokenomics_config": {
+   "id": "tokenomics_config",
+   "pageId": "P-204",
+   "title": "Tokenomics Configuration",
+   "directory": "BILLING",
+   "route": "/billing/tokenomics",
+   "description": "Token pricing multipliers, credit burn rates, and margin settings.",
+   "keywords": [
+    "tokenomics",
+    "pricing",
+    "credits",
+    "burn rate",
+    "margin"
+   ],
+   "synonyms": [
+    "tokenomics settings",
+    "credit rules"
+   ],
+   "availableFilters": {
+    "model": {
+     "key": "model",
+     "label": "Model Name",
+     "type": "select",
+     "options": [
+      "gpt-4o",
+      "claude-3.5-sonnet",
+      "llama-3.3-70b",
+      "deepseek-r1"
+     ],
+     "default": "All",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "margin_desc",
+     "label": "Margin (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-208",
+     "type": "kpi",
+     "title": "AVG TOKEN MARGIN",
+     "value": "42.5%",
+     "change": "+3.1% MoM",
+     "code": "W-208"
+    },
+    {
+     "id": "W-209",
+     "type": "grid",
+     "title": "Tokenomics Multipliers Matrix",
+     "code": "W-209"
+    }
+   ]
+  },
+  "executive_billing": {
+   "id": "executive_billing",
+   "pageId": "P-205",
+   "title": "Executive Billing Summary",
+   "directory": "BILLING",
+   "route": "/billing/executive",
+   "description": "High-level summary of billing collections, net revenue retention, and gross margins.",
+   "keywords": [
+    "executive",
+    "billing",
+    "nrr",
+    "gross margin",
+    "collections"
+   ],
+   "synonyms": [
+    "executive billing",
+    "finance summary"
+   ],
+   "availableFilters": {},
+   "availableSorts": [],
+   "widgets": [
+    {
+     "id": "W-210",
+     "type": "kpi",
+     "title": "NET REVENUE RETENTION (NRR)",
+     "value": "118.4%",
+     "change": "+2.1% YoY",
+     "code": "W-210"
+    }
+   ]
+  },
+  "services_dashboard": {
+   "id": "services_dashboard",
+   "pageId": "P-301",
+   "title": "Services Overview",
+   "directory": "PRODUCT & SERVICES",
+   "route": "/products/services",
+   "description": "Catalog of monetized API, Token, Subscription, and GPU services.",
+   "keywords": [
+    "services",
+    "products",
+    "catalog",
+    "gpu",
+    "token",
+    "subscription"
+   ],
+   "synonyms": [
+    "services dashboard",
+    "products overview"
+   ],
+   "availableFilters": {
+    "status": {
+     "key": "status",
+     "label": "Status",
+     "type": "select",
+     "options": [
+      "Active",
+      "InActive",
+      "Draft"
+     ],
+     "default": "InActive",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "name_asc",
+     "label": "Name (A-Z)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-301",
+     "type": "kpi",
+     "title": "ACTIVE SERVICES",
+     "value": "112 Active",
+     "change": "75.6% of Catalog",
+     "code": "W-301"
+    },
+    {
+     "id": "W-302",
+     "type": "grid",
+     "title": "Monetized Product & Services Catalog",
+     "code": "W-302"
+    }
+   ]
+  },
+  "gpu_services": {
+   "id": "gpu_services",
+   "pageId": "P-302",
+   "title": "GPU Services Management",
+   "directory": "PRODUCT & SERVICES",
+   "route": "/products/gpu",
+   "description": "GPU cluster allocation, hourly compute rate cards, and instance provisioning.",
+   "keywords": [
+    "gpu",
+    "compute",
+    "h100",
+    "a100",
+    "instance",
+    "create service"
+   ],
+   "synonyms": [
+    "gpu services",
+    "gpu compute",
+    "h100 instances"
+   ],
+   "state_changing_action": "create_service",
+   "availableFilters": {
+    "provider": {
+     "key": "provider",
+     "label": "Infrastructure Provider",
+     "type": "select",
+     "options": [
+      "AWS",
+      "GCP",
+      "Azure",
+      "CoreWeave"
+     ],
+     "default": "All",
+     "required": true
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "rate_desc",
+     "label": "Hourly Rate (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-303",
+     "type": "kpi",
+     "title": "GPU HOURLY RATE AVG",
+     "value": "$3.85 / hr",
+     "change": "H100 / A100 Clusters",
+     "code": "W-303"
+    },
+    {
+     "id": "W-304",
+     "type": "grid",
+     "title": "GPU Compute Rate Cards",
+     "code": "W-304"
+    }
+   ]
+  },
+  "token_services": {
+   "id": "token_services",
+   "pageId": "P-303",
+   "title": "Token Services & Consumption",
+   "directory": "PRODUCT & SERVICES",
+   "route": "/products/tokens",
+   "description": "LLM token consumption metrics, provider volume splits, and drop analysis.",
+   "keywords": [
+    "token",
+    "consumption",
+    "llm",
+    "provider x",
+    "drop",
+    "july 2026"
+   ],
+   "synonyms": [
+    "token usage",
+    "llm consumption",
+    "token analytics"
+   ],
+   "availableFilters": {
+    "provider": {
+     "key": "provider",
+     "label": "Model Provider",
+     "type": "select",
+     "options": [
+      "Provider X",
+      "Provider Y",
+      "Provider Z",
+      "OpenAI"
+     ],
+     "default": "Provider X",
+     "required": true
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "tokens_desc",
+     "label": "Total Tokens (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-305",
+     "type": "kpi",
+     "title": "JULY TOKEN CONSUMPTION",
+     "value": "31.4M Tokens",
+     "change": "Drop -30.5% in July (Provider X)",
+     "code": "W-305"
+    },
+    {
+     "id": "W-306",
+     "type": "chart",
+     "title": "Monthly Token Consumption by Provider",
+     "chartType": "bar",
+     "code": "W-306"
+    }
+   ]
+  },
+  "pricing_simulator": {
+   "id": "pricing_simulator",
+   "pageId": "P-304",
+   "title": "Pricing Simulator & Model",
+   "directory": "PRODUCT & SERVICES",
+   "route": "/products/pricing-simulator",
+   "description": "Simulate rate changes, tiered volume discounts, and propose new pricing models.",
+   "keywords": [
+    "pricing",
+    "simulator",
+    "rates",
+    "propose pricing change",
+    "discount"
+   ],
+   "synonyms": [
+    "pricing model",
+    "rate simulator",
+    "pricing simulator"
+   ],
+   "state_changing_action": "propose_change",
+   "availableFilters": {},
+   "availableSorts": [],
+   "widgets": [
+    {
+     "id": "W-307",
+     "type": "kpi",
+     "title": "SIMULATED MARGIN",
+     "value": "48.2%",
+     "change": "+5.7% Project Impact",
+     "code": "W-307"
+    }
+   ]
+  },
+  "deals_pipeline": {
+   "id": "deals_pipeline",
+   "pageId": "P-401",
+   "title": "Deals Pipeline",
+   "directory": "DEAL MANAGER",
+   "route": "/deals/pipeline",
+   "description": "Enterprise sales deals, deal stages, and contract value pipeline.",
+   "keywords": [
+    "deals",
+    "pipeline",
+    "sales",
+    "contract value",
+    "closed won",
+    "churn"
+   ],
+   "synonyms": [
+    "deals pipeline",
+    "sales deals",
+    "deal tracker"
+   ],
+   "availableFilters": {
+    "stage": {
+     "key": "stage",
+     "label": "Deal Stage",
+     "type": "select",
+     "options": [
+      "Prospecting",
+      "Negotiation",
+      "Closed Won",
+      "Closed Lost"
+     ],
+     "default": "All",
+     "required": false
+    },
+    "region": {
+     "key": "region",
+     "label": "Region",
+     "type": "select",
+     "options": [
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ],
+     "default": "All",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "value_desc",
+     "label": "Deal Value (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-401",
+     "type": "kpi",
+     "title": "TOTAL PIPELINE VALUE",
+     "value": "$8,450,000",
+     "change": "42 Active Deals",
+     "code": "W-401"
+    },
+    {
+     "id": "W-402",
+     "type": "grid",
+     "title": "Enterprise Deal Pipeline Ledger",
+     "code": "W-402"
+    }
+   ]
+  },
+  "deal_approvals": {
+   "id": "deal_approvals",
+   "pageId": "P-402",
+   "title": "Deal Approvals & Provisioning",
+   "directory": "DEAL MANAGER",
+   "route": "/deals/approvals",
+   "description": "Pending deal discount approvals, custom SLA terms, and contract provisioning.",
+   "keywords": [
+    "deal approvals",
+    "create deal",
+    "discount approval",
+    "contract"
+   ],
+   "synonyms": [
+    "deal approvals",
+    "contract approvals"
+   ],
+   "state_changing_action": "create_deal",
+   "availableFilters": {
+    "approval_status": {
+     "key": "approval_status",
+     "label": "Approval Status",
+     "type": "select",
+     "options": [
+      "Pending",
+      "Approved",
+      "Rejected"
+     ],
+     "default": "Pending",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "value_desc",
+     "label": "Contract Value (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-403",
+     "type": "kpi",
+     "title": "PENDING APPROVALS",
+     "value": "8 Deals",
+     "change": "$1,240,000 Total Value",
+     "code": "W-403"
+    },
+    {
+     "id": "W-404",
+     "type": "grid",
+     "title": "Deal Approvals Queue",
+     "code": "W-404"
+    }
+   ]
+  },
+  "customer_dashboard": {
+   "id": "customer_dashboard",
+   "pageId": "P-501",
+   "title": "Customer Overview",
+   "directory": "CUSTOMERS",
+   "route": "/customers/overview",
+   "description": "Customer tier distribution, churn risk, and account spend analysis.",
+   "keywords": [
+    "customer",
+    "accounts",
+    "enterprise",
+    "churn",
+    "churned",
+    "q2 2026"
+   ],
+   "synonyms": [
+    "customer dashboard",
+    "customer overview",
+    "account breakdown"
+   ],
+   "availableFilters": {
+    "tier": {
+     "key": "tier",
+     "label": "Customer Tier",
+     "type": "select",
+     "options": [
+      "Enterprise",
+      "Mid-Market",
+      "SMB"
+     ],
+     "default": "Enterprise",
+     "required": true
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "spend_desc",
+     "label": "Annual Spend (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-501",
+     "type": "kpi",
+     "title": "ENTERPRISE CUSTOMERS",
+     "value": "48 Accounts",
+     "change": "2 Churned in Q2 (Billed Rev Dip)",
+     "code": "W-501"
+    },
+    {
+     "id": "W-502",
+     "type": "chart",
+     "title": "Customer Spend by Service Category",
+     "chartType": "donut",
+     "code": "W-502"
+    },
+    {
+     "id": "W-503",
+     "type": "grid",
+     "title": "Key Enterprise Accounts Roster",
+     "code": "W-503"
+    }
+   ]
+  },
+  "customer_accounts": {
+   "id": "customer_accounts",
+   "pageId": "P-502",
+   "title": "Customer Accounts Directory",
+   "directory": "CUSTOMERS",
+   "route": "/customers/accounts",
+   "description": "Complete list of customer accounts, signup dates, and assigned regions.",
+   "keywords": [
+    "customer accounts",
+    "accounts list",
+    "industry",
+    "signup"
+   ],
+   "synonyms": [
+    "customer accounts",
+    "client list"
+   ],
+   "availableFilters": {
+    "region": {
+     "key": "region",
+     "label": "Region",
+     "type": "select",
+     "options": [
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ],
+     "default": "All",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "name_asc",
+     "label": "Name (A-Z)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-504",
+     "type": "kpi",
+     "title": "TOTAL ACCOUNTS",
+     "value": "320 Clients",
+     "change": "+42 this Year",
+     "code": "W-504"
+    },
+    {
+     "id": "W-505",
+     "type": "grid",
+     "title": "Customer Account Directory",
+     "code": "W-505"
+    }
+   ]
+  },
+  "users_list": {
+   "id": "users_list",
+   "pageId": "P-601",
+   "title": "Users Management",
+   "directory": "USERS & ROLES",
+   "route": "/settings/users",
+   "description": "System user accounts, email addresses, and assigned access roles.",
+   "keywords": [
+    "users",
+    "accounts",
+    "admin",
+    "team",
+    "members"
+   ],
+   "synonyms": [
+    "users management",
+    "user accounts",
+    "team members"
+   ],
+   "availableFilters": {
+    "role": {
+     "key": "role",
+     "label": "Access Role",
+     "type": "select",
+     "options": [
+      "Admin",
+      "Finance Ops",
+      "RevOps Manager",
+      "Viewer"
+     ],
+     "default": "All",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "name_asc",
+     "label": "Name (A-Z)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-601",
+     "type": "kpi",
+     "title": "TOTAL SYSTEM USERS",
+     "value": "54 Active Users",
+     "change": "+5 this Month",
+     "code": "W-601"
+    },
+    {
+     "id": "W-602",
+     "type": "grid",
+     "title": "System User Accounts Roster",
+     "code": "W-602"
+    }
+   ]
+  },
+  "roles_permissions": {
+   "id": "roles_permissions",
+   "pageId": "P-602",
+   "title": "Roles & Permissions",
+   "directory": "USERS & ROLES",
+   "route": "/settings/roles",
+   "description": "Role-based access control (RBAC) matrix and API endpoint permissions.",
+   "keywords": [
+    "roles",
+    "permissions",
+    "rbac",
+    "access control",
+    "security"
+   ],
+   "synonyms": [
+    "roles and permissions",
+    "access control"
+   ],
+   "availableFilters": {},
+   "availableSorts": [],
+   "widgets": [
+    {
+     "id": "W-603",
+     "type": "kpi",
+     "title": "CONFIGURED ROLES",
+     "value": "6 RBAC Roles",
+     "change": "Strict Granular Scopes",
+     "code": "W-603"
+    }
+   ]
+  },
+  "model_providers": {
+   "id": "model_providers",
+   "pageId": "P-701",
+   "title": "Model Provider Setup",
+   "directory": "INTELLIGENCE HUB",
+   "route": "/intelligence/providers",
+   "description": "Configure LLM provider API credentials, rate limits, and fallback priority.",
+   "keywords": [
+    "model provider",
+    "provider setup",
+    "credentials",
+    "openai",
+    "provider x"
+   ],
+   "synonyms": [
+    "model providers",
+    "provider setup",
+    "llm keys"
+   ],
+   "availableFilters": {
+    "provider": {
+     "key": "provider",
+     "label": "Provider",
+     "type": "select",
+     "options": [
+      "Provider X",
+      "Provider Y",
+      "Provider Z",
+      "OpenAI"
+     ],
+     "default": "All",
+     "required": false
+    }
+   },
+   "availableSorts": [],
+   "widgets": [
+    {
+     "id": "W-701",
+     "type": "kpi",
+     "title": "CONNECTED PROVIDERS",
+     "value": "4 Providers",
+     "change": "Primary: Provider X",
+     "code": "W-701"
+    }
+   ]
+  },
+  "virtual_keys": {
+   "id": "virtual_keys",
+   "pageId": "P-702",
+   "title": "Virtual Keys Management",
+   "directory": "INTELLIGENCE HUB",
+   "route": "/intelligence/virtual-keys",
+   "description": "Provision and manage virtual API keys, token quotas, and rate limiting.",
+   "keywords": [
+    "virtual keys",
+    "create virtual key",
+    "api keys",
+    "token quota",
+    "key management"
+   ],
+   "synonyms": [
+    "virtual keys",
+    "api keys management",
+    "virtual key provisioning"
+   ],
+   "state_changing_action": "create_virtual_key",
+   "availableFilters": {
+    "status": {
+     "key": "status",
+     "label": "Key Status",
+     "type": "select",
+     "options": [
+      "Active",
+      "Revoked",
+      "Expired"
+     ],
+     "default": "Active",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "created_desc",
+     "label": "Created (Newest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-702",
+     "type": "kpi",
+     "title": "ACTIVE VIRTUAL KEYS",
+     "value": "184 Keys",
+     "change": "28 Provisioned this Month",
+     "code": "W-702"
+    },
+    {
+     "id": "W-703",
+     "type": "grid",
+     "title": "Virtual API Keys Directory",
+     "code": "W-703"
+    }
+   ]
+  },
+  "usage_analytics": {
+   "id": "usage_analytics",
+   "pageId": "P-703",
+   "title": "Intelligence Usage Analytics",
+   "directory": "INTELLIGENCE HUB",
+   "route": "/intelligence/analytics",
+   "description": "Model latency, token efficiency, and AI workload cost performance.",
+   "keywords": [
+    "usage analytics",
+    "latency",
+    "token efficiency",
+    "ai cost",
+    "workload"
+   ],
+   "synonyms": [
+    "intelligence analytics",
+    "ai usage analytics"
+   ],
+   "availableFilters": {
+    "model": {
+     "key": "model",
+     "label": "Model Name",
+     "type": "select",
+     "options": [
+      "gpt-4o",
+      "claude-3.5-sonnet",
+      "llama-3.3-70b",
+      "deepseek-r1"
+     ],
+     "default": "All",
+     "required": false
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "latency_asc",
+     "label": "Latency (Fastest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-704",
+     "type": "kpi",
+     "title": "AVG INFERENCE LATENCY",
+     "value": "340 ms",
+     "change": "-45ms Optimization",
+     "code": "W-704"
+    },
+    {
+     "id": "W-705",
+     "type": "chart",
+     "title": "Inference Latency by Model Provider",
+     "chartType": "bar",
+     "code": "W-705"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,475 @@
+{
+ "pages": {
+  "dashboard": {
+   "id": "dashboard",
+   "pageId": "P-100",
+   "title": "Executive Dashboard",
+   "directory": "EXECUTIVE OVERVIEW",
+   "route": "/overview/dashboard",
+   "description": "Company-wide ARR, active tenants, spend and operational performance at a glance",
+   "keywords": [
+    "dashboard",
+    "overview",
+    "executive",
+    "arr",
+    "spend",
+    "mrr",
+    "active tenants",
+    "performance"
+   ],
+   "availableFilters": {
+    "period": {
+     "label": "Period Scope",
+     "options": [
+      "Last 12 months",
+      "Last 6 months",
+      "Q3 2025",
+      "Q2 2025",
+      "This Year"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "period_desc",
+     "label": "Period (Newest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-001",
+     "type": "kpi",
+     "title": "ANNUAL RECURRING REVENUE (ARR)",
+     "value": "$4,850,000",
+     "change": "+18.4% YoY",
+     "code": "R-001"
+    },
+    {
+     "id": "R-002",
+     "type": "kpi",
+     "title": "MONTHLY RECURRING REVENUE (MRR)",
+     "value": "$482,500",
+     "change": "+14.2% QoQ",
+     "code": "R-002"
+    },
+    {
+     "id": "R-003",
+     "type": "kpi",
+     "title": "ACTIVE ENTERPRISE TENANTS",
+     "value": "142 Tenants",
+     "change": "+12 New Tenants",
+     "code": "R-003"
+    },
+    {
+     "id": "R-004",
+     "type": "kpi",
+     "title": "AVG CONTRACT VALUE (ACV)",
+     "value": "$34,200",
+     "change": "+5.1% QoQ",
+     "code": "R-004"
+    },
+    {
+     "id": "R-101",
+     "type": "chart",
+     "title": "Revenue Trend (Quarterly Spend)",
+     "chartType": "bar",
+     "code": "R-101 bar"
+    },
+    {
+     "id": "R-102",
+     "type": "chart",
+     "title": "Revenue Distribution by Customer Tier",
+     "chartType": "donut",
+     "code": "R-102 donut"
+    },
+    {
+     "id": "R-103",
+     "type": "grid",
+     "title": "Key Account Transactions",
+     "code": "R-103 grid"
+    }
+   ]
+  },
+  "sales_analytics": {
+   "id": "sales_analytics",
+   "pageId": "P-200",
+   "title": "Revenue & Deal Analytics",
+   "directory": "SALES & REVENUE",
+   "route": "/sales/analytics",
+   "description": "Deal pipeline, monthly recurring revenue (MRR), and conversion velocity",
+   "keywords": [
+    "sales",
+    "revenue",
+    "mrr",
+    "deals",
+    "closed won",
+    "pipeline",
+    "conversion"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025",
+      "Last 30 Days"
+     ]
+    },
+    "customer_tier": {
+     "label": "Customer Tier",
+     "options": [
+      "All Tiers",
+      "Enterprise",
+      "Mid-Market",
+      "SMB"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    },
+    "deal_status": {
+     "label": "Deal Status",
+     "options": [
+      "All Statuses",
+      "Closed Won",
+      "Under Negotiation",
+      "Prospecting"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "mrr_desc",
+     "label": "MRR / Value (High to Low)"
+    },
+    {
+     "value": "date_desc",
+     "label": "Close Date (Newest)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-201",
+     "type": "grid",
+     "title": "Sales Deal Pipeline Grid",
+     "code": "R-201 grid"
+    }
+   ]
+  },
+  "regional_sales": {
+   "id": "regional_sales",
+   "pageId": "P-210",
+   "title": "Regional Sales Dashboard",
+   "directory": "SALES & REVENUE",
+   "route": "/sales/regional",
+   "description": "Territory performance breakdown, North vs South period comparisons, and growth rates",
+   "keywords": [
+    "regional",
+    "karnataka",
+    "south region",
+    "north region",
+    "territory",
+    "regional comparison",
+    "decline"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025",
+      "This Year"
+     ]
+    },
+    "region": {
+     "label": "Target Region",
+     "options": [
+      "All Regions",
+      "South Region",
+      "North Region",
+      "Karnataka",
+      "EMEA",
+      "APAC"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "rev_desc",
+     "label": "Revenue (Highest First)"
+    },
+    {
+     "value": "growth_asc",
+     "label": "Decline Rate (Worst First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-211",
+     "type": "grid",
+     "title": "Regional Territory Grid",
+     "code": "R-211 grid"
+    }
+   ]
+  },
+  "operations_supply": {
+   "id": "operations_supply",
+   "pageId": "P-300",
+   "title": "Fulfillment & Supplier Grid",
+   "directory": "SUPPLY CHAIN & LOGISTICS",
+   "route": "/supply/fulfillment",
+   "description": "Logistics tracking, supplier delays, warehouse hub status, and shipment logs",
+   "keywords": [
+    "fulfillment",
+    "logistics",
+    "supply chain",
+    "suppliers",
+    "shipment delays",
+    "warehouse",
+    "apac"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "region": {
+     "label": "Hub Region",
+     "options": [
+      "All Regions",
+      "APAC",
+      "EMEA",
+      "North America",
+      "LATAM"
+     ]
+    },
+    "delay_severity": {
+     "label": "Delay Severity",
+     "options": [
+      "All",
+      "Critical (>15 Days)",
+      "Moderate (5-15 Days)"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "delay_desc",
+     "label": "Delay Days (Longest First)"
+    },
+    {
+     "value": "order_val_desc",
+     "label": "Order Value (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-301",
+     "type": "grid",
+     "title": "Supplier Delay Log",
+     "code": "R-301 grid"
+    }
+   ]
+  },
+  "customer_churn": {
+   "id": "customer_churn",
+   "pageId": "P-400",
+   "title": "High-Risk Churn Grid",
+   "directory": "CUSTOMER SUCCESS",
+   "route": "/cs/churn-risk",
+   "description": "Account health scores, ARR at risk, product usage drop-offs, and open escalation tickets",
+   "keywords": [
+    "churn",
+    "churn risk",
+    "customer success",
+    "health score",
+    "arr at risk",
+    "escalation"
+   ],
+   "availableFilters": {
+    "risk_level": {
+     "label": "Risk Level",
+     "options": [
+      "All Risk Levels",
+      "High Risk (>75%)",
+      "Medium Risk (40-75%)",
+      "Low Risk (<40%)"
+     ]
+    },
+    "customer_tier": {
+     "label": "Subscription Plan",
+     "options": [
+      "All Plans",
+      "Enterprise",
+      "Mid-Market",
+      "SMB"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "risk_desc",
+     "label": "Risk Score (Highest First)"
+    },
+    {
+     "value": "arr_desc",
+     "label": "ARR at Risk (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-401",
+     "type": "grid",
+     "title": "At-Risk Account Health Grid",
+     "code": "R-401 grid"
+    }
+   ]
+  },
+  "financial_reports": {
+   "id": "financial_reports",
+   "pageId": "P-500",
+   "title": "Quarterly P&L Breakdown",
+   "directory": "FINANCIAL REPORTS",
+   "route": "/finance/p-and-l",
+   "description": "Profit and loss ledger, operating expenses (Opex), COGS, and gross margin audits",
+   "keywords": [
+    "finance",
+    "p&l",
+    "expenses",
+    "profit",
+    "cogs",
+    "opex",
+    "gross margin",
+    "cost center"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "customer_tier": {
+     "label": "Segment",
+     "options": [
+      "All Segments",
+      "Enterprise",
+      "Mid-Market",
+      "SMB"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "margin_desc",
+     "label": "Gross Margin % (High to Low)"
+    },
+    {
+     "value": "expense_desc",
+     "label": "Operating Expense (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-501",
+     "type": "grid",
+     "title": "P&L Financial Ledger Grid",
+     "code": "R-501 grid"
+    }
+   ]
+  }
+ },
+ "navigation": [
+  {
+   "id": "dir_overview",
+   "title": "EXECUTIVE OVERVIEW",
+   "pages": [
+    {
+     "id": "dashboard",
+     "pageId": "P-100",
+     "title": "Executive Dashboard",
+     "path": "/overview/dashboard",
+     "description": "Company-wide ARR, active tenants, spend and operational performance at a glance"
+    }
+   ]
+  },
+  {
+   "id": "dir_sales",
+   "title": "SALES & REVENUE",
+   "pages": [
+    {
+     "id": "sales_analytics",
+     "pageId": "P-200",
+     "title": "Revenue & Deal Analytics",
+     "path": "/sales/analytics",
+     "description": "Deal pipeline, monthly recurring revenue (MRR), and conversion velocity"
+    },
+    {
+     "id": "regional_sales",
+     "pageId": "P-210",
+     "title": "Regional Sales Dashboard",
+     "path": "/sales/regional",
+     "description": "Territory performance breakdown, North vs South period comparisons, and growth rates"
+    }
+   ]
+  },
+  {
+   "id": "dir_supply",
+   "title": "SUPPLY CHAIN & LOGISTICS",
+   "pages": [
+    {
+     "id": "operations_supply",
+     "pageId": "P-300",
+     "title": "Fulfillment & Supplier Grid",
+     "path": "/supply/fulfillment",
+     "description": "Logistics tracking, supplier delays, warehouse hub status, and shipment logs"
+    }
+   ]
+  },
+  {
+   "id": "dir_cs",
+   "title": "CUSTOMER SUCCESS",
+   "pages": [
+    {
+     "id": "customer_churn",
+     "pageId": "P-400",
+     "title": "High-Risk Churn Grid",
+     "path": "/cs/churn-risk",
+     "description": "Account health scores, ARR at risk, product usage drop-offs, and open escalation tickets"
+    }
+   ]
+  },
+  {
+   "id": "dir_finance",
+   "title": "FINANCIAL REPORTS",
+   "pages": [
+    {
+     "id": "financial_reports",
+     "pageId": "P-500",
+     "title": "Quarterly P&L Breakdown",
+     "path": "/finance/p-and-l",
+     "description": "Profit and loss ledger, operating expenses (Opex), COGS, and gross margin audits"
+    }
+   ]
+  }
+ ]
+}

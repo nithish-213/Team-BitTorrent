@@ -1,0 +1,34 @@
+[
+  {
+    "anomaly_id": "A",
+    "metric": "token_usage",
+    "period": "July 2026 vs June 2026",
+    "expected_driver": "Provider X",
+    "expected_delta": "-30.5%",
+    "explanation": "Token consumption dropped ~30% in July 2026 due to traffic reduction on Provider X."
+  },
+  {
+    "anomaly_id": "B",
+    "metric": "billed_revenue",
+    "period": "Q2 2026 vs Q1 2026",
+    "expected_driver": "Apex Global Fintech (CUST-ENT-04) & Titanium AI Labs (CUST-ENT-09)",
+    "expected_delta": "-18.5%",
+    "explanation": "Billed revenue dipped in Q2 2026 compared to Q1 because 2 major Enterprise accounts churned."
+  },
+  {
+    "anomaly_id": "C",
+    "metric": "overdue_invoices",
+    "period": "August 2026",
+    "expected_driver": "EMEA Region",
+    "expected_delta": "+140%",
+    "explanation": "A localized surge in Overdue invoices occurred in August 2026 within the EMEA region."
+  },
+  {
+    "anomaly_id": "D",
+    "metric": "draft_services",
+    "period": "March 2026",
+    "expected_driver": "Service Creation Spike",
+    "expected_delta": "+18 Draft Services",
+    "explanation": "18 new Draft monetization services were created in March 2026 during service catalog restructuring."
+  }
+]

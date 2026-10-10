@@ -1,0 +1,8142 @@
+{
+ "pages": {
+  "dashboard": {
+   "id": "dashboard",
+   "pageId": "P-100",
+   "title": "Executive Dashboard",
+   "directory": "EXECUTIVE OVERVIEW",
+   "route": "/overview/dashboard",
+   "description": "Company-wide ARR, active tenants, spend and operational performance at a glance",
+   "keywords": [
+    "dashboard",
+    "overview",
+    "executive",
+    "arr",
+    "spend",
+    "mrr",
+    "active tenants",
+    "performance"
+   ],
+   "availableFilters": {
+    "period": {
+     "label": "Period Scope",
+     "options": [
+      "Last 12 months",
+      "Last 6 months",
+      "Q3 2025",
+      "Q2 2025",
+      "This Year"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "period_desc",
+     "label": "Period (Newest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-001",
+     "type": "kpi",
+     "title": "ANNUAL RECURRING REVENUE (ARR)",
+     "value": "$4,850,000",
+     "change": "+18.4% YoY",
+     "code": "R-001"
+    },
+    {
+     "id": "R-002",
+     "type": "kpi",
+     "title": "MONTHLY RECURRING REVENUE (MRR)",
+     "value": "$482,500",
+     "change": "+14.2% QoQ",
+     "code": "R-002"
+    },
+    {
+     "id": "R-003",
+     "type": "kpi",
+     "title": "ACTIVE ENTERPRISE TENANTS",
+     "value": "142 Tenants",
+     "change": "+12 New Tenants",
+     "code": "R-003"
+    },
+    {
+     "id": "R-004",
+     "type": "kpi",
+     "title": "AVG CONTRACT VALUE (ACV)",
+     "value": "$34,200",
+     "change": "+5.1% QoQ",
+     "code": "R-004"
+    },
+    {
+     "id": "R-101",
+     "type": "chart",
+     "title": "Revenue Trend (Quarterly Spend)",
+     "chartType": "bar",
+     "code": "R-101 bar"
+    },
+    {
+     "id": "R-102",
+     "type": "chart",
+     "title": "Revenue Distribution by Customer Tier",
+     "chartType": "donut",
+     "code": "R-102 donut"
+    },
+    {
+     "id": "R-103",
+     "type": "grid",
+     "title": "Key Account Transactions",
+     "code": "R-103 grid"
+    }
+   ],
+   "has_data": true
+  },
+  "sales_analytics": {
+   "id": "sales_analytics",
+   "pageId": "P-200",
+   "title": "Revenue & Deal Analytics",
+   "directory": "SALES & REVENUE",
+   "route": "/sales/analytics",
+   "description": "Deal pipeline, monthly recurring revenue (MRR), and conversion velocity",
+   "keywords": [
+    "sales",
+    "revenue",
+    "mrr",
+    "deals",
+    "closed won",
+    "pipeline",
+    "conversion"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025",
+      "Last 30 Days"
+     ]
+    },
+    "customer_tier": {
+     "label": "Customer Tier",
+     "options": [
+      "All Tiers",
+      "Enterprise",
+      "Mid-Market",
+      "SMB"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    },
+    "deal_status": {
+     "label": "Deal Status",
+     "options": [
+      "All Statuses",
+      "Closed Won",
+      "Under Negotiation",
+      "Prospecting"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "mrr_desc",
+     "label": "MRR / Value (High to Low)"
+    },
+    {
+     "value": "date_desc",
+     "label": "Close Date (Newest)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-201",
+     "type": "grid",
+     "title": "Sales Deal Pipeline Grid",
+     "code": "R-201 grid"
+    }
+   ],
+   "has_data": true
+  },
+  "regional_sales": {
+   "id": "regional_sales",
+   "pageId": "P-210",
+   "title": "Regional Sales Dashboard",
+   "directory": "SALES & REVENUE",
+   "route": "/sales/regional",
+   "description": "Territory performance breakdown, North vs South period comparisons, and growth rates",
+   "keywords": [
+    "regional",
+    "karnataka",
+    "south region",
+    "north region",
+    "territory",
+    "regional comparison",
+    "decline"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025",
+      "This Year"
+     ]
+    },
+    "region": {
+     "label": "Target Region",
+     "options": [
+      "All Regions",
+      "South Region",
+      "North Region",
+      "Karnataka",
+      "EMEA",
+      "APAC"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "rev_desc",
+     "label": "Revenue (Highest First)"
+    },
+    {
+     "value": "growth_asc",
+     "label": "Decline Rate (Worst First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-211",
+     "type": "grid",
+     "title": "Regional Territory Grid",
+     "code": "R-211 grid"
+    }
+   ],
+   "has_data": true
+  },
+  "operations_supply": {
+   "id": "operations_supply",
+   "pageId": "P-300",
+   "title": "Fulfillment & Supplier Grid",
+   "directory": "SUPPLY CHAIN & LOGISTICS",
+   "route": "/supply/fulfillment",
+   "description": "Logistics tracking, supplier delays, warehouse hub status, and shipment logs",
+   "keywords": [
+    "fulfillment",
+    "logistics",
+    "supply chain",
+    "suppliers",
+    "shipment delays",
+    "warehouse",
+    "apac"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "region": {
+     "label": "Hub Region",
+     "options": [
+      "All Regions",
+      "APAC",
+      "EMEA",
+      "North America",
+      "LATAM"
+     ]
+    },
+    "delay_severity": {
+     "label": "Delay Severity",
+     "options": [
+      "All",
+      "Critical (>15 Days)",
+      "Moderate (5-15 Days)"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "delay_desc",
+     "label": "Delay Days (Longest First)"
+    },
+    {
+     "value": "order_val_desc",
+     "label": "Order Value (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-301",
+     "type": "grid",
+     "title": "Supplier Delay Log",
+     "code": "R-301 grid"
+    }
+   ],
+   "has_data": true
+  },
+  "customer_churn": {
+   "id": "customer_churn",
+   "pageId": "P-400",
+   "title": "High-Risk Churn Grid",
+   "directory": "CUSTOMER SUCCESS",
+   "route": "/cs/churn-risk",
+   "description": "Account health scores, ARR at risk, product usage drop-offs, and open escalation tickets",
+   "keywords": [
+    "churn",
+    "churn risk",
+    "customer success",
+    "health score",
+    "arr at risk",
+    "escalation"
+   ],
+   "availableFilters": {
+    "risk_level": {
+     "label": "Risk Level",
+     "options": [
+      "All Risk Levels",
+      "High Risk (>75%)",
+      "Medium Risk (40-75%)",
+      "Low Risk (<40%)"
+     ]
+    },
+    "customer_tier": {
+     "label": "Subscription Plan",
+     "options": [
+      "All Plans",
+      "Enterprise",
+      "Mid-Market",
+      "SMB"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "risk_desc",
+     "label": "Risk Score (Highest First)"
+    },
+    {
+     "value": "arr_desc",
+     "label": "ARR at Risk (Highest First)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-401",
+     "type": "grid",
+     "title": "At-Risk Account Health Grid",
+     "code": "R-401 grid"
+    }
+   ],
+   "has_data": true
+  },
+  "financial_reports": {
+   "id": "financial_reports",
+   "pageId": "P-500",
+   "title": "Quarterly P&L Breakdown",
+   "directory": "FINANCIAL REPORTS",
+   "route": "/finance/p-and-l",
+   "description": "Profit and loss ledger, operating expenses (Opex), COGS, and gross margin audits",
+   "keywords": [
+    "finance",
+    "p&l",
+    "expenses",
+    "profit",
+    "cogs",
+    "opex",
+    "gross margin",
+    "cost center"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "customer_tier": {
+     "label": "Segment",
+     "options": [
+      "All Segments",
+      "Enterprise",
+      "Mid-Market",
+      "SMB"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "margin_desc",
+     "label": "Gross Margin % (High to Low)"
+    },
+    {
+     "value": "expense_desc",
+     "label": "Operating Expense (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "R-501",
+     "type": "grid",
+     "title": "P&L Financial Ledger Grid",
+     "code": "R-501 grid"
+    }
+   ],
+   "has_data": true
+  },
+  "hr_headcount_trends": {
+   "id": "hr_headcount_trends",
+   "pageId": "P-610",
+   "title": "Headcount Trends",
+   "directory": "HR",
+   "route": "/hr/headcount_trends",
+   "description": "Headcount Trends for the HR team: trends, status breakdown and detailed records",
+   "keywords": [
+    "headcount",
+    "trends",
+    "hr"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-6101",
+     "type": "kpi",
+     "title": "Total Headcount Trends",
+     "code": "W-6101"
+    },
+    {
+     "id": "W-6102",
+     "type": "chart",
+     "title": "Headcount Trends Trend by Month",
+     "chartType": "line",
+     "code": "W-6102"
+    },
+    {
+     "id": "W-6103",
+     "type": "chart",
+     "title": "Headcount Trends by Region",
+     "chartType": "bar",
+     "code": "W-6103"
+    },
+    {
+     "id": "W-6104",
+     "type": "grid",
+     "title": "Headcount Trends Detail Records",
+     "code": "W-6104"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "hr_attrition_analysis": {
+   "id": "hr_attrition_analysis",
+   "pageId": "P-620",
+   "title": "Attrition Analysis",
+   "directory": "HR",
+   "route": "/hr/attrition_analysis",
+   "description": "Attrition Analysis for the HR team: trends, status breakdown and detailed records",
+   "keywords": [
+    "attrition",
+    "analysis",
+    "hr"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-6201",
+     "type": "kpi",
+     "title": "Total Attrition Analysis",
+     "code": "W-6201"
+    },
+    {
+     "id": "W-6202",
+     "type": "chart",
+     "title": "Attrition Analysis Trend by Month",
+     "chartType": "line",
+     "code": "W-6202"
+    },
+    {
+     "id": "W-6203",
+     "type": "chart",
+     "title": "Attrition Analysis by Region",
+     "chartType": "bar",
+     "code": "W-6203"
+    },
+    {
+     "id": "W-6204",
+     "type": "grid",
+     "title": "Attrition Analysis Detail Records",
+     "code": "W-6204"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "hr_hiring_pipeline": {
+   "id": "hr_hiring_pipeline",
+   "pageId": "P-630",
+   "title": "Hiring Pipeline",
+   "directory": "HR",
+   "route": "/hr/hiring_pipeline",
+   "description": "Hiring Pipeline for the HR team: trends, status breakdown and detailed records",
+   "keywords": [
+    "hiring",
+    "pipeline",
+    "hr"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-6301",
+     "type": "kpi",
+     "title": "Total Hiring Pipeline",
+     "code": "W-6301"
+    },
+    {
+     "id": "W-6302",
+     "type": "chart",
+     "title": "Hiring Pipeline Trend by Month",
+     "chartType": "line",
+     "code": "W-6302"
+    },
+    {
+     "id": "W-6303",
+     "type": "chart",
+     "title": "Hiring Pipeline by Region",
+     "chartType": "bar",
+     "code": "W-6303"
+    },
+    {
+     "id": "W-6304",
+     "type": "grid",
+     "title": "Hiring Pipeline Detail Records",
+     "code": "W-6304"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "hr_payroll_summary": {
+   "id": "hr_payroll_summary",
+   "pageId": "P-640",
+   "title": "Payroll Summary",
+   "directory": "HR",
+   "route": "/hr/payroll_summary",
+   "description": "Payroll Summary for the HR team: trends, status breakdown and detailed records",
+   "keywords": [
+    "payroll",
+    "summary",
+    "hr"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-6401",
+     "type": "kpi",
+     "title": "Total Payroll Summary",
+     "code": "W-6401"
+    },
+    {
+     "id": "W-6402",
+     "type": "chart",
+     "title": "Payroll Summary Trend by Month",
+     "chartType": "line",
+     "code": "W-6402"
+    },
+    {
+     "id": "W-6403",
+     "type": "chart",
+     "title": "Payroll Summary by Region",
+     "chartType": "bar",
+     "code": "W-6403"
+    },
+    {
+     "id": "W-6404",
+     "type": "grid",
+     "title": "Payroll Summary Detail Records",
+     "code": "W-6404"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "hr_leave_balances": {
+   "id": "hr_leave_balances",
+   "pageId": "P-650",
+   "title": "Leave Balances",
+   "directory": "HR",
+   "route": "/hr/leave_balances",
+   "description": "Leave Balances for the HR team: trends, status breakdown and detailed records",
+   "keywords": [
+    "leave",
+    "balances",
+    "hr"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-6501",
+     "type": "kpi",
+     "title": "Total Leave Balances",
+     "code": "W-6501"
+    },
+    {
+     "id": "W-6502",
+     "type": "chart",
+     "title": "Leave Balances Trend by Month",
+     "chartType": "line",
+     "code": "W-6502"
+    },
+    {
+     "id": "W-6503",
+     "type": "chart",
+     "title": "Leave Balances by Region",
+     "chartType": "bar",
+     "code": "W-6503"
+    },
+    {
+     "id": "W-6504",
+     "type": "grid",
+     "title": "Leave Balances Detail Records",
+     "code": "W-6504"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "hr_training_completion": {
+   "id": "hr_training_completion",
+   "pageId": "P-660",
+   "title": "Training Completion",
+   "directory": "HR",
+   "route": "/hr/training_completion",
+   "description": "Training Completion for the HR team: trends, status breakdown and detailed records",
+   "keywords": [
+    "training",
+    "completion",
+    "hr"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-6601",
+     "type": "kpi",
+     "title": "Total Training Completion",
+     "code": "W-6601"
+    },
+    {
+     "id": "W-6602",
+     "type": "chart",
+     "title": "Training Completion Trend by Month",
+     "chartType": "line",
+     "code": "W-6602"
+    },
+    {
+     "id": "W-6603",
+     "type": "chart",
+     "title": "Training Completion by Region",
+     "chartType": "bar",
+     "code": "W-6603"
+    },
+    {
+     "id": "W-6604",
+     "type": "grid",
+     "title": "Training Completion Detail Records",
+     "code": "W-6604"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "marketing_campaign_roi": {
+   "id": "marketing_campaign_roi",
+   "pageId": "P-670",
+   "title": "Campaign ROI",
+   "directory": "MARKETING",
+   "route": "/marketing/campaign_roi",
+   "description": "Campaign ROI for the Marketing team: trends, status breakdown and detailed records",
+   "keywords": [
+    "campaign",
+    "roi",
+    "marketing"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-6701",
+     "type": "kpi",
+     "title": "Total Campaign ROI",
+     "code": "W-6701"
+    },
+    {
+     "id": "W-6702",
+     "type": "chart",
+     "title": "Campaign ROI Trend by Month",
+     "chartType": "line",
+     "code": "W-6702"
+    },
+    {
+     "id": "W-6703",
+     "type": "chart",
+     "title": "Campaign ROI by Region",
+     "chartType": "bar",
+     "code": "W-6703"
+    },
+    {
+     "id": "W-6704",
+     "type": "grid",
+     "title": "Campaign ROI Detail Records",
+     "code": "W-6704"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "marketing_lead_funnel": {
+   "id": "marketing_lead_funnel",
+   "pageId": "P-680",
+   "title": "Lead Funnel",
+   "directory": "MARKETING",
+   "route": "/marketing/lead_funnel",
+   "description": "Lead Funnel for the Marketing team: trends, status breakdown and detailed records",
+   "keywords": [
+    "lead",
+    "funnel",
+    "marketing"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-6801",
+     "type": "kpi",
+     "title": "Total Lead Funnel",
+     "code": "W-6801"
+    },
+    {
+     "id": "W-6802",
+     "type": "chart",
+     "title": "Lead Funnel Trend by Month",
+     "chartType": "line",
+     "code": "W-6802"
+    },
+    {
+     "id": "W-6803",
+     "type": "chart",
+     "title": "Lead Funnel by Region",
+     "chartType": "bar",
+     "code": "W-6803"
+    },
+    {
+     "id": "W-6804",
+     "type": "grid",
+     "title": "Lead Funnel Detail Records",
+     "code": "W-6804"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "marketing_email_engagement": {
+   "id": "marketing_email_engagement",
+   "pageId": "P-690",
+   "title": "Email Engagement",
+   "directory": "MARKETING",
+   "route": "/marketing/email_engagement",
+   "description": "Email Engagement for the Marketing team: trends, status breakdown and detailed records",
+   "keywords": [
+    "email",
+    "engagement",
+    "marketing"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-6901",
+     "type": "kpi",
+     "title": "Total Email Engagement",
+     "code": "W-6901"
+    },
+    {
+     "id": "W-6902",
+     "type": "chart",
+     "title": "Email Engagement Trend by Month",
+     "chartType": "line",
+     "code": "W-6902"
+    },
+    {
+     "id": "W-6903",
+     "type": "chart",
+     "title": "Email Engagement by Region",
+     "chartType": "bar",
+     "code": "W-6903"
+    },
+    {
+     "id": "W-6904",
+     "type": "grid",
+     "title": "Email Engagement Detail Records",
+     "code": "W-6904"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "marketing_social_media_reach": {
+   "id": "marketing_social_media_reach",
+   "pageId": "P-700",
+   "title": "Social Media Reach",
+   "directory": "MARKETING",
+   "route": "/marketing/social_media_reach",
+   "description": "Social Media Reach for the Marketing team: trends, status breakdown and detailed records",
+   "keywords": [
+    "social",
+    "media",
+    "reach",
+    "marketing"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-7001",
+     "type": "kpi",
+     "title": "Total Social Media Reach",
+     "code": "W-7001"
+    },
+    {
+     "id": "W-7002",
+     "type": "chart",
+     "title": "Social Media Reach Trend by Month",
+     "chartType": "line",
+     "code": "W-7002"
+    },
+    {
+     "id": "W-7003",
+     "type": "chart",
+     "title": "Social Media Reach by Region",
+     "chartType": "bar",
+     "code": "W-7003"
+    },
+    {
+     "id": "W-7004",
+     "type": "grid",
+     "title": "Social Media Reach Detail Records",
+     "code": "W-7004"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "marketing_ad_spend_breakdown": {
+   "id": "marketing_ad_spend_breakdown",
+   "pageId": "P-710",
+   "title": "Ad Spend Breakdown",
+   "directory": "MARKETING",
+   "route": "/marketing/ad_spend_breakdown",
+   "description": "Ad Spend Breakdown for the Marketing team: trends, status breakdown and detailed records",
+   "keywords": [
+    "ad",
+    "spend",
+    "breakdown",
+    "marketing"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-7101",
+     "type": "kpi",
+     "title": "Total Ad Spend Breakdown",
+     "code": "W-7101"
+    },
+    {
+     "id": "W-7102",
+     "type": "chart",
+     "title": "Ad Spend Breakdown Trend by Month",
+     "chartType": "line",
+     "code": "W-7102"
+    },
+    {
+     "id": "W-7103",
+     "type": "chart",
+     "title": "Ad Spend Breakdown by Region",
+     "chartType": "bar",
+     "code": "W-7103"
+    },
+    {
+     "id": "W-7104",
+     "type": "grid",
+     "title": "Ad Spend Breakdown Detail Records",
+     "code": "W-7104"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "marketing_webinar_attendance": {
+   "id": "marketing_webinar_attendance",
+   "pageId": "P-720",
+   "title": "Webinar Attendance",
+   "directory": "MARKETING",
+   "route": "/marketing/webinar_attendance",
+   "description": "Webinar Attendance for the Marketing team: trends, status breakdown and detailed records",
+   "keywords": [
+    "webinar",
+    "attendance",
+    "marketing"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-7201",
+     "type": "kpi",
+     "title": "Total Webinar Attendance",
+     "code": "W-7201"
+    },
+    {
+     "id": "W-7202",
+     "type": "chart",
+     "title": "Webinar Attendance Trend by Month",
+     "chartType": "line",
+     "code": "W-7202"
+    },
+    {
+     "id": "W-7203",
+     "type": "chart",
+     "title": "Webinar Attendance by Region",
+     "chartType": "bar",
+     "code": "W-7203"
+    },
+    {
+     "id": "W-7204",
+     "type": "grid",
+     "title": "Webinar Attendance Detail Records",
+     "code": "W-7204"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "it_operations_incident_tracker": {
+   "id": "it_operations_incident_tracker",
+   "pageId": "P-730",
+   "title": "Incident Tracker",
+   "directory": "IT OPERATIONS",
+   "route": "/it_operations/incident_tracker",
+   "description": "Incident Tracker for the IT Operations team: trends, status breakdown and detailed records",
+   "keywords": [
+    "incident",
+    "tracker",
+    "it operations"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-7301",
+     "type": "kpi",
+     "title": "Total Incident Tracker",
+     "code": "W-7301"
+    },
+    {
+     "id": "W-7302",
+     "type": "chart",
+     "title": "Incident Tracker Trend by Month",
+     "chartType": "line",
+     "code": "W-7302"
+    },
+    {
+     "id": "W-7303",
+     "type": "chart",
+     "title": "Incident Tracker by Region",
+     "chartType": "bar",
+     "code": "W-7303"
+    },
+    {
+     "id": "W-7304",
+     "type": "grid",
+     "title": "Incident Tracker Detail Records",
+     "code": "W-7304"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "it_operations_server_uptime": {
+   "id": "it_operations_server_uptime",
+   "pageId": "P-740",
+   "title": "Server Uptime",
+   "directory": "IT OPERATIONS",
+   "route": "/it_operations/server_uptime",
+   "description": "Server Uptime for the IT Operations team: trends, status breakdown and detailed records",
+   "keywords": [
+    "server",
+    "uptime",
+    "it operations"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-7401",
+     "type": "kpi",
+     "title": "Total Server Uptime",
+     "code": "W-7401"
+    },
+    {
+     "id": "W-7402",
+     "type": "chart",
+     "title": "Server Uptime Trend by Month",
+     "chartType": "line",
+     "code": "W-7402"
+    },
+    {
+     "id": "W-7403",
+     "type": "chart",
+     "title": "Server Uptime by Region",
+     "chartType": "bar",
+     "code": "W-7403"
+    },
+    {
+     "id": "W-7404",
+     "type": "grid",
+     "title": "Server Uptime Detail Records",
+     "code": "W-7404"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "it_operations_ticket_backlog": {
+   "id": "it_operations_ticket_backlog",
+   "pageId": "P-750",
+   "title": "Ticket Backlog",
+   "directory": "IT OPERATIONS",
+   "route": "/it_operations/ticket_backlog",
+   "description": "Ticket Backlog for the IT Operations team: trends, status breakdown and detailed records",
+   "keywords": [
+    "ticket",
+    "backlog",
+    "it operations"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-7501",
+     "type": "kpi",
+     "title": "Total Ticket Backlog",
+     "code": "W-7501"
+    },
+    {
+     "id": "W-7502",
+     "type": "chart",
+     "title": "Ticket Backlog Trend by Month",
+     "chartType": "line",
+     "code": "W-7502"
+    },
+    {
+     "id": "W-7503",
+     "type": "chart",
+     "title": "Ticket Backlog by Region",
+     "chartType": "bar",
+     "code": "W-7503"
+    },
+    {
+     "id": "W-7504",
+     "type": "grid",
+     "title": "Ticket Backlog Detail Records",
+     "code": "W-7504"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "it_operations_cloud_cost_monitor": {
+   "id": "it_operations_cloud_cost_monitor",
+   "pageId": "P-760",
+   "title": "Cloud Cost Monitor",
+   "directory": "IT OPERATIONS",
+   "route": "/it_operations/cloud_cost_monitor",
+   "description": "Cloud Cost Monitor for the IT Operations team: trends, status breakdown and detailed records",
+   "keywords": [
+    "cloud",
+    "cost",
+    "monitor",
+    "it operations"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-7601",
+     "type": "kpi",
+     "title": "Total Cloud Cost Monitor",
+     "code": "W-7601"
+    },
+    {
+     "id": "W-7602",
+     "type": "chart",
+     "title": "Cloud Cost Monitor Trend by Month",
+     "chartType": "line",
+     "code": "W-7602"
+    },
+    {
+     "id": "W-7603",
+     "type": "chart",
+     "title": "Cloud Cost Monitor by Region",
+     "chartType": "bar",
+     "code": "W-7603"
+    },
+    {
+     "id": "W-7604",
+     "type": "grid",
+     "title": "Cloud Cost Monitor Detail Records",
+     "code": "W-7604"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "it_operations_patch_compliance": {
+   "id": "it_operations_patch_compliance",
+   "pageId": "P-770",
+   "title": "Patch Compliance",
+   "directory": "IT OPERATIONS",
+   "route": "/it_operations/patch_compliance",
+   "description": "Patch Compliance for the IT Operations team: trends, status breakdown and detailed records",
+   "keywords": [
+    "patch",
+    "compliance",
+    "it operations"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-7701",
+     "type": "kpi",
+     "title": "Total Patch Compliance",
+     "code": "W-7701"
+    },
+    {
+     "id": "W-7702",
+     "type": "chart",
+     "title": "Patch Compliance Trend by Month",
+     "chartType": "line",
+     "code": "W-7702"
+    },
+    {
+     "id": "W-7703",
+     "type": "chart",
+     "title": "Patch Compliance by Region",
+     "chartType": "bar",
+     "code": "W-7703"
+    },
+    {
+     "id": "W-7704",
+     "type": "grid",
+     "title": "Patch Compliance Detail Records",
+     "code": "W-7704"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "it_operations_change_requests": {
+   "id": "it_operations_change_requests",
+   "pageId": "P-780",
+   "title": "Change Requests",
+   "directory": "IT OPERATIONS",
+   "route": "/it_operations/change_requests",
+   "description": "Change Requests for the IT Operations team: trends, status breakdown and detailed records",
+   "keywords": [
+    "change",
+    "requests",
+    "it operations"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-7801",
+     "type": "kpi",
+     "title": "Total Change Requests",
+     "code": "W-7801"
+    },
+    {
+     "id": "W-7802",
+     "type": "chart",
+     "title": "Change Requests Trend by Month",
+     "chartType": "line",
+     "code": "W-7802"
+    },
+    {
+     "id": "W-7803",
+     "type": "chart",
+     "title": "Change Requests by Region",
+     "chartType": "bar",
+     "code": "W-7803"
+    },
+    {
+     "id": "W-7804",
+     "type": "grid",
+     "title": "Change Requests Detail Records",
+     "code": "W-7804"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "security_vulnerability_scan_results": {
+   "id": "security_vulnerability_scan_results",
+   "pageId": "P-790",
+   "title": "Vulnerability Scan Results",
+   "directory": "SECURITY",
+   "route": "/security/vulnerability_scan_results",
+   "description": "Vulnerability Scan Results for the Security team: trends, status breakdown and detailed records",
+   "keywords": [
+    "vulnerability",
+    "scan",
+    "results",
+    "security"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-7901",
+     "type": "kpi",
+     "title": "Total Vulnerability Scan Results",
+     "code": "W-7901"
+    },
+    {
+     "id": "W-7902",
+     "type": "chart",
+     "title": "Vulnerability Scan Results Trend by Month",
+     "chartType": "line",
+     "code": "W-7902"
+    },
+    {
+     "id": "W-7903",
+     "type": "chart",
+     "title": "Vulnerability Scan Results by Region",
+     "chartType": "bar",
+     "code": "W-7903"
+    },
+    {
+     "id": "W-7904",
+     "type": "grid",
+     "title": "Vulnerability Scan Results Detail Records",
+     "code": "W-7904"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "security_access_review": {
+   "id": "security_access_review",
+   "pageId": "P-800",
+   "title": "Access Review",
+   "directory": "SECURITY",
+   "route": "/security/access_review",
+   "description": "Access Review for the Security team: trends, status breakdown and detailed records",
+   "keywords": [
+    "access",
+    "review",
+    "security"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-8001",
+     "type": "kpi",
+     "title": "Total Access Review",
+     "code": "W-8001"
+    },
+    {
+     "id": "W-8002",
+     "type": "chart",
+     "title": "Access Review Trend by Month",
+     "chartType": "line",
+     "code": "W-8002"
+    },
+    {
+     "id": "W-8003",
+     "type": "chart",
+     "title": "Access Review by Region",
+     "chartType": "bar",
+     "code": "W-8003"
+    },
+    {
+     "id": "W-8004",
+     "type": "grid",
+     "title": "Access Review Detail Records",
+     "code": "W-8004"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "security_phishing_simulation": {
+   "id": "security_phishing_simulation",
+   "pageId": "P-810",
+   "title": "Phishing Simulation",
+   "directory": "SECURITY",
+   "route": "/security/phishing_simulation",
+   "description": "Phishing Simulation for the Security team: trends, status breakdown and detailed records",
+   "keywords": [
+    "phishing",
+    "simulation",
+    "security"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-8101",
+     "type": "kpi",
+     "title": "Total Phishing Simulation",
+     "code": "W-8101"
+    },
+    {
+     "id": "W-8102",
+     "type": "chart",
+     "title": "Phishing Simulation Trend by Month",
+     "chartType": "line",
+     "code": "W-8102"
+    },
+    {
+     "id": "W-8103",
+     "type": "chart",
+     "title": "Phishing Simulation by Region",
+     "chartType": "bar",
+     "code": "W-8103"
+    },
+    {
+     "id": "W-8104",
+     "type": "grid",
+     "title": "Phishing Simulation Detail Records",
+     "code": "W-8104"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "security_audit_log_explorer": {
+   "id": "security_audit_log_explorer",
+   "pageId": "P-820",
+   "title": "Audit Log Explorer",
+   "directory": "SECURITY",
+   "route": "/security/audit_log_explorer",
+   "description": "Audit Log Explorer for the Security team: trends, status breakdown and detailed records",
+   "keywords": [
+    "audit",
+    "log",
+    "explorer",
+    "security"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-8201",
+     "type": "kpi",
+     "title": "Total Audit Log Explorer",
+     "code": "W-8201"
+    },
+    {
+     "id": "W-8202",
+     "type": "chart",
+     "title": "Audit Log Explorer Trend by Month",
+     "chartType": "line",
+     "code": "W-8202"
+    },
+    {
+     "id": "W-8203",
+     "type": "chart",
+     "title": "Audit Log Explorer by Region",
+     "chartType": "bar",
+     "code": "W-8203"
+    },
+    {
+     "id": "W-8204",
+     "type": "grid",
+     "title": "Audit Log Explorer Detail Records",
+     "code": "W-8204"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "security_threat_alerts": {
+   "id": "security_threat_alerts",
+   "pageId": "P-830",
+   "title": "Threat Alerts",
+   "directory": "SECURITY",
+   "route": "/security/threat_alerts",
+   "description": "Threat Alerts for the Security team: trends, status breakdown and detailed records",
+   "keywords": [
+    "threat",
+    "alerts",
+    "security"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-8301",
+     "type": "kpi",
+     "title": "Total Threat Alerts",
+     "code": "W-8301"
+    },
+    {
+     "id": "W-8302",
+     "type": "chart",
+     "title": "Threat Alerts Trend by Month",
+     "chartType": "line",
+     "code": "W-8302"
+    },
+    {
+     "id": "W-8303",
+     "type": "chart",
+     "title": "Threat Alerts by Region",
+     "chartType": "bar",
+     "code": "W-8303"
+    },
+    {
+     "id": "W-8304",
+     "type": "grid",
+     "title": "Threat Alerts Detail Records",
+     "code": "W-8304"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "security_endpoint_coverage": {
+   "id": "security_endpoint_coverage",
+   "pageId": "P-840",
+   "title": "Endpoint Coverage",
+   "directory": "SECURITY",
+   "route": "/security/endpoint_coverage",
+   "description": "Endpoint Coverage for the Security team: trends, status breakdown and detailed records",
+   "keywords": [
+    "endpoint",
+    "coverage",
+    "security"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-8401",
+     "type": "kpi",
+     "title": "Total Endpoint Coverage",
+     "code": "W-8401"
+    },
+    {
+     "id": "W-8402",
+     "type": "chart",
+     "title": "Endpoint Coverage Trend by Month",
+     "chartType": "line",
+     "code": "W-8402"
+    },
+    {
+     "id": "W-8403",
+     "type": "chart",
+     "title": "Endpoint Coverage by Region",
+     "chartType": "bar",
+     "code": "W-8403"
+    },
+    {
+     "id": "W-8404",
+     "type": "grid",
+     "title": "Endpoint Coverage Detail Records",
+     "code": "W-8404"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "procurement_purchase_orders": {
+   "id": "procurement_purchase_orders",
+   "pageId": "P-850",
+   "title": "Purchase Orders",
+   "directory": "PROCUREMENT",
+   "route": "/procurement/purchase_orders",
+   "description": "Purchase Orders for the Procurement team: trends, status breakdown and detailed records",
+   "keywords": [
+    "purchase",
+    "orders",
+    "procurement"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-8501",
+     "type": "kpi",
+     "title": "Total Purchase Orders",
+     "code": "W-8501"
+    },
+    {
+     "id": "W-8502",
+     "type": "chart",
+     "title": "Purchase Orders Trend by Month",
+     "chartType": "line",
+     "code": "W-8502"
+    },
+    {
+     "id": "W-8503",
+     "type": "chart",
+     "title": "Purchase Orders by Region",
+     "chartType": "bar",
+     "code": "W-8503"
+    },
+    {
+     "id": "W-8504",
+     "type": "grid",
+     "title": "Purchase Orders Detail Records",
+     "code": "W-8504"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "procurement_vendor_scorecards": {
+   "id": "procurement_vendor_scorecards",
+   "pageId": "P-860",
+   "title": "Vendor Scorecards",
+   "directory": "PROCUREMENT",
+   "route": "/procurement/vendor_scorecards",
+   "description": "Vendor Scorecards for the Procurement team: trends, status breakdown and detailed records",
+   "keywords": [
+    "vendor",
+    "scorecards",
+    "procurement"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-8601",
+     "type": "kpi",
+     "title": "Total Vendor Scorecards",
+     "code": "W-8601"
+    },
+    {
+     "id": "W-8602",
+     "type": "chart",
+     "title": "Vendor Scorecards Trend by Month",
+     "chartType": "line",
+     "code": "W-8602"
+    },
+    {
+     "id": "W-8603",
+     "type": "chart",
+     "title": "Vendor Scorecards by Region",
+     "chartType": "bar",
+     "code": "W-8603"
+    },
+    {
+     "id": "W-8604",
+     "type": "grid",
+     "title": "Vendor Scorecards Detail Records",
+     "code": "W-8604"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "procurement_contract_renewals": {
+   "id": "procurement_contract_renewals",
+   "pageId": "P-870",
+   "title": "Contract Renewals",
+   "directory": "PROCUREMENT",
+   "route": "/procurement/contract_renewals",
+   "description": "Contract Renewals for the Procurement team: trends, status breakdown and detailed records",
+   "keywords": [
+    "contract",
+    "renewals",
+    "procurement"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-8701",
+     "type": "kpi",
+     "title": "Total Contract Renewals",
+     "code": "W-8701"
+    },
+    {
+     "id": "W-8702",
+     "type": "chart",
+     "title": "Contract Renewals Trend by Month",
+     "chartType": "line",
+     "code": "W-8702"
+    },
+    {
+     "id": "W-8703",
+     "type": "chart",
+     "title": "Contract Renewals by Region",
+     "chartType": "bar",
+     "code": "W-8703"
+    },
+    {
+     "id": "W-8704",
+     "type": "grid",
+     "title": "Contract Renewals Detail Records",
+     "code": "W-8704"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "procurement_spend_under_management": {
+   "id": "procurement_spend_under_management",
+   "pageId": "P-880",
+   "title": "Spend Under Management",
+   "directory": "PROCUREMENT",
+   "route": "/procurement/spend_under_management",
+   "description": "Spend Under Management for the Procurement team: trends, status breakdown and detailed records",
+   "keywords": [
+    "spend",
+    "under",
+    "management",
+    "procurement"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-8801",
+     "type": "kpi",
+     "title": "Total Spend Under Management",
+     "code": "W-8801"
+    },
+    {
+     "id": "W-8802",
+     "type": "chart",
+     "title": "Spend Under Management Trend by Month",
+     "chartType": "line",
+     "code": "W-8802"
+    },
+    {
+     "id": "W-8803",
+     "type": "chart",
+     "title": "Spend Under Management by Region",
+     "chartType": "bar",
+     "code": "W-8803"
+    },
+    {
+     "id": "W-8804",
+     "type": "grid",
+     "title": "Spend Under Management Detail Records",
+     "code": "W-8804"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "procurement_invoice_matching": {
+   "id": "procurement_invoice_matching",
+   "pageId": "P-890",
+   "title": "Invoice Matching",
+   "directory": "PROCUREMENT",
+   "route": "/procurement/invoice_matching",
+   "description": "Invoice Matching for the Procurement team: trends, status breakdown and detailed records",
+   "keywords": [
+    "invoice",
+    "matching",
+    "procurement"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-8901",
+     "type": "kpi",
+     "title": "Total Invoice Matching",
+     "code": "W-8901"
+    },
+    {
+     "id": "W-8902",
+     "type": "chart",
+     "title": "Invoice Matching Trend by Month",
+     "chartType": "line",
+     "code": "W-8902"
+    },
+    {
+     "id": "W-8903",
+     "type": "chart",
+     "title": "Invoice Matching by Region",
+     "chartType": "bar",
+     "code": "W-8903"
+    },
+    {
+     "id": "W-8904",
+     "type": "grid",
+     "title": "Invoice Matching Detail Records",
+     "code": "W-8904"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "procurement_rfq_status": {
+   "id": "procurement_rfq_status",
+   "pageId": "P-900",
+   "title": "RFQ Status",
+   "directory": "PROCUREMENT",
+   "route": "/procurement/rfq_status",
+   "description": "RFQ Status for the Procurement team: trends, status breakdown and detailed records",
+   "keywords": [
+    "rfq",
+    "status",
+    "procurement"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-9001",
+     "type": "kpi",
+     "title": "Total RFQ Status",
+     "code": "W-9001"
+    },
+    {
+     "id": "W-9002",
+     "type": "chart",
+     "title": "RFQ Status Trend by Month",
+     "chartType": "line",
+     "code": "W-9002"
+    },
+    {
+     "id": "W-9003",
+     "type": "chart",
+     "title": "RFQ Status by Region",
+     "chartType": "bar",
+     "code": "W-9003"
+    },
+    {
+     "id": "W-9004",
+     "type": "grid",
+     "title": "RFQ Status Detail Records",
+     "code": "W-9004"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "support_ticket_volume": {
+   "id": "support_ticket_volume",
+   "pageId": "P-910",
+   "title": "Ticket Volume",
+   "directory": "SUPPORT",
+   "route": "/support/ticket_volume",
+   "description": "Ticket Volume for the Support team: trends, status breakdown and detailed records",
+   "keywords": [
+    "ticket",
+    "volume",
+    "support"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-9101",
+     "type": "kpi",
+     "title": "Total Ticket Volume",
+     "code": "W-9101"
+    },
+    {
+     "id": "W-9102",
+     "type": "chart",
+     "title": "Ticket Volume Trend by Month",
+     "chartType": "line",
+     "code": "W-9102"
+    },
+    {
+     "id": "W-9103",
+     "type": "chart",
+     "title": "Ticket Volume by Region",
+     "chartType": "bar",
+     "code": "W-9103"
+    },
+    {
+     "id": "W-9104",
+     "type": "grid",
+     "title": "Ticket Volume Detail Records",
+     "code": "W-9104"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "support_first_response_time": {
+   "id": "support_first_response_time",
+   "pageId": "P-920",
+   "title": "First Response Time",
+   "directory": "SUPPORT",
+   "route": "/support/first_response_time",
+   "description": "First Response Time for the Support team: trends, status breakdown and detailed records",
+   "keywords": [
+    "first",
+    "response",
+    "time",
+    "support"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-9201",
+     "type": "kpi",
+     "title": "Total First Response Time",
+     "code": "W-9201"
+    },
+    {
+     "id": "W-9202",
+     "type": "chart",
+     "title": "First Response Time Trend by Month",
+     "chartType": "line",
+     "code": "W-9202"
+    },
+    {
+     "id": "W-9203",
+     "type": "chart",
+     "title": "First Response Time by Region",
+     "chartType": "bar",
+     "code": "W-9203"
+    },
+    {
+     "id": "W-9204",
+     "type": "grid",
+     "title": "First Response Time Detail Records",
+     "code": "W-9204"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "support_csat_scores": {
+   "id": "support_csat_scores",
+   "pageId": "P-930",
+   "title": "CSAT Scores",
+   "directory": "SUPPORT",
+   "route": "/support/csat_scores",
+   "description": "CSAT Scores for the Support team: trends, status breakdown and detailed records",
+   "keywords": [
+    "csat",
+    "scores",
+    "support"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-9301",
+     "type": "kpi",
+     "title": "Total CSAT Scores",
+     "code": "W-9301"
+    },
+    {
+     "id": "W-9302",
+     "type": "chart",
+     "title": "CSAT Scores Trend by Month",
+     "chartType": "line",
+     "code": "W-9302"
+    },
+    {
+     "id": "W-9303",
+     "type": "chart",
+     "title": "CSAT Scores by Region",
+     "chartType": "bar",
+     "code": "W-9303"
+    },
+    {
+     "id": "W-9304",
+     "type": "grid",
+     "title": "CSAT Scores Detail Records",
+     "code": "W-9304"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "support_escalation_queue": {
+   "id": "support_escalation_queue",
+   "pageId": "P-940",
+   "title": "Escalation Queue",
+   "directory": "SUPPORT",
+   "route": "/support/escalation_queue",
+   "description": "Escalation Queue for the Support team: trends, status breakdown and detailed records",
+   "keywords": [
+    "escalation",
+    "queue",
+    "support"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-9401",
+     "type": "kpi",
+     "title": "Total Escalation Queue",
+     "code": "W-9401"
+    },
+    {
+     "id": "W-9402",
+     "type": "chart",
+     "title": "Escalation Queue Trend by Month",
+     "chartType": "line",
+     "code": "W-9402"
+    },
+    {
+     "id": "W-9403",
+     "type": "chart",
+     "title": "Escalation Queue by Region",
+     "chartType": "bar",
+     "code": "W-9403"
+    },
+    {
+     "id": "W-9404",
+     "type": "grid",
+     "title": "Escalation Queue Detail Records",
+     "code": "W-9404"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "support_knowledge_base_usage": {
+   "id": "support_knowledge_base_usage",
+   "pageId": "P-950",
+   "title": "Knowledge Base Usage",
+   "directory": "SUPPORT",
+   "route": "/support/knowledge_base_usage",
+   "description": "Knowledge Base Usage for the Support team: trends, status breakdown and detailed records",
+   "keywords": [
+    "knowledge",
+    "base",
+    "usage",
+    "support"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-9501",
+     "type": "kpi",
+     "title": "Total Knowledge Base Usage",
+     "code": "W-9501"
+    },
+    {
+     "id": "W-9502",
+     "type": "chart",
+     "title": "Knowledge Base Usage Trend by Month",
+     "chartType": "line",
+     "code": "W-9502"
+    },
+    {
+     "id": "W-9503",
+     "type": "chart",
+     "title": "Knowledge Base Usage by Region",
+     "chartType": "bar",
+     "code": "W-9503"
+    },
+    {
+     "id": "W-9504",
+     "type": "grid",
+     "title": "Knowledge Base Usage Detail Records",
+     "code": "W-9504"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "support_agent_workload": {
+   "id": "support_agent_workload",
+   "pageId": "P-960",
+   "title": "Agent Workload",
+   "directory": "SUPPORT",
+   "route": "/support/agent_workload",
+   "description": "Agent Workload for the Support team: trends, status breakdown and detailed records",
+   "keywords": [
+    "agent",
+    "workload",
+    "support"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-9601",
+     "type": "kpi",
+     "title": "Total Agent Workload",
+     "code": "W-9601"
+    },
+    {
+     "id": "W-9602",
+     "type": "chart",
+     "title": "Agent Workload Trend by Month",
+     "chartType": "line",
+     "code": "W-9602"
+    },
+    {
+     "id": "W-9603",
+     "type": "chart",
+     "title": "Agent Workload by Region",
+     "chartType": "bar",
+     "code": "W-9603"
+    },
+    {
+     "id": "W-9604",
+     "type": "grid",
+     "title": "Agent Workload Detail Records",
+     "code": "W-9604"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "product_feature_adoption": {
+   "id": "product_feature_adoption",
+   "pageId": "P-970",
+   "title": "Feature Adoption",
+   "directory": "PRODUCT",
+   "route": "/product/feature_adoption",
+   "description": "Feature Adoption for the Product team: trends, status breakdown and detailed records",
+   "keywords": [
+    "feature",
+    "adoption",
+    "product"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-9701",
+     "type": "kpi",
+     "title": "Total Feature Adoption",
+     "code": "W-9701"
+    },
+    {
+     "id": "W-9702",
+     "type": "chart",
+     "title": "Feature Adoption Trend by Month",
+     "chartType": "line",
+     "code": "W-9702"
+    },
+    {
+     "id": "W-9703",
+     "type": "chart",
+     "title": "Feature Adoption by Region",
+     "chartType": "bar",
+     "code": "W-9703"
+    },
+    {
+     "id": "W-9704",
+     "type": "grid",
+     "title": "Feature Adoption Detail Records",
+     "code": "W-9704"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "product_release_calendar": {
+   "id": "product_release_calendar",
+   "pageId": "P-980",
+   "title": "Release Calendar",
+   "directory": "PRODUCT",
+   "route": "/product/release_calendar",
+   "description": "Release Calendar for the Product team: trends, status breakdown and detailed records",
+   "keywords": [
+    "release",
+    "calendar",
+    "product"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-9801",
+     "type": "kpi",
+     "title": "Total Release Calendar",
+     "code": "W-9801"
+    },
+    {
+     "id": "W-9802",
+     "type": "chart",
+     "title": "Release Calendar Trend by Month",
+     "chartType": "line",
+     "code": "W-9802"
+    },
+    {
+     "id": "W-9803",
+     "type": "chart",
+     "title": "Release Calendar by Region",
+     "chartType": "bar",
+     "code": "W-9803"
+    },
+    {
+     "id": "W-9804",
+     "type": "grid",
+     "title": "Release Calendar Detail Records",
+     "code": "W-9804"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "product_bug_burndown": {
+   "id": "product_bug_burndown",
+   "pageId": "P-990",
+   "title": "Bug Burndown",
+   "directory": "PRODUCT",
+   "route": "/product/bug_burndown",
+   "description": "Bug Burndown for the Product team: trends, status breakdown and detailed records",
+   "keywords": [
+    "bug",
+    "burndown",
+    "product"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-9901",
+     "type": "kpi",
+     "title": "Total Bug Burndown",
+     "code": "W-9901"
+    },
+    {
+     "id": "W-9902",
+     "type": "chart",
+     "title": "Bug Burndown Trend by Month",
+     "chartType": "line",
+     "code": "W-9902"
+    },
+    {
+     "id": "W-9903",
+     "type": "chart",
+     "title": "Bug Burndown by Region",
+     "chartType": "bar",
+     "code": "W-9903"
+    },
+    {
+     "id": "W-9904",
+     "type": "grid",
+     "title": "Bug Burndown Detail Records",
+     "code": "W-9904"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "product_roadmap_progress": {
+   "id": "product_roadmap_progress",
+   "pageId": "P-1000",
+   "title": "Roadmap Progress",
+   "directory": "PRODUCT",
+   "route": "/product/roadmap_progress",
+   "description": "Roadmap Progress for the Product team: trends, status breakdown and detailed records",
+   "keywords": [
+    "roadmap",
+    "progress",
+    "product"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-10001",
+     "type": "kpi",
+     "title": "Total Roadmap Progress",
+     "code": "W-10001"
+    },
+    {
+     "id": "W-10002",
+     "type": "chart",
+     "title": "Roadmap Progress Trend by Month",
+     "chartType": "line",
+     "code": "W-10002"
+    },
+    {
+     "id": "W-10003",
+     "type": "chart",
+     "title": "Roadmap Progress by Region",
+     "chartType": "bar",
+     "code": "W-10003"
+    },
+    {
+     "id": "W-10004",
+     "type": "grid",
+     "title": "Roadmap Progress Detail Records",
+     "code": "W-10004"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "product_user_feedback": {
+   "id": "product_user_feedback",
+   "pageId": "P-1010",
+   "title": "User Feedback",
+   "directory": "PRODUCT",
+   "route": "/product/user_feedback",
+   "description": "User Feedback for the Product team: trends, status breakdown and detailed records",
+   "keywords": [
+    "user",
+    "feedback",
+    "product"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-10101",
+     "type": "kpi",
+     "title": "Total User Feedback",
+     "code": "W-10101"
+    },
+    {
+     "id": "W-10102",
+     "type": "chart",
+     "title": "User Feedback Trend by Month",
+     "chartType": "line",
+     "code": "W-10102"
+    },
+    {
+     "id": "W-10103",
+     "type": "chart",
+     "title": "User Feedback by Region",
+     "chartType": "bar",
+     "code": "W-10103"
+    },
+    {
+     "id": "W-10104",
+     "type": "grid",
+     "title": "User Feedback Detail Records",
+     "code": "W-10104"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "product_beta_program": {
+   "id": "product_beta_program",
+   "pageId": "P-1020",
+   "title": "Beta Program",
+   "directory": "PRODUCT",
+   "route": "/product/beta_program",
+   "description": "Beta Program for the Product team: trends, status breakdown and detailed records",
+   "keywords": [
+    "beta",
+    "program",
+    "product"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-10201",
+     "type": "kpi",
+     "title": "Total Beta Program",
+     "code": "W-10201"
+    },
+    {
+     "id": "W-10202",
+     "type": "chart",
+     "title": "Beta Program Trend by Month",
+     "chartType": "line",
+     "code": "W-10202"
+    },
+    {
+     "id": "W-10203",
+     "type": "chart",
+     "title": "Beta Program by Region",
+     "chartType": "bar",
+     "code": "W-10203"
+    },
+    {
+     "id": "W-10204",
+     "type": "grid",
+     "title": "Beta Program Detail Records",
+     "code": "W-10204"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "legal_compliance_contract_repository": {
+   "id": "legal_compliance_contract_repository",
+   "pageId": "P-1030",
+   "title": "Contract Repository",
+   "directory": "LEGAL & COMPLIANCE",
+   "route": "/legal_compliance/contract_repository",
+   "description": "Contract Repository for the Legal & Compliance team: trends, status breakdown and detailed records",
+   "keywords": [
+    "contract",
+    "repository",
+    "legal & compliance"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-10301",
+     "type": "kpi",
+     "title": "Total Contract Repository",
+     "code": "W-10301"
+    },
+    {
+     "id": "W-10302",
+     "type": "chart",
+     "title": "Contract Repository Trend by Month",
+     "chartType": "line",
+     "code": "W-10302"
+    },
+    {
+     "id": "W-10303",
+     "type": "chart",
+     "title": "Contract Repository by Region",
+     "chartType": "bar",
+     "code": "W-10303"
+    },
+    {
+     "id": "W-10304",
+     "type": "grid",
+     "title": "Contract Repository Detail Records",
+     "code": "W-10304"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "legal_compliance_policy_acknowledgements": {
+   "id": "legal_compliance_policy_acknowledgements",
+   "pageId": "P-1040",
+   "title": "Policy Acknowledgements",
+   "directory": "LEGAL & COMPLIANCE",
+   "route": "/legal_compliance/policy_acknowledgements",
+   "description": "Policy Acknowledgements for the Legal & Compliance team: trends, status breakdown and detailed records",
+   "keywords": [
+    "policy",
+    "acknowledgements",
+    "legal & compliance"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-10401",
+     "type": "kpi",
+     "title": "Total Policy Acknowledgements",
+     "code": "W-10401"
+    },
+    {
+     "id": "W-10402",
+     "type": "chart",
+     "title": "Policy Acknowledgements Trend by Month",
+     "chartType": "line",
+     "code": "W-10402"
+    },
+    {
+     "id": "W-10403",
+     "type": "chart",
+     "title": "Policy Acknowledgements by Region",
+     "chartType": "bar",
+     "code": "W-10403"
+    },
+    {
+     "id": "W-10404",
+     "type": "grid",
+     "title": "Policy Acknowledgements Detail Records",
+     "code": "W-10404"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "legal_compliance_regulatory_filings": {
+   "id": "legal_compliance_regulatory_filings",
+   "pageId": "P-1050",
+   "title": "Regulatory Filings",
+   "directory": "LEGAL & COMPLIANCE",
+   "route": "/legal_compliance/regulatory_filings",
+   "description": "Regulatory Filings for the Legal & Compliance team: trends, status breakdown and detailed records",
+   "keywords": [
+    "regulatory",
+    "filings",
+    "legal & compliance"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-10501",
+     "type": "kpi",
+     "title": "Total Regulatory Filings",
+     "code": "W-10501"
+    },
+    {
+     "id": "W-10502",
+     "type": "chart",
+     "title": "Regulatory Filings Trend by Month",
+     "chartType": "line",
+     "code": "W-10502"
+    },
+    {
+     "id": "W-10503",
+     "type": "chart",
+     "title": "Regulatory Filings by Region",
+     "chartType": "bar",
+     "code": "W-10503"
+    },
+    {
+     "id": "W-10504",
+     "type": "grid",
+     "title": "Regulatory Filings Detail Records",
+     "code": "W-10504"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "legal_compliance_risk_register": {
+   "id": "legal_compliance_risk_register",
+   "pageId": "P-1060",
+   "title": "Risk Register",
+   "directory": "LEGAL & COMPLIANCE",
+   "route": "/legal_compliance/risk_register",
+   "description": "Risk Register for the Legal & Compliance team: trends, status breakdown and detailed records",
+   "keywords": [
+    "risk",
+    "register",
+    "legal & compliance"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-10601",
+     "type": "kpi",
+     "title": "Total Risk Register",
+     "code": "W-10601"
+    },
+    {
+     "id": "W-10602",
+     "type": "chart",
+     "title": "Risk Register Trend by Month",
+     "chartType": "line",
+     "code": "W-10602"
+    },
+    {
+     "id": "W-10603",
+     "type": "chart",
+     "title": "Risk Register by Region",
+     "chartType": "bar",
+     "code": "W-10603"
+    },
+    {
+     "id": "W-10604",
+     "type": "grid",
+     "title": "Risk Register Detail Records",
+     "code": "W-10604"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "legal_compliance_audit_findings": {
+   "id": "legal_compliance_audit_findings",
+   "pageId": "P-1070",
+   "title": "Audit Findings",
+   "directory": "LEGAL & COMPLIANCE",
+   "route": "/legal_compliance/audit_findings",
+   "description": "Audit Findings for the Legal & Compliance team: trends, status breakdown and detailed records",
+   "keywords": [
+    "audit",
+    "findings",
+    "legal & compliance"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-10701",
+     "type": "kpi",
+     "title": "Total Audit Findings",
+     "code": "W-10701"
+    },
+    {
+     "id": "W-10702",
+     "type": "chart",
+     "title": "Audit Findings Trend by Month",
+     "chartType": "line",
+     "code": "W-10702"
+    },
+    {
+     "id": "W-10703",
+     "type": "chart",
+     "title": "Audit Findings by Region",
+     "chartType": "bar",
+     "code": "W-10703"
+    },
+    {
+     "id": "W-10704",
+     "type": "grid",
+     "title": "Audit Findings Detail Records",
+     "code": "W-10704"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "legal_compliance_data_privacy_requests": {
+   "id": "legal_compliance_data_privacy_requests",
+   "pageId": "P-1080",
+   "title": "Data Privacy Requests",
+   "directory": "LEGAL & COMPLIANCE",
+   "route": "/legal_compliance/data_privacy_requests",
+   "description": "Data Privacy Requests for the Legal & Compliance team: trends, status breakdown and detailed records",
+   "keywords": [
+    "data",
+    "privacy",
+    "requests",
+    "legal & compliance"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-10801",
+     "type": "kpi",
+     "title": "Total Data Privacy Requests",
+     "code": "W-10801"
+    },
+    {
+     "id": "W-10802",
+     "type": "chart",
+     "title": "Data Privacy Requests Trend by Month",
+     "chartType": "line",
+     "code": "W-10802"
+    },
+    {
+     "id": "W-10803",
+     "type": "chart",
+     "title": "Data Privacy Requests by Region",
+     "chartType": "bar",
+     "code": "W-10803"
+    },
+    {
+     "id": "W-10804",
+     "type": "grid",
+     "title": "Data Privacy Requests Detail Records",
+     "code": "W-10804"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "warehouse_inventory_levels": {
+   "id": "warehouse_inventory_levels",
+   "pageId": "P-1090",
+   "title": "Inventory Levels",
+   "directory": "WAREHOUSE",
+   "route": "/warehouse/inventory_levels",
+   "description": "Inventory Levels for the Warehouse team: trends, status breakdown and detailed records",
+   "keywords": [
+    "inventory",
+    "levels",
+    "warehouse"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-10901",
+     "type": "kpi",
+     "title": "Total Inventory Levels",
+     "code": "W-10901"
+    },
+    {
+     "id": "W-10902",
+     "type": "chart",
+     "title": "Inventory Levels Trend by Month",
+     "chartType": "line",
+     "code": "W-10902"
+    },
+    {
+     "id": "W-10903",
+     "type": "chart",
+     "title": "Inventory Levels by Region",
+     "chartType": "bar",
+     "code": "W-10903"
+    },
+    {
+     "id": "W-10904",
+     "type": "grid",
+     "title": "Inventory Levels Detail Records",
+     "code": "W-10904"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "warehouse_stock_transfers": {
+   "id": "warehouse_stock_transfers",
+   "pageId": "P-1100",
+   "title": "Stock Transfers",
+   "directory": "WAREHOUSE",
+   "route": "/warehouse/stock_transfers",
+   "description": "Stock Transfers for the Warehouse team: trends, status breakdown and detailed records",
+   "keywords": [
+    "stock",
+    "transfers",
+    "warehouse"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-11001",
+     "type": "kpi",
+     "title": "Total Stock Transfers",
+     "code": "W-11001"
+    },
+    {
+     "id": "W-11002",
+     "type": "chart",
+     "title": "Stock Transfers Trend by Month",
+     "chartType": "line",
+     "code": "W-11002"
+    },
+    {
+     "id": "W-11003",
+     "type": "chart",
+     "title": "Stock Transfers by Region",
+     "chartType": "bar",
+     "code": "W-11003"
+    },
+    {
+     "id": "W-11004",
+     "type": "grid",
+     "title": "Stock Transfers Detail Records",
+     "code": "W-11004"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "warehouse_returns_processing": {
+   "id": "warehouse_returns_processing",
+   "pageId": "P-1110",
+   "title": "Returns Processing",
+   "directory": "WAREHOUSE",
+   "route": "/warehouse/returns_processing",
+   "description": "Returns Processing for the Warehouse team: trends, status breakdown and detailed records",
+   "keywords": [
+    "returns",
+    "processing",
+    "warehouse"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-11101",
+     "type": "kpi",
+     "title": "Total Returns Processing",
+     "code": "W-11101"
+    },
+    {
+     "id": "W-11102",
+     "type": "chart",
+     "title": "Returns Processing Trend by Month",
+     "chartType": "line",
+     "code": "W-11102"
+    },
+    {
+     "id": "W-11103",
+     "type": "chart",
+     "title": "Returns Processing by Region",
+     "chartType": "bar",
+     "code": "W-11103"
+    },
+    {
+     "id": "W-11104",
+     "type": "grid",
+     "title": "Returns Processing Detail Records",
+     "code": "W-11104"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "warehouse_pick_and_pack_throughput": {
+   "id": "warehouse_pick_and_pack_throughput",
+   "pageId": "P-1120",
+   "title": "Pick and Pack Throughput",
+   "directory": "WAREHOUSE",
+   "route": "/warehouse/pick_and_pack_throughput",
+   "description": "Pick and Pack Throughput for the Warehouse team: trends, status breakdown and detailed records",
+   "keywords": [
+    "pick",
+    "and",
+    "pack",
+    "throughput",
+    "warehouse"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-11201",
+     "type": "kpi",
+     "title": "Total Pick and Pack Throughput",
+     "code": "W-11201"
+    },
+    {
+     "id": "W-11202",
+     "type": "chart",
+     "title": "Pick and Pack Throughput Trend by Month",
+     "chartType": "line",
+     "code": "W-11202"
+    },
+    {
+     "id": "W-11203",
+     "type": "chart",
+     "title": "Pick and Pack Throughput by Region",
+     "chartType": "bar",
+     "code": "W-11203"
+    },
+    {
+     "id": "W-11204",
+     "type": "grid",
+     "title": "Pick and Pack Throughput Detail Records",
+     "code": "W-11204"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "warehouse_cycle_count": {
+   "id": "warehouse_cycle_count",
+   "pageId": "P-1130",
+   "title": "Cycle Count",
+   "directory": "WAREHOUSE",
+   "route": "/warehouse/cycle_count",
+   "description": "Cycle Count for the Warehouse team: trends, status breakdown and detailed records",
+   "keywords": [
+    "cycle",
+    "count",
+    "warehouse"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-11301",
+     "type": "kpi",
+     "title": "Total Cycle Count",
+     "code": "W-11301"
+    },
+    {
+     "id": "W-11302",
+     "type": "chart",
+     "title": "Cycle Count Trend by Month",
+     "chartType": "line",
+     "code": "W-11302"
+    },
+    {
+     "id": "W-11303",
+     "type": "chart",
+     "title": "Cycle Count by Region",
+     "chartType": "bar",
+     "code": "W-11303"
+    },
+    {
+     "id": "W-11304",
+     "type": "grid",
+     "title": "Cycle Count Detail Records",
+     "code": "W-11304"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "warehouse_dock_scheduling": {
+   "id": "warehouse_dock_scheduling",
+   "pageId": "P-1140",
+   "title": "Dock Scheduling",
+   "directory": "WAREHOUSE",
+   "route": "/warehouse/dock_scheduling",
+   "description": "Dock Scheduling for the Warehouse team: trends, status breakdown and detailed records",
+   "keywords": [
+    "dock",
+    "scheduling",
+    "warehouse"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-11401",
+     "type": "kpi",
+     "title": "Total Dock Scheduling",
+     "code": "W-11401"
+    },
+    {
+     "id": "W-11402",
+     "type": "chart",
+     "title": "Dock Scheduling Trend by Month",
+     "chartType": "line",
+     "code": "W-11402"
+    },
+    {
+     "id": "W-11403",
+     "type": "chart",
+     "title": "Dock Scheduling by Region",
+     "chartType": "bar",
+     "code": "W-11403"
+    },
+    {
+     "id": "W-11404",
+     "type": "grid",
+     "title": "Dock Scheduling Detail Records",
+     "code": "W-11404"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "finance_ops_accounts_receivable_aging": {
+   "id": "finance_ops_accounts_receivable_aging",
+   "pageId": "P-1150",
+   "title": "Accounts Receivable Aging",
+   "directory": "FINANCE OPS",
+   "route": "/finance_ops/accounts_receivable_aging",
+   "description": "Accounts Receivable Aging for the Finance Ops team: trends, status breakdown and detailed records",
+   "keywords": [
+    "accounts",
+    "receivable",
+    "aging",
+    "finance ops"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-11501",
+     "type": "kpi",
+     "title": "Total Accounts Receivable Aging",
+     "code": "W-11501"
+    },
+    {
+     "id": "W-11502",
+     "type": "chart",
+     "title": "Accounts Receivable Aging Trend by Month",
+     "chartType": "line",
+     "code": "W-11502"
+    },
+    {
+     "id": "W-11503",
+     "type": "chart",
+     "title": "Accounts Receivable Aging by Region",
+     "chartType": "bar",
+     "code": "W-11503"
+    },
+    {
+     "id": "W-11504",
+     "type": "grid",
+     "title": "Accounts Receivable Aging Detail Records",
+     "code": "W-11504"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "finance_ops_accounts_payable": {
+   "id": "finance_ops_accounts_payable",
+   "pageId": "P-1160",
+   "title": "Accounts Payable",
+   "directory": "FINANCE OPS",
+   "route": "/finance_ops/accounts_payable",
+   "description": "Accounts Payable for the Finance Ops team: trends, status breakdown and detailed records",
+   "keywords": [
+    "accounts",
+    "payable",
+    "finance ops"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-11601",
+     "type": "kpi",
+     "title": "Total Accounts Payable",
+     "code": "W-11601"
+    },
+    {
+     "id": "W-11602",
+     "type": "chart",
+     "title": "Accounts Payable Trend by Month",
+     "chartType": "line",
+     "code": "W-11602"
+    },
+    {
+     "id": "W-11603",
+     "type": "chart",
+     "title": "Accounts Payable by Region",
+     "chartType": "bar",
+     "code": "W-11603"
+    },
+    {
+     "id": "W-11604",
+     "type": "grid",
+     "title": "Accounts Payable Detail Records",
+     "code": "W-11604"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "finance_ops_budget_vs_actual": {
+   "id": "finance_ops_budget_vs_actual",
+   "pageId": "P-1170",
+   "title": "Budget vs Actual",
+   "directory": "FINANCE OPS",
+   "route": "/finance_ops/budget_vs_actual",
+   "description": "Budget vs Actual for the Finance Ops team: trends, status breakdown and detailed records",
+   "keywords": [
+    "budget",
+    "vs",
+    "actual",
+    "finance ops"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-11701",
+     "type": "kpi",
+     "title": "Total Budget vs Actual",
+     "code": "W-11701"
+    },
+    {
+     "id": "W-11702",
+     "type": "chart",
+     "title": "Budget vs Actual Trend by Month",
+     "chartType": "line",
+     "code": "W-11702"
+    },
+    {
+     "id": "W-11703",
+     "type": "chart",
+     "title": "Budget vs Actual by Region",
+     "chartType": "bar",
+     "code": "W-11703"
+    },
+    {
+     "id": "W-11704",
+     "type": "grid",
+     "title": "Budget vs Actual Detail Records",
+     "code": "W-11704"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "finance_ops_cash_flow_forecast": {
+   "id": "finance_ops_cash_flow_forecast",
+   "pageId": "P-1180",
+   "title": "Cash Flow Forecast",
+   "directory": "FINANCE OPS",
+   "route": "/finance_ops/cash_flow_forecast",
+   "description": "Cash Flow Forecast for the Finance Ops team: trends, status breakdown and detailed records",
+   "keywords": [
+    "cash",
+    "flow",
+    "forecast",
+    "finance ops"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-11801",
+     "type": "kpi",
+     "title": "Total Cash Flow Forecast",
+     "code": "W-11801"
+    },
+    {
+     "id": "W-11802",
+     "type": "chart",
+     "title": "Cash Flow Forecast Trend by Month",
+     "chartType": "line",
+     "code": "W-11802"
+    },
+    {
+     "id": "W-11803",
+     "type": "chart",
+     "title": "Cash Flow Forecast by Region",
+     "chartType": "bar",
+     "code": "W-11803"
+    },
+    {
+     "id": "W-11804",
+     "type": "grid",
+     "title": "Cash Flow Forecast Detail Records",
+     "code": "W-11804"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "finance_ops_expense_claims": {
+   "id": "finance_ops_expense_claims",
+   "pageId": "P-1190",
+   "title": "Expense Claims",
+   "directory": "FINANCE OPS",
+   "route": "/finance_ops/expense_claims",
+   "description": "Expense Claims for the Finance Ops team: trends, status breakdown and detailed records",
+   "keywords": [
+    "expense",
+    "claims",
+    "finance ops"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-11901",
+     "type": "kpi",
+     "title": "Total Expense Claims",
+     "code": "W-11901"
+    },
+    {
+     "id": "W-11902",
+     "type": "chart",
+     "title": "Expense Claims Trend by Month",
+     "chartType": "line",
+     "code": "W-11902"
+    },
+    {
+     "id": "W-11903",
+     "type": "chart",
+     "title": "Expense Claims by Region",
+     "chartType": "bar",
+     "code": "W-11903"
+    },
+    {
+     "id": "W-11904",
+     "type": "grid",
+     "title": "Expense Claims Detail Records",
+     "code": "W-11904"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "finance_ops_tax_provisions": {
+   "id": "finance_ops_tax_provisions",
+   "pageId": "P-1200",
+   "title": "Tax Provisions",
+   "directory": "FINANCE OPS",
+   "route": "/finance_ops/tax_provisions",
+   "description": "Tax Provisions for the Finance Ops team: trends, status breakdown and detailed records",
+   "keywords": [
+    "tax",
+    "provisions",
+    "finance ops"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-12001",
+     "type": "kpi",
+     "title": "Total Tax Provisions",
+     "code": "W-12001"
+    },
+    {
+     "id": "W-12002",
+     "type": "chart",
+     "title": "Tax Provisions Trend by Month",
+     "chartType": "line",
+     "code": "W-12002"
+    },
+    {
+     "id": "W-12003",
+     "type": "chart",
+     "title": "Tax Provisions by Region",
+     "chartType": "bar",
+     "code": "W-12003"
+    },
+    {
+     "id": "W-12004",
+     "type": "grid",
+     "title": "Tax Provisions Detail Records",
+     "code": "W-12004"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "customer_onboarding_onboarding_progress": {
+   "id": "customer_onboarding_onboarding_progress",
+   "pageId": "P-1210",
+   "title": "Onboarding Progress",
+   "directory": "CUSTOMER ONBOARDING",
+   "route": "/customer_onboarding/onboarding_progress",
+   "description": "Onboarding Progress for the Customer Onboarding team: trends, status breakdown and detailed records",
+   "keywords": [
+    "onboarding",
+    "progress",
+    "customer onboarding"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-12101",
+     "type": "kpi",
+     "title": "Total Onboarding Progress",
+     "code": "W-12101"
+    },
+    {
+     "id": "W-12102",
+     "type": "chart",
+     "title": "Onboarding Progress Trend by Month",
+     "chartType": "line",
+     "code": "W-12102"
+    },
+    {
+     "id": "W-12103",
+     "type": "chart",
+     "title": "Onboarding Progress by Region",
+     "chartType": "bar",
+     "code": "W-12103"
+    },
+    {
+     "id": "W-12104",
+     "type": "grid",
+     "title": "Onboarding Progress Detail Records",
+     "code": "W-12104"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "customer_onboarding_nps_survey": {
+   "id": "customer_onboarding_nps_survey",
+   "pageId": "P-1220",
+   "title": "NPS Survey",
+   "directory": "CUSTOMER ONBOARDING",
+   "route": "/customer_onboarding/nps_survey",
+   "description": "NPS Survey for the Customer Onboarding team: trends, status breakdown and detailed records",
+   "keywords": [
+    "nps",
+    "survey",
+    "customer onboarding"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-12201",
+     "type": "kpi",
+     "title": "Total NPS Survey",
+     "code": "W-12201"
+    },
+    {
+     "id": "W-12202",
+     "type": "chart",
+     "title": "NPS Survey Trend by Month",
+     "chartType": "line",
+     "code": "W-12202"
+    },
+    {
+     "id": "W-12203",
+     "type": "chart",
+     "title": "NPS Survey by Region",
+     "chartType": "bar",
+     "code": "W-12203"
+    },
+    {
+     "id": "W-12204",
+     "type": "grid",
+     "title": "NPS Survey Detail Records",
+     "code": "W-12204"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "customer_onboarding_renewal_forecast": {
+   "id": "customer_onboarding_renewal_forecast",
+   "pageId": "P-1230",
+   "title": "Renewal Forecast",
+   "directory": "CUSTOMER ONBOARDING",
+   "route": "/customer_onboarding/renewal_forecast",
+   "description": "Renewal Forecast for the Customer Onboarding team: trends, status breakdown and detailed records",
+   "keywords": [
+    "renewal",
+    "forecast",
+    "customer onboarding"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-12301",
+     "type": "kpi",
+     "title": "Total Renewal Forecast",
+     "code": "W-12301"
+    },
+    {
+     "id": "W-12302",
+     "type": "chart",
+     "title": "Renewal Forecast Trend by Month",
+     "chartType": "line",
+     "code": "W-12302"
+    },
+    {
+     "id": "W-12303",
+     "type": "chart",
+     "title": "Renewal Forecast by Region",
+     "chartType": "bar",
+     "code": "W-12303"
+    },
+    {
+     "id": "W-12304",
+     "type": "grid",
+     "title": "Renewal Forecast Detail Records",
+     "code": "W-12304"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "customer_onboarding_qbr_schedule": {
+   "id": "customer_onboarding_qbr_schedule",
+   "pageId": "P-1240",
+   "title": "QBR Schedule",
+   "directory": "CUSTOMER ONBOARDING",
+   "route": "/customer_onboarding/qbr_schedule",
+   "description": "QBR Schedule for the Customer Onboarding team: trends, status breakdown and detailed records",
+   "keywords": [
+    "qbr",
+    "schedule",
+    "customer onboarding"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-12401",
+     "type": "kpi",
+     "title": "Total QBR Schedule",
+     "code": "W-12401"
+    },
+    {
+     "id": "W-12402",
+     "type": "chart",
+     "title": "QBR Schedule Trend by Month",
+     "chartType": "line",
+     "code": "W-12402"
+    },
+    {
+     "id": "W-12403",
+     "type": "chart",
+     "title": "QBR Schedule by Region",
+     "chartType": "bar",
+     "code": "W-12403"
+    },
+    {
+     "id": "W-12404",
+     "type": "grid",
+     "title": "QBR Schedule Detail Records",
+     "code": "W-12404"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "customer_onboarding_product_usage_heatmap": {
+   "id": "customer_onboarding_product_usage_heatmap",
+   "pageId": "P-1250",
+   "title": "Product Usage Heatmap",
+   "directory": "CUSTOMER ONBOARDING",
+   "route": "/customer_onboarding/product_usage_heatmap",
+   "description": "Product Usage Heatmap for the Customer Onboarding team: trends, status breakdown and detailed records",
+   "keywords": [
+    "product",
+    "usage",
+    "heatmap",
+    "customer onboarding"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-12501",
+     "type": "kpi",
+     "title": "Total Product Usage Heatmap",
+     "code": "W-12501"
+    },
+    {
+     "id": "W-12502",
+     "type": "chart",
+     "title": "Product Usage Heatmap Trend by Month",
+     "chartType": "line",
+     "code": "W-12502"
+    },
+    {
+     "id": "W-12503",
+     "type": "chart",
+     "title": "Product Usage Heatmap by Region",
+     "chartType": "bar",
+     "code": "W-12503"
+    },
+    {
+     "id": "W-12504",
+     "type": "grid",
+     "title": "Product Usage Heatmap Detail Records",
+     "code": "W-12504"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "customer_onboarding_health_score_trends": {
+   "id": "customer_onboarding_health_score_trends",
+   "pageId": "P-1260",
+   "title": "Health Score Trends",
+   "directory": "CUSTOMER ONBOARDING",
+   "route": "/customer_onboarding/health_score_trends",
+   "description": "Health Score Trends for the Customer Onboarding team: trends, status breakdown and detailed records",
+   "keywords": [
+    "health",
+    "score",
+    "trends",
+    "customer onboarding"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-12601",
+     "type": "kpi",
+     "title": "Total Health Score Trends",
+     "code": "W-12601"
+    },
+    {
+     "id": "W-12602",
+     "type": "chart",
+     "title": "Health Score Trends Trend by Month",
+     "chartType": "line",
+     "code": "W-12602"
+    },
+    {
+     "id": "W-12603",
+     "type": "chart",
+     "title": "Health Score Trends by Region",
+     "chartType": "bar",
+     "code": "W-12603"
+    },
+    {
+     "id": "W-12604",
+     "type": "grid",
+     "title": "Health Score Trends Detail Records",
+     "code": "W-12604"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "data_platform_pipeline_runs": {
+   "id": "data_platform_pipeline_runs",
+   "pageId": "P-1270",
+   "title": "Pipeline Runs",
+   "directory": "DATA PLATFORM",
+   "route": "/data_platform/pipeline_runs",
+   "description": "Pipeline Runs for the Data Platform team: trends, status breakdown and detailed records",
+   "keywords": [
+    "pipeline",
+    "runs",
+    "data platform"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-12701",
+     "type": "kpi",
+     "title": "Total Pipeline Runs",
+     "code": "W-12701"
+    },
+    {
+     "id": "W-12702",
+     "type": "chart",
+     "title": "Pipeline Runs Trend by Month",
+     "chartType": "line",
+     "code": "W-12702"
+    },
+    {
+     "id": "W-12703",
+     "type": "chart",
+     "title": "Pipeline Runs by Region",
+     "chartType": "bar",
+     "code": "W-12703"
+    },
+    {
+     "id": "W-12704",
+     "type": "grid",
+     "title": "Pipeline Runs Detail Records",
+     "code": "W-12704"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "data_platform_data_quality_checks": {
+   "id": "data_platform_data_quality_checks",
+   "pageId": "P-1280",
+   "title": "Data Quality Checks",
+   "directory": "DATA PLATFORM",
+   "route": "/data_platform/data_quality_checks",
+   "description": "Data Quality Checks for the Data Platform team: trends, status breakdown and detailed records",
+   "keywords": [
+    "data",
+    "quality",
+    "checks",
+    "data platform"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-12801",
+     "type": "kpi",
+     "title": "Total Data Quality Checks",
+     "code": "W-12801"
+    },
+    {
+     "id": "W-12802",
+     "type": "chart",
+     "title": "Data Quality Checks Trend by Month",
+     "chartType": "line",
+     "code": "W-12802"
+    },
+    {
+     "id": "W-12803",
+     "type": "chart",
+     "title": "Data Quality Checks by Region",
+     "chartType": "bar",
+     "code": "W-12803"
+    },
+    {
+     "id": "W-12804",
+     "type": "grid",
+     "title": "Data Quality Checks Detail Records",
+     "code": "W-12804"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "data_platform_query_costs": {
+   "id": "data_platform_query_costs",
+   "pageId": "P-1290",
+   "title": "Query Costs",
+   "directory": "DATA PLATFORM",
+   "route": "/data_platform/query_costs",
+   "description": "Query Costs for the Data Platform team: trends, status breakdown and detailed records",
+   "keywords": [
+    "query",
+    "costs",
+    "data platform"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-12901",
+     "type": "kpi",
+     "title": "Total Query Costs",
+     "code": "W-12901"
+    },
+    {
+     "id": "W-12902",
+     "type": "chart",
+     "title": "Query Costs Trend by Month",
+     "chartType": "line",
+     "code": "W-12902"
+    },
+    {
+     "id": "W-12903",
+     "type": "chart",
+     "title": "Query Costs by Region",
+     "chartType": "bar",
+     "code": "W-12903"
+    },
+    {
+     "id": "W-12904",
+     "type": "grid",
+     "title": "Query Costs Detail Records",
+     "code": "W-12904"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "data_platform_dataset_catalog": {
+   "id": "data_platform_dataset_catalog",
+   "pageId": "P-1300",
+   "title": "Dataset Catalog",
+   "directory": "DATA PLATFORM",
+   "route": "/data_platform/dataset_catalog",
+   "description": "Dataset Catalog for the Data Platform team: trends, status breakdown and detailed records",
+   "keywords": [
+    "dataset",
+    "catalog",
+    "data platform"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-13001",
+     "type": "kpi",
+     "title": "Total Dataset Catalog",
+     "code": "W-13001"
+    },
+    {
+     "id": "W-13002",
+     "type": "chart",
+     "title": "Dataset Catalog Trend by Month",
+     "chartType": "line",
+     "code": "W-13002"
+    },
+    {
+     "id": "W-13003",
+     "type": "chart",
+     "title": "Dataset Catalog by Region",
+     "chartType": "bar",
+     "code": "W-13003"
+    },
+    {
+     "id": "W-13004",
+     "type": "grid",
+     "title": "Dataset Catalog Detail Records",
+     "code": "W-13004"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "data_platform_access_requests": {
+   "id": "data_platform_access_requests",
+   "pageId": "P-1310",
+   "title": "Access Requests",
+   "directory": "DATA PLATFORM",
+   "route": "/data_platform/access_requests",
+   "description": "Access Requests for the Data Platform team: trends, status breakdown and detailed records",
+   "keywords": [
+    "access",
+    "requests",
+    "data platform"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-13101",
+     "type": "kpi",
+     "title": "Total Access Requests",
+     "code": "W-13101"
+    },
+    {
+     "id": "W-13102",
+     "type": "chart",
+     "title": "Access Requests Trend by Month",
+     "chartType": "line",
+     "code": "W-13102"
+    },
+    {
+     "id": "W-13103",
+     "type": "chart",
+     "title": "Access Requests by Region",
+     "chartType": "bar",
+     "code": "W-13103"
+    },
+    {
+     "id": "W-13104",
+     "type": "grid",
+     "title": "Access Requests Detail Records",
+     "code": "W-13104"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "data_platform_storage_growth": {
+   "id": "data_platform_storage_growth",
+   "pageId": "P-1320",
+   "title": "Storage Growth",
+   "directory": "DATA PLATFORM",
+   "route": "/data_platform/storage_growth",
+   "description": "Storage Growth for the Data Platform team: trends, status breakdown and detailed records",
+   "keywords": [
+    "storage",
+    "growth",
+    "data platform"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-13201",
+     "type": "kpi",
+     "title": "Total Storage Growth",
+     "code": "W-13201"
+    },
+    {
+     "id": "W-13202",
+     "type": "chart",
+     "title": "Storage Growth Trend by Month",
+     "chartType": "line",
+     "code": "W-13202"
+    },
+    {
+     "id": "W-13203",
+     "type": "chart",
+     "title": "Storage Growth by Region",
+     "chartType": "bar",
+     "code": "W-13203"
+    },
+    {
+     "id": "W-13204",
+     "type": "grid",
+     "title": "Storage Growth Detail Records",
+     "code": "W-13204"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "facilities_space_utilization": {
+   "id": "facilities_space_utilization",
+   "pageId": "P-1330",
+   "title": "Space Utilization",
+   "directory": "FACILITIES",
+   "route": "/facilities/space_utilization",
+   "description": "Space Utilization for the Facilities team: trends, status breakdown and detailed records",
+   "keywords": [
+    "space",
+    "utilization",
+    "facilities"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-13301",
+     "type": "kpi",
+     "title": "Total Space Utilization",
+     "code": "W-13301"
+    },
+    {
+     "id": "W-13302",
+     "type": "chart",
+     "title": "Space Utilization Trend by Month",
+     "chartType": "line",
+     "code": "W-13302"
+    },
+    {
+     "id": "W-13303",
+     "type": "chart",
+     "title": "Space Utilization by Region",
+     "chartType": "bar",
+     "code": "W-13303"
+    },
+    {
+     "id": "W-13304",
+     "type": "grid",
+     "title": "Space Utilization Detail Records",
+     "code": "W-13304"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "facilities_maintenance_requests": {
+   "id": "facilities_maintenance_requests",
+   "pageId": "P-1340",
+   "title": "Maintenance Requests",
+   "directory": "FACILITIES",
+   "route": "/facilities/maintenance_requests",
+   "description": "Maintenance Requests for the Facilities team: trends, status breakdown and detailed records",
+   "keywords": [
+    "maintenance",
+    "requests",
+    "facilities"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-13401",
+     "type": "kpi",
+     "title": "Total Maintenance Requests",
+     "code": "W-13401"
+    },
+    {
+     "id": "W-13402",
+     "type": "chart",
+     "title": "Maintenance Requests Trend by Month",
+     "chartType": "line",
+     "code": "W-13402"
+    },
+    {
+     "id": "W-13403",
+     "type": "chart",
+     "title": "Maintenance Requests by Region",
+     "chartType": "bar",
+     "code": "W-13403"
+    },
+    {
+     "id": "W-13404",
+     "type": "grid",
+     "title": "Maintenance Requests Detail Records",
+     "code": "W-13404"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "facilities_energy_consumption": {
+   "id": "facilities_energy_consumption",
+   "pageId": "P-1350",
+   "title": "Energy Consumption",
+   "directory": "FACILITIES",
+   "route": "/facilities/energy_consumption",
+   "description": "Energy Consumption for the Facilities team: trends, status breakdown and detailed records",
+   "keywords": [
+    "energy",
+    "consumption",
+    "facilities"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-13501",
+     "type": "kpi",
+     "title": "Total Energy Consumption",
+     "code": "W-13501"
+    },
+    {
+     "id": "W-13502",
+     "type": "chart",
+     "title": "Energy Consumption Trend by Month",
+     "chartType": "line",
+     "code": "W-13502"
+    },
+    {
+     "id": "W-13503",
+     "type": "chart",
+     "title": "Energy Consumption by Region",
+     "chartType": "bar",
+     "code": "W-13503"
+    },
+    {
+     "id": "W-13504",
+     "type": "grid",
+     "title": "Energy Consumption Detail Records",
+     "code": "W-13504"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "facilities_visitor_log": {
+   "id": "facilities_visitor_log",
+   "pageId": "P-1360",
+   "title": "Visitor Log",
+   "directory": "FACILITIES",
+   "route": "/facilities/visitor_log",
+   "description": "Visitor Log for the Facilities team: trends, status breakdown and detailed records",
+   "keywords": [
+    "visitor",
+    "log",
+    "facilities"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-13601",
+     "type": "kpi",
+     "title": "Total Visitor Log",
+     "code": "W-13601"
+    },
+    {
+     "id": "W-13602",
+     "type": "chart",
+     "title": "Visitor Log Trend by Month",
+     "chartType": "line",
+     "code": "W-13602"
+    },
+    {
+     "id": "W-13603",
+     "type": "chart",
+     "title": "Visitor Log by Region",
+     "chartType": "bar",
+     "code": "W-13603"
+    },
+    {
+     "id": "W-13604",
+     "type": "grid",
+     "title": "Visitor Log Detail Records",
+     "code": "W-13604"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "facilities_asset_register": {
+   "id": "facilities_asset_register",
+   "pageId": "P-1370",
+   "title": "Asset Register",
+   "directory": "FACILITIES",
+   "route": "/facilities/asset_register",
+   "description": "Asset Register for the Facilities team: trends, status breakdown and detailed records",
+   "keywords": [
+    "asset",
+    "register",
+    "facilities"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-13701",
+     "type": "kpi",
+     "title": "Total Asset Register",
+     "code": "W-13701"
+    },
+    {
+     "id": "W-13702",
+     "type": "chart",
+     "title": "Asset Register Trend by Month",
+     "chartType": "line",
+     "code": "W-13702"
+    },
+    {
+     "id": "W-13703",
+     "type": "chart",
+     "title": "Asset Register by Region",
+     "chartType": "bar",
+     "code": "W-13703"
+    },
+    {
+     "id": "W-13704",
+     "type": "grid",
+     "title": "Asset Register Detail Records",
+     "code": "W-13704"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "facilities_safety_incidents": {
+   "id": "facilities_safety_incidents",
+   "pageId": "P-1380",
+   "title": "Safety Incidents",
+   "directory": "FACILITIES",
+   "route": "/facilities/safety_incidents",
+   "description": "Safety Incidents for the Facilities team: trends, status breakdown and detailed records",
+   "keywords": [
+    "safety",
+    "incidents",
+    "facilities"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-13801",
+     "type": "kpi",
+     "title": "Total Safety Incidents",
+     "code": "W-13801"
+    },
+    {
+     "id": "W-13802",
+     "type": "chart",
+     "title": "Safety Incidents Trend by Month",
+     "chartType": "line",
+     "code": "W-13802"
+    },
+    {
+     "id": "W-13803",
+     "type": "chart",
+     "title": "Safety Incidents by Region",
+     "chartType": "bar",
+     "code": "W-13803"
+    },
+    {
+     "id": "W-13804",
+     "type": "grid",
+     "title": "Safety Incidents Detail Records",
+     "code": "W-13804"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "partner_management_partner_pipeline": {
+   "id": "partner_management_partner_pipeline",
+   "pageId": "P-1390",
+   "title": "Partner Pipeline",
+   "directory": "PARTNER MANAGEMENT",
+   "route": "/partner_management/partner_pipeline",
+   "description": "Partner Pipeline for the Partner Management team: trends, status breakdown and detailed records",
+   "keywords": [
+    "partner",
+    "pipeline",
+    "partner management"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-13901",
+     "type": "kpi",
+     "title": "Total Partner Pipeline",
+     "code": "W-13901"
+    },
+    {
+     "id": "W-13902",
+     "type": "chart",
+     "title": "Partner Pipeline Trend by Month",
+     "chartType": "line",
+     "code": "W-13902"
+    },
+    {
+     "id": "W-13903",
+     "type": "chart",
+     "title": "Partner Pipeline by Region",
+     "chartType": "bar",
+     "code": "W-13903"
+    },
+    {
+     "id": "W-13904",
+     "type": "grid",
+     "title": "Partner Pipeline Detail Records",
+     "code": "W-13904"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "partner_management_reseller_performance": {
+   "id": "partner_management_reseller_performance",
+   "pageId": "P-1400",
+   "title": "Reseller Performance",
+   "directory": "PARTNER MANAGEMENT",
+   "route": "/partner_management/reseller_performance",
+   "description": "Reseller Performance for the Partner Management team: trends, status breakdown and detailed records",
+   "keywords": [
+    "reseller",
+    "performance",
+    "partner management"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-14001",
+     "type": "kpi",
+     "title": "Total Reseller Performance",
+     "code": "W-14001"
+    },
+    {
+     "id": "W-14002",
+     "type": "chart",
+     "title": "Reseller Performance Trend by Month",
+     "chartType": "line",
+     "code": "W-14002"
+    },
+    {
+     "id": "W-14003",
+     "type": "chart",
+     "title": "Reseller Performance by Region",
+     "chartType": "bar",
+     "code": "W-14003"
+    },
+    {
+     "id": "W-14004",
+     "type": "grid",
+     "title": "Reseller Performance Detail Records",
+     "code": "W-14004"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "partner_management_co_sell_deals": {
+   "id": "partner_management_co_sell_deals",
+   "pageId": "P-1410",
+   "title": "Co-sell Deals",
+   "directory": "PARTNER MANAGEMENT",
+   "route": "/partner_management/co_sell_deals",
+   "description": "Co-sell Deals for the Partner Management team: trends, status breakdown and detailed records",
+   "keywords": [
+    "co-sell",
+    "deals",
+    "partner management"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-14101",
+     "type": "kpi",
+     "title": "Total Co-sell Deals",
+     "code": "W-14101"
+    },
+    {
+     "id": "W-14102",
+     "type": "chart",
+     "title": "Co-sell Deals Trend by Month",
+     "chartType": "line",
+     "code": "W-14102"
+    },
+    {
+     "id": "W-14103",
+     "type": "chart",
+     "title": "Co-sell Deals by Region",
+     "chartType": "bar",
+     "code": "W-14103"
+    },
+    {
+     "id": "W-14104",
+     "type": "grid",
+     "title": "Co-sell Deals Detail Records",
+     "code": "W-14104"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "partner_management_partner_certifications": {
+   "id": "partner_management_partner_certifications",
+   "pageId": "P-1420",
+   "title": "Partner Certifications",
+   "directory": "PARTNER MANAGEMENT",
+   "route": "/partner_management/partner_certifications",
+   "description": "Partner Certifications for the Partner Management team: trends, status breakdown and detailed records",
+   "keywords": [
+    "partner",
+    "certifications",
+    "partner management"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-14201",
+     "type": "kpi",
+     "title": "Total Partner Certifications",
+     "code": "W-14201"
+    },
+    {
+     "id": "W-14202",
+     "type": "chart",
+     "title": "Partner Certifications Trend by Month",
+     "chartType": "line",
+     "code": "W-14202"
+    },
+    {
+     "id": "W-14203",
+     "type": "chart",
+     "title": "Partner Certifications by Region",
+     "chartType": "bar",
+     "code": "W-14203"
+    },
+    {
+     "id": "W-14204",
+     "type": "grid",
+     "title": "Partner Certifications Detail Records",
+     "code": "W-14204"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "partner_management_mdf_spend": {
+   "id": "partner_management_mdf_spend",
+   "pageId": "P-1430",
+   "title": "MDF Spend",
+   "directory": "PARTNER MANAGEMENT",
+   "route": "/partner_management/mdf_spend",
+   "description": "MDF Spend for the Partner Management team: trends, status breakdown and detailed records",
+   "keywords": [
+    "mdf",
+    "spend",
+    "partner management"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-14301",
+     "type": "kpi",
+     "title": "Total MDF Spend",
+     "code": "W-14301"
+    },
+    {
+     "id": "W-14302",
+     "type": "chart",
+     "title": "MDF Spend Trend by Month",
+     "chartType": "line",
+     "code": "W-14302"
+    },
+    {
+     "id": "W-14303",
+     "type": "chart",
+     "title": "MDF Spend by Region",
+     "chartType": "bar",
+     "code": "W-14303"
+    },
+    {
+     "id": "W-14304",
+     "type": "grid",
+     "title": "MDF Spend Detail Records",
+     "code": "W-14304"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  },
+  "partner_management_channel_conflicts": {
+   "id": "partner_management_channel_conflicts",
+   "pageId": "P-1440",
+   "title": "Channel Conflicts",
+   "directory": "PARTNER MANAGEMENT",
+   "route": "/partner_management/channel_conflicts",
+   "description": "Channel Conflicts for the Partner Management team: trends, status breakdown and detailed records",
+   "keywords": [
+    "channel",
+    "conflicts",
+    "partner management"
+   ],
+   "availableFilters": {
+    "date_range": {
+     "label": "Date Range",
+     "options": [
+      "All Time",
+      "Q1 2025",
+      "Q2 2025",
+      "Q3 2025"
+     ]
+    },
+    "status": {
+     "label": "Status",
+     "options": [
+      "All Statuses",
+      "Open",
+      "In Progress",
+      "Closed"
+     ]
+    },
+    "region": {
+     "label": "Region",
+     "options": [
+      "All Regions",
+      "North America",
+      "EMEA",
+      "APAC",
+      "LATAM"
+     ]
+    }
+   },
+   "availableSorts": [
+    {
+     "value": "recent",
+     "label": "Most Recent"
+    },
+    {
+     "value": "value_desc",
+     "label": "Value (High to Low)"
+    }
+   ],
+   "widgets": [
+    {
+     "id": "W-14401",
+     "type": "kpi",
+     "title": "Total Channel Conflicts",
+     "code": "W-14401"
+    },
+    {
+     "id": "W-14402",
+     "type": "chart",
+     "title": "Channel Conflicts Trend by Month",
+     "chartType": "line",
+     "code": "W-14402"
+    },
+    {
+     "id": "W-14403",
+     "type": "chart",
+     "title": "Channel Conflicts by Region",
+     "chartType": "bar",
+     "code": "W-14403"
+    },
+    {
+     "id": "W-14404",
+     "type": "grid",
+     "title": "Channel Conflicts Detail Records",
+     "code": "W-14404"
+    }
+   ],
+   "synthetic": true,
+   "has_data": false
+  }
+ },
+ "navigation": [
+  {
+   "id": "dir_overview",
+   "title": "EXECUTIVE OVERVIEW",
+   "pages": [
+    {
+     "id": "dashboard",
+     "pageId": "P-100",
+     "title": "Executive Dashboard",
+     "path": "/overview/dashboard",
+     "description": "Company-wide ARR, active tenants, spend and operational performance at a glance"
+    }
+   ]
+  },
+  {
+   "id": "dir_sales",
+   "title": "SALES & REVENUE",
+   "pages": [
+    {
+     "id": "sales_analytics",
+     "pageId": "P-200",
+     "title": "Revenue & Deal Analytics",
+     "path": "/sales/analytics",
+     "description": "Deal pipeline, monthly recurring revenue (MRR), and conversion velocity"
+    },
+    {
+     "id": "regional_sales",
+     "pageId": "P-210",
+     "title": "Regional Sales Dashboard",
+     "path": "/sales/regional",
+     "description": "Territory performance breakdown, North vs South period comparisons, and growth rates"
+    }
+   ]
+  },
+  {
+   "id": "dir_supply",
+   "title": "SUPPLY CHAIN & LOGISTICS",
+   "pages": [
+    {
+     "id": "operations_supply",
+     "pageId": "P-300",
+     "title": "Fulfillment & Supplier Grid",
+     "path": "/supply/fulfillment",
+     "description": "Logistics tracking, supplier delays, warehouse hub status, and shipment logs"
+    }
+   ]
+  },
+  {
+   "id": "dir_cs",
+   "title": "CUSTOMER SUCCESS",
+   "pages": [
+    {
+     "id": "customer_churn",
+     "pageId": "P-400",
+     "title": "High-Risk Churn Grid",
+     "path": "/cs/churn-risk",
+     "description": "Account health scores, ARR at risk, product usage drop-offs, and open escalation tickets"
+    }
+   ]
+  },
+  {
+   "id": "dir_finance",
+   "title": "FINANCIAL REPORTS",
+   "pages": [
+    {
+     "id": "financial_reports",
+     "pageId": "P-500",
+     "title": "Quarterly P&L Breakdown",
+     "path": "/finance/p-and-l",
+     "description": "Profit and loss ledger, operating expenses (Opex), COGS, and gross margin audits"
+    }
+   ]
+  },
+  {
+   "id": "dir_hr",
+   "title": "HR",
+   "pages": [
+    {
+     "id": "hr_headcount_trends",
+     "pageId": "P-610",
+     "title": "Headcount Trends",
+     "path": "/hr/headcount_trends",
+     "description": "Headcount Trends for the HR team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "hr_attrition_analysis",
+     "pageId": "P-620",
+     "title": "Attrition Analysis",
+     "path": "/hr/attrition_analysis",
+     "description": "Attrition Analysis for the HR team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "hr_hiring_pipeline",
+     "pageId": "P-630",
+     "title": "Hiring Pipeline",
+     "path": "/hr/hiring_pipeline",
+     "description": "Hiring Pipeline for the HR team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "hr_payroll_summary",
+     "pageId": "P-640",
+     "title": "Payroll Summary",
+     "path": "/hr/payroll_summary",
+     "description": "Payroll Summary for the HR team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "hr_leave_balances",
+     "pageId": "P-650",
+     "title": "Leave Balances",
+     "path": "/hr/leave_balances",
+     "description": "Leave Balances for the HR team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "hr_training_completion",
+     "pageId": "P-660",
+     "title": "Training Completion",
+     "path": "/hr/training_completion",
+     "description": "Training Completion for the HR team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_marketing",
+   "title": "MARKETING",
+   "pages": [
+    {
+     "id": "marketing_campaign_roi",
+     "pageId": "P-670",
+     "title": "Campaign ROI",
+     "path": "/marketing/campaign_roi",
+     "description": "Campaign ROI for the Marketing team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "marketing_lead_funnel",
+     "pageId": "P-680",
+     "title": "Lead Funnel",
+     "path": "/marketing/lead_funnel",
+     "description": "Lead Funnel for the Marketing team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "marketing_email_engagement",
+     "pageId": "P-690",
+     "title": "Email Engagement",
+     "path": "/marketing/email_engagement",
+     "description": "Email Engagement for the Marketing team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "marketing_social_media_reach",
+     "pageId": "P-700",
+     "title": "Social Media Reach",
+     "path": "/marketing/social_media_reach",
+     "description": "Social Media Reach for the Marketing team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "marketing_ad_spend_breakdown",
+     "pageId": "P-710",
+     "title": "Ad Spend Breakdown",
+     "path": "/marketing/ad_spend_breakdown",
+     "description": "Ad Spend Breakdown for the Marketing team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "marketing_webinar_attendance",
+     "pageId": "P-720",
+     "title": "Webinar Attendance",
+     "path": "/marketing/webinar_attendance",
+     "description": "Webinar Attendance for the Marketing team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_it_operations",
+   "title": "IT OPERATIONS",
+   "pages": [
+    {
+     "id": "it_operations_incident_tracker",
+     "pageId": "P-730",
+     "title": "Incident Tracker",
+     "path": "/it_operations/incident_tracker",
+     "description": "Incident Tracker for the IT Operations team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "it_operations_server_uptime",
+     "pageId": "P-740",
+     "title": "Server Uptime",
+     "path": "/it_operations/server_uptime",
+     "description": "Server Uptime for the IT Operations team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "it_operations_ticket_backlog",
+     "pageId": "P-750",
+     "title": "Ticket Backlog",
+     "path": "/it_operations/ticket_backlog",
+     "description": "Ticket Backlog for the IT Operations team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "it_operations_cloud_cost_monitor",
+     "pageId": "P-760",
+     "title": "Cloud Cost Monitor",
+     "path": "/it_operations/cloud_cost_monitor",
+     "description": "Cloud Cost Monitor for the IT Operations team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "it_operations_patch_compliance",
+     "pageId": "P-770",
+     "title": "Patch Compliance",
+     "path": "/it_operations/patch_compliance",
+     "description": "Patch Compliance for the IT Operations team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "it_operations_change_requests",
+     "pageId": "P-780",
+     "title": "Change Requests",
+     "path": "/it_operations/change_requests",
+     "description": "Change Requests for the IT Operations team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_security",
+   "title": "SECURITY",
+   "pages": [
+    {
+     "id": "security_vulnerability_scan_results",
+     "pageId": "P-790",
+     "title": "Vulnerability Scan Results",
+     "path": "/security/vulnerability_scan_results",
+     "description": "Vulnerability Scan Results for the Security team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "security_access_review",
+     "pageId": "P-800",
+     "title": "Access Review",
+     "path": "/security/access_review",
+     "description": "Access Review for the Security team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "security_phishing_simulation",
+     "pageId": "P-810",
+     "title": "Phishing Simulation",
+     "path": "/security/phishing_simulation",
+     "description": "Phishing Simulation for the Security team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "security_audit_log_explorer",
+     "pageId": "P-820",
+     "title": "Audit Log Explorer",
+     "path": "/security/audit_log_explorer",
+     "description": "Audit Log Explorer for the Security team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "security_threat_alerts",
+     "pageId": "P-830",
+     "title": "Threat Alerts",
+     "path": "/security/threat_alerts",
+     "description": "Threat Alerts for the Security team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "security_endpoint_coverage",
+     "pageId": "P-840",
+     "title": "Endpoint Coverage",
+     "path": "/security/endpoint_coverage",
+     "description": "Endpoint Coverage for the Security team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_procurement",
+   "title": "PROCUREMENT",
+   "pages": [
+    {
+     "id": "procurement_purchase_orders",
+     "pageId": "P-850",
+     "title": "Purchase Orders",
+     "path": "/procurement/purchase_orders",
+     "description": "Purchase Orders for the Procurement team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "procurement_vendor_scorecards",
+     "pageId": "P-860",
+     "title": "Vendor Scorecards",
+     "path": "/procurement/vendor_scorecards",
+     "description": "Vendor Scorecards for the Procurement team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "procurement_contract_renewals",
+     "pageId": "P-870",
+     "title": "Contract Renewals",
+     "path": "/procurement/contract_renewals",
+     "description": "Contract Renewals for the Procurement team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "procurement_spend_under_management",
+     "pageId": "P-880",
+     "title": "Spend Under Management",
+     "path": "/procurement/spend_under_management",
+     "description": "Spend Under Management for the Procurement team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "procurement_invoice_matching",
+     "pageId": "P-890",
+     "title": "Invoice Matching",
+     "path": "/procurement/invoice_matching",
+     "description": "Invoice Matching for the Procurement team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "procurement_rfq_status",
+     "pageId": "P-900",
+     "title": "RFQ Status",
+     "path": "/procurement/rfq_status",
+     "description": "RFQ Status for the Procurement team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_support",
+   "title": "SUPPORT",
+   "pages": [
+    {
+     "id": "support_ticket_volume",
+     "pageId": "P-910",
+     "title": "Ticket Volume",
+     "path": "/support/ticket_volume",
+     "description": "Ticket Volume for the Support team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "support_first_response_time",
+     "pageId": "P-920",
+     "title": "First Response Time",
+     "path": "/support/first_response_time",
+     "description": "First Response Time for the Support team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "support_csat_scores",
+     "pageId": "P-930",
+     "title": "CSAT Scores",
+     "path": "/support/csat_scores",
+     "description": "CSAT Scores for the Support team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "support_escalation_queue",
+     "pageId": "P-940",
+     "title": "Escalation Queue",
+     "path": "/support/escalation_queue",
+     "description": "Escalation Queue for the Support team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "support_knowledge_base_usage",
+     "pageId": "P-950",
+     "title": "Knowledge Base Usage",
+     "path": "/support/knowledge_base_usage",
+     "description": "Knowledge Base Usage for the Support team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "support_agent_workload",
+     "pageId": "P-960",
+     "title": "Agent Workload",
+     "path": "/support/agent_workload",
+     "description": "Agent Workload for the Support team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_product",
+   "title": "PRODUCT",
+   "pages": [
+    {
+     "id": "product_feature_adoption",
+     "pageId": "P-970",
+     "title": "Feature Adoption",
+     "path": "/product/feature_adoption",
+     "description": "Feature Adoption for the Product team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "product_release_calendar",
+     "pageId": "P-980",
+     "title": "Release Calendar",
+     "path": "/product/release_calendar",
+     "description": "Release Calendar for the Product team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "product_bug_burndown",
+     "pageId": "P-990",
+     "title": "Bug Burndown",
+     "path": "/product/bug_burndown",
+     "description": "Bug Burndown for the Product team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "product_roadmap_progress",
+     "pageId": "P-1000",
+     "title": "Roadmap Progress",
+     "path": "/product/roadmap_progress",
+     "description": "Roadmap Progress for the Product team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "product_user_feedback",
+     "pageId": "P-1010",
+     "title": "User Feedback",
+     "path": "/product/user_feedback",
+     "description": "User Feedback for the Product team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "product_beta_program",
+     "pageId": "P-1020",
+     "title": "Beta Program",
+     "path": "/product/beta_program",
+     "description": "Beta Program for the Product team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_legal_compliance",
+   "title": "LEGAL & COMPLIANCE",
+   "pages": [
+    {
+     "id": "legal_compliance_contract_repository",
+     "pageId": "P-1030",
+     "title": "Contract Repository",
+     "path": "/legal_compliance/contract_repository",
+     "description": "Contract Repository for the Legal & Compliance team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "legal_compliance_policy_acknowledgements",
+     "pageId": "P-1040",
+     "title": "Policy Acknowledgements",
+     "path": "/legal_compliance/policy_acknowledgements",
+     "description": "Policy Acknowledgements for the Legal & Compliance team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "legal_compliance_regulatory_filings",
+     "pageId": "P-1050",
+     "title": "Regulatory Filings",
+     "path": "/legal_compliance/regulatory_filings",
+     "description": "Regulatory Filings for the Legal & Compliance team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "legal_compliance_risk_register",
+     "pageId": "P-1060",
+     "title": "Risk Register",
+     "path": "/legal_compliance/risk_register",
+     "description": "Risk Register for the Legal & Compliance team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "legal_compliance_audit_findings",
+     "pageId": "P-1070",
+     "title": "Audit Findings",
+     "path": "/legal_compliance/audit_findings",
+     "description": "Audit Findings for the Legal & Compliance team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "legal_compliance_data_privacy_requests",
+     "pageId": "P-1080",
+     "title": "Data Privacy Requests",
+     "path": "/legal_compliance/data_privacy_requests",
+     "description": "Data Privacy Requests for the Legal & Compliance team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_warehouse",
+   "title": "WAREHOUSE",
+   "pages": [
+    {
+     "id": "warehouse_inventory_levels",
+     "pageId": "P-1090",
+     "title": "Inventory Levels",
+     "path": "/warehouse/inventory_levels",
+     "description": "Inventory Levels for the Warehouse team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "warehouse_stock_transfers",
+     "pageId": "P-1100",
+     "title": "Stock Transfers",
+     "path": "/warehouse/stock_transfers",
+     "description": "Stock Transfers for the Warehouse team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "warehouse_returns_processing",
+     "pageId": "P-1110",
+     "title": "Returns Processing",
+     "path": "/warehouse/returns_processing",
+     "description": "Returns Processing for the Warehouse team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "warehouse_pick_and_pack_throughput",
+     "pageId": "P-1120",
+     "title": "Pick and Pack Throughput",
+     "path": "/warehouse/pick_and_pack_throughput",
+     "description": "Pick and Pack Throughput for the Warehouse team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "warehouse_cycle_count",
+     "pageId": "P-1130",
+     "title": "Cycle Count",
+     "path": "/warehouse/cycle_count",
+     "description": "Cycle Count for the Warehouse team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "warehouse_dock_scheduling",
+     "pageId": "P-1140",
+     "title": "Dock Scheduling",
+     "path": "/warehouse/dock_scheduling",
+     "description": "Dock Scheduling for the Warehouse team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_finance_ops",
+   "title": "FINANCE OPS",
+   "pages": [
+    {
+     "id": "finance_ops_accounts_receivable_aging",
+     "pageId": "P-1150",
+     "title": "Accounts Receivable Aging",
+     "path": "/finance_ops/accounts_receivable_aging",
+     "description": "Accounts Receivable Aging for the Finance Ops team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "finance_ops_accounts_payable",
+     "pageId": "P-1160",
+     "title": "Accounts Payable",
+     "path": "/finance_ops/accounts_payable",
+     "description": "Accounts Payable for the Finance Ops team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "finance_ops_budget_vs_actual",
+     "pageId": "P-1170",
+     "title": "Budget vs Actual",
+     "path": "/finance_ops/budget_vs_actual",
+     "description": "Budget vs Actual for the Finance Ops team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "finance_ops_cash_flow_forecast",
+     "pageId": "P-1180",
+     "title": "Cash Flow Forecast",
+     "path": "/finance_ops/cash_flow_forecast",
+     "description": "Cash Flow Forecast for the Finance Ops team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "finance_ops_expense_claims",
+     "pageId": "P-1190",
+     "title": "Expense Claims",
+     "path": "/finance_ops/expense_claims",
+     "description": "Expense Claims for the Finance Ops team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "finance_ops_tax_provisions",
+     "pageId": "P-1200",
+     "title": "Tax Provisions",
+     "path": "/finance_ops/tax_provisions",
+     "description": "Tax Provisions for the Finance Ops team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_customer_onboarding",
+   "title": "CUSTOMER ONBOARDING",
+   "pages": [
+    {
+     "id": "customer_onboarding_onboarding_progress",
+     "pageId": "P-1210",
+     "title": "Onboarding Progress",
+     "path": "/customer_onboarding/onboarding_progress",
+     "description": "Onboarding Progress for the Customer Onboarding team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "customer_onboarding_nps_survey",
+     "pageId": "P-1220",
+     "title": "NPS Survey",
+     "path": "/customer_onboarding/nps_survey",
+     "description": "NPS Survey for the Customer Onboarding team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "customer_onboarding_renewal_forecast",
+     "pageId": "P-1230",
+     "title": "Renewal Forecast",
+     "path": "/customer_onboarding/renewal_forecast",
+     "description": "Renewal Forecast for the Customer Onboarding team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "customer_onboarding_qbr_schedule",
+     "pageId": "P-1240",
+     "title": "QBR Schedule",
+     "path": "/customer_onboarding/qbr_schedule",
+     "description": "QBR Schedule for the Customer Onboarding team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "customer_onboarding_product_usage_heatmap",
+     "pageId": "P-1250",
+     "title": "Product Usage Heatmap",
+     "path": "/customer_onboarding/product_usage_heatmap",
+     "description": "Product Usage Heatmap for the Customer Onboarding team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "customer_onboarding_health_score_trends",
+     "pageId": "P-1260",
+     "title": "Health Score Trends",
+     "path": "/customer_onboarding/health_score_trends",
+     "description": "Health Score Trends for the Customer Onboarding team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_data_platform",
+   "title": "DATA PLATFORM",
+   "pages": [
+    {
+     "id": "data_platform_pipeline_runs",
+     "pageId": "P-1270",
+     "title": "Pipeline Runs",
+     "path": "/data_platform/pipeline_runs",
+     "description": "Pipeline Runs for the Data Platform team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "data_platform_data_quality_checks",
+     "pageId": "P-1280",
+     "title": "Data Quality Checks",
+     "path": "/data_platform/data_quality_checks",
+     "description": "Data Quality Checks for the Data Platform team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "data_platform_query_costs",
+     "pageId": "P-1290",
+     "title": "Query Costs",
+     "path": "/data_platform/query_costs",
+     "description": "Query Costs for the Data Platform team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "data_platform_dataset_catalog",
+     "pageId": "P-1300",
+     "title": "Dataset Catalog",
+     "path": "/data_platform/dataset_catalog",
+     "description": "Dataset Catalog for the Data Platform team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "data_platform_access_requests",
+     "pageId": "P-1310",
+     "title": "Access Requests",
+     "path": "/data_platform/access_requests",
+     "description": "Access Requests for the Data Platform team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "data_platform_storage_growth",
+     "pageId": "P-1320",
+     "title": "Storage Growth",
+     "path": "/data_platform/storage_growth",
+     "description": "Storage Growth for the Data Platform team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_facilities",
+   "title": "FACILITIES",
+   "pages": [
+    {
+     "id": "facilities_space_utilization",
+     "pageId": "P-1330",
+     "title": "Space Utilization",
+     "path": "/facilities/space_utilization",
+     "description": "Space Utilization for the Facilities team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "facilities_maintenance_requests",
+     "pageId": "P-1340",
+     "title": "Maintenance Requests",
+     "path": "/facilities/maintenance_requests",
+     "description": "Maintenance Requests for the Facilities team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "facilities_energy_consumption",
+     "pageId": "P-1350",
+     "title": "Energy Consumption",
+     "path": "/facilities/energy_consumption",
+     "description": "Energy Consumption for the Facilities team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "facilities_visitor_log",
+     "pageId": "P-1360",
+     "title": "Visitor Log",
+     "path": "/facilities/visitor_log",
+     "description": "Visitor Log for the Facilities team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "facilities_asset_register",
+     "pageId": "P-1370",
+     "title": "Asset Register",
+     "path": "/facilities/asset_register",
+     "description": "Asset Register for the Facilities team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "facilities_safety_incidents",
+     "pageId": "P-1380",
+     "title": "Safety Incidents",
+     "path": "/facilities/safety_incidents",
+     "description": "Safety Incidents for the Facilities team: trends, status breakdown and detailed records"
+    }
+   ]
+  },
+  {
+   "id": "dir_partner_management",
+   "title": "PARTNER MANAGEMENT",
+   "pages": [
+    {
+     "id": "partner_management_partner_pipeline",
+     "pageId": "P-1390",
+     "title": "Partner Pipeline",
+     "path": "/partner_management/partner_pipeline",
+     "description": "Partner Pipeline for the Partner Management team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "partner_management_reseller_performance",
+     "pageId": "P-1400",
+     "title": "Reseller Performance",
+     "path": "/partner_management/reseller_performance",
+     "description": "Reseller Performance for the Partner Management team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "partner_management_co_sell_deals",
+     "pageId": "P-1410",
+     "title": "Co-sell Deals",
+     "path": "/partner_management/co_sell_deals",
+     "description": "Co-sell Deals for the Partner Management team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "partner_management_partner_certifications",
+     "pageId": "P-1420",
+     "title": "Partner Certifications",
+     "path": "/partner_management/partner_certifications",
+     "description": "Partner Certifications for the Partner Management team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "partner_management_mdf_spend",
+     "pageId": "P-1430",
+     "title": "MDF Spend",
+     "path": "/partner_management/mdf_spend",
+     "description": "MDF Spend for the Partner Management team: trends, status breakdown and detailed records"
+    },
+    {
+     "id": "partner_management_channel_conflicts",
+     "pageId": "P-1440",
+     "title": "Channel Conflicts",
+     "path": "/partner_management/channel_conflicts",
+     "description": "Channel Conflicts for the Partner Management team: trends, status breakdown and detailed records"
+    }
+   ]
+  }
+ ]
+}

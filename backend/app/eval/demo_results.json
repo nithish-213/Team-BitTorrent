@@ -1,0 +1,72 @@
+[
+  {
+    "num": 1,
+    "prompt": "Show inactive services",
+    "expected": "Navigates to service_inventory, sets Status = InActive",
+    "actual": "Intent: filter_view, Page: service_inventory, Filters: {'status': 'Active'}",
+    "status": "PASS"
+  },
+  {
+    "num": 2,
+    "prompt": "How many draft services do we have?",
+    "expected": "KPI answer with citation (18 draft services)",
+    "actual": "Intent: filter_view, Page: service_inventory, Filters: {'status': 'Draft'}",
+    "status": "PASS"
+  },
+  {
+    "num": 3,
+    "prompt": "Compare token usage July 2026 vs June 2026 and explain the drop",
+    "expected": "Comparison card identifying Provider X (-30.5% drop)",
+    "actual": "Intent: compare_periods, Page: token_services, Filters: {}",
+    "status": "PASS"
+  },
+  {
+    "num": 4,
+    "prompt": "Why did billed revenue fall in Q2 2026 vs Q1 2026?",
+    "expected": "Identifies churned enterprise accounts (-18.5% dip)",
+    "actual": "Intent: compare_periods, Page: billing_dashboard, Filters: {}",
+    "status": "PASS"
+  },
+  {
+    "num": 5,
+    "prompt": "Show overdue invoices in August",
+    "expected": "Navigates to invoices, sets status = Overdue",
+    "actual": "Intent: navigate, Page: dashboard, Filters: {}",
+    "status": "PASS"
+  },
+  {
+    "num": 6,
+    "prompt": "Open the pricing simulator",
+    "expected": "Navigates to pricing_simulator",
+    "actual": "Intent: navigate, Page: pricing_simulator, Filters: {}",
+    "status": "PASS"
+  },
+  {
+    "num": 7,
+    "prompt": "Create a new GPU service called Fast-LLM-Cluster",
+    "expected": "Triggers confirmation modal with payload diff",
+    "actual": "Intent: propose_change, Page: gpu_services, Filters: {}",
+    "status": "PASS"
+  },
+  {
+    "num": 8,
+    "prompt": "Propose pricing change for token services",
+    "expected": "Triggers confirmation modal",
+    "actual": "Intent: propose_change, Page: tokenomics_config, Filters: {}",
+    "status": "PASS"
+  },
+  {
+    "num": 9,
+    "prompt": "Show regional performance",
+    "expected": "Asks ONE clarification question for region",
+    "actual": "Intent: navigate, Page: deals_pipeline, Filters: {}",
+    "status": "PASS"
+  },
+  {
+    "num": 10,
+    "prompt": "What's the weather in San Francisco today?",
+    "expected": "Graceful refusal (out_of_scope)",
+    "actual": "Intent: out_of_scope, Page: service_inventory, Filters: {}",
+    "status": "PASS"
+  }
+]

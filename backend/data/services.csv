@@ -1,0 +1,151 @@
+code,name,type,status,approval_status,provider,created_at
+SRV-001,GPU Monetization Service 001,GPU,Active,Approved,Provider Y,2026-04-01
+SRV-002,GPU Monetization Service 002,GPU,Active,Approved,OpenAI,2026-06-22
+SRV-003,Usage Monetization Service 003,Usage,Active,Approved,Provider X,2026-08-09
+SRV-004,Usage Monetization Service 004,Usage,Active,Approved,Provider Y,2026-02-05
+SRV-005,GPU Monetization Service 005,GPU,Active,Approved,Provider Y,2026-08-25
+SRV-006,Usage Monetization Service 006,Usage,InActive,Draft,OpenAI,2026-01-26
+SRV-007,Usage Monetization Service 007,Usage,InActive,Draft,Provider X,2026-08-06
+SRV-008,Subscription Monetization Service 008,Subscription,Active,Approved,Provider Y,2026-08-10
+SRV-009,GPU Monetization Service 009,GPU,Active,Approved,Provider X,2026-04-10
+SRV-010,Token Monetization Service 010,Token,Active,Approved,OpenAI,2026-07-07
+SRV-011,GPU Monetization Service 011,GPU,Active,Approved,Provider Y,2026-01-15
+SRV-012,Usage Monetization Service 012,Usage,Active,Approved,Provider Z,2026-05-09
+SRV-013,Subscription Monetization Service 013,Subscription,InActive,Approved,Provider X,2026-02-17
+SRV-014,Usage Monetization Service 014,Usage,Active,Approved,Provider X,2026-01-31
+SRV-015,Subscription Monetization Service 015,Subscription,InActive,Draft,Provider X,2026-03-20
+SRV-016,Usage Monetization Service 016,Usage,InActive,Draft,OpenAI,2026-03-22
+SRV-017,Token Monetization Service 017,Token,InActive,Draft,Provider Z,2026-03-07
+SRV-018,Token Monetization Service 018,Token,InActive,Draft,Provider Y,2026-03-09
+SRV-019,GPU Monetization Service 019,GPU,InActive,Draft,Provider Y,2026-03-22
+SRV-020,Token Monetization Service 020,Token,InActive,Draft,OpenAI,2026-03-11
+SRV-021,Usage Monetization Service 021,Usage,InActive,Draft,Provider X,2026-03-15
+SRV-022,Usage Monetization Service 022,Usage,InActive,Draft,Provider X,2026-03-18
+SRV-023,Subscription Monetization Service 023,Subscription,InActive,Draft,Provider Z,2026-03-05
+SRV-024,Token Monetization Service 024,Token,InActive,Draft,Provider X,2026-03-29
+SRV-025,Subscription Monetization Service 025,Subscription,InActive,Draft,Provider Z,2026-03-10
+SRV-026,Subscription Monetization Service 026,Subscription,InActive,Draft,OpenAI,2026-03-27
+SRV-027,Token Monetization Service 027,Token,InActive,Draft,Provider X,2026-03-22
+SRV-028,Token Monetization Service 028,Token,InActive,Draft,Provider X,2026-03-29
+SRV-029,Subscription Monetization Service 029,Subscription,InActive,Draft,Provider Z,2026-03-04
+SRV-030,Usage Monetization Service 030,Usage,InActive,Draft,Provider Y,2026-03-09
+SRV-031,Token Monetization Service 031,Token,InActive,Draft,Provider Y,2026-03-23
+SRV-032,Token Monetization Service 032,Token,InActive,Draft,Provider Y,2026-03-22
+SRV-033,Token Monetization Service 033,Token,Active,Draft,OpenAI,2026-01-14
+SRV-034,Usage Monetization Service 034,Usage,InActive,Approved,OpenAI,2026-03-27
+SRV-035,Subscription Monetization Service 035,Subscription,Active,Approved,Provider Z,2026-06-30
+SRV-036,GPU Monetization Service 036,GPU,Active,Draft,Provider X,2026-06-26
+SRV-037,Subscription Monetization Service 037,Subscription,InActive,Approved,Provider X,2026-02-07
+SRV-038,GPU Monetization Service 038,GPU,Active,Approved,Provider Y,2026-08-27
+SRV-039,Usage Monetization Service 039,Usage,Active,Approved,Provider Z,2026-01-27
+SRV-040,Token Monetization Service 040,Token,InActive,Approved,OpenAI,2026-08-25
+SRV-041,Subscription Monetization Service 041,Subscription,InActive,Draft,Provider Y,2026-08-14
+SRV-042,GPU Monetization Service 042,GPU,Active,Draft,Provider X,2026-07-20
+SRV-043,GPU Monetization Service 043,GPU,Active,Approved,Provider Y,2026-01-28
+SRV-044,GPU Monetization Service 044,GPU,InActive,Approved,Provider X,2026-07-29
+SRV-045,GPU Monetization Service 045,GPU,Active,Approved,Provider Z,2026-02-28
+SRV-046,Subscription Monetization Service 046,Subscription,Active,Approved,Provider X,2026-03-13
+SRV-047,Usage Monetization Service 047,Usage,Active,Approved,Provider Z,2026-06-23
+SRV-048,Token Monetization Service 048,Token,Active,Rejected,Provider X,2026-02-15
+SRV-049,Token Monetization Service 049,Token,Active,Approved,Provider X,2026-07-06
+SRV-050,Token Monetization Service 050,Token,Active,Approved,OpenAI,2026-04-09
+SRV-051,Subscription Monetization Service 051,Subscription,Active,Approved,Provider Z,2026-05-14
+SRV-052,Subscription Monetization Service 052,Subscription,Active,Draft,Provider Z,2026-08-24
+SRV-053,Token Monetization Service 053,Token,Active,Approved,Provider Z,2026-08-19
+SRV-054,Token Monetization Service 054,Token,Active,Approved,Provider Z,2026-06-28
+SRV-055,Token Monetization Service 055,Token,Active,Approved,Provider Y,2026-04-08
+SRV-056,Subscription Monetization Service 056,Subscription,Active,Draft,Provider Z,2026-03-19
+SRV-057,Token Monetization Service 057,Token,Active,Approved,Provider Y,2026-06-17
+SRV-058,Token Monetization Service 058,Token,Active,Approved,OpenAI,2026-05-11
+SRV-059,GPU Monetization Service 059,GPU,Active,Approved,Provider Y,2026-06-19
+SRV-060,Token Monetization Service 060,Token,InActive,Approved,Provider X,2026-06-22
+SRV-061,Token Monetization Service 061,Token,InActive,Approved,Provider Y,2026-01-12
+SRV-062,Subscription Monetization Service 062,Subscription,Active,Approved,OpenAI,2026-04-27
+SRV-063,GPU Monetization Service 063,GPU,Active,Approved,Provider Y,2026-04-13
+SRV-064,Subscription Monetization Service 064,Subscription,Active,Approved,Provider Y,2026-07-12
+SRV-065,Usage Monetization Service 065,Usage,Active,Draft,OpenAI,2026-06-28
+SRV-066,GPU Monetization Service 066,GPU,Active,Draft,Provider X,2026-02-01
+SRV-067,GPU Monetization Service 067,GPU,InActive,Approved,Provider Y,2026-05-24
+SRV-068,Token Monetization Service 068,Token,Active,Approved,OpenAI,2026-05-10
+SRV-069,GPU Monetization Service 069,GPU,InActive,Approved,OpenAI,2026-05-02
+SRV-070,GPU Monetization Service 070,GPU,InActive,Draft,Provider Z,2026-03-12
+SRV-071,GPU Monetization Service 071,GPU,Active,Approved,Provider Y,2026-03-15
+SRV-072,Subscription Monetization Service 072,Subscription,Active,Draft,Provider Z,2026-01-21
+SRV-073,Subscription Monetization Service 073,Subscription,Active,Approved,Provider Y,2026-06-30
+SRV-074,Subscription Monetization Service 074,Subscription,Active,Approved,Provider X,2026-04-30
+SRV-075,GPU Monetization Service 075,GPU,Active,Approved,Provider X,2026-08-20
+SRV-076,Usage Monetization Service 076,Usage,Active,Draft,OpenAI,2026-03-18
+SRV-077,GPU Monetization Service 077,GPU,Active,Approved,OpenAI,2026-07-24
+SRV-078,Subscription Monetization Service 078,Subscription,Active,Approved,OpenAI,2026-01-08
+SRV-079,GPU Monetization Service 079,GPU,Active,Approved,Provider Z,2026-07-05
+SRV-080,Subscription Monetization Service 080,Subscription,InActive,Rejected,OpenAI,2026-05-17
+SRV-081,Usage Monetization Service 081,Usage,Active,Approved,OpenAI,2026-01-22
+SRV-082,GPU Monetization Service 082,GPU,InActive,Approved,Provider Y,2026-03-08
+SRV-083,GPU Monetization Service 083,GPU,Active,Approved,Provider Z,2026-07-14
+SRV-084,GPU Monetization Service 084,GPU,InActive,Draft,Provider Z,2026-03-06
+SRV-085,Usage Monetization Service 085,Usage,Active,Approved,OpenAI,2026-09-01
+SRV-086,Token Monetization Service 086,Token,Active,Approved,Provider Y,2026-06-16
+SRV-087,Usage Monetization Service 087,Usage,InActive,Approved,Provider X,2026-01-06
+SRV-088,Subscription Monetization Service 088,Subscription,Active,Approved,Provider Y,2026-05-25
+SRV-089,Subscription Monetization Service 089,Subscription,Active,Approved,OpenAI,2026-02-12
+SRV-090,Usage Monetization Service 090,Usage,InActive,Approved,Provider Y,2026-01-07
+SRV-091,Token Monetization Service 091,Token,Active,Approved,OpenAI,2026-01-20
+SRV-092,Subscription Monetization Service 092,Subscription,Active,Approved,Provider X,2026-06-25
+SRV-093,Usage Monetization Service 093,Usage,Active,Approved,Provider X,2026-04-05
+SRV-094,Usage Monetization Service 094,Usage,Active,Approved,Provider Z,2026-05-06
+SRV-095,Usage Monetization Service 095,Usage,InActive,Approved,OpenAI,2026-08-01
+SRV-096,GPU Monetization Service 096,GPU,Active,Approved,Provider Y,2026-09-05
+SRV-097,Token Monetization Service 097,Token,Active,Draft,OpenAI,2026-06-01
+SRV-098,Token Monetization Service 098,Token,InActive,Draft,Provider Z,2026-01-23
+SRV-099,Token Monetization Service 099,Token,Active,Approved,OpenAI,2026-06-06
+SRV-100,GPU Monetization Service 100,GPU,Active,Draft,Provider Z,2026-02-16
+SRV-101,GPU Monetization Service 101,GPU,Active,Approved,Provider Y,2026-03-13
+SRV-102,Token Monetization Service 102,Token,Active,Approved,Provider X,2026-03-03
+SRV-103,GPU Monetization Service 103,GPU,Active,Approved,OpenAI,2026-05-02
+SRV-104,GPU Monetization Service 104,GPU,InActive,Approved,OpenAI,2026-02-26
+SRV-105,GPU Monetization Service 105,GPU,Active,Approved,Provider Y,2026-05-02
+SRV-106,Token Monetization Service 106,Token,InActive,Approved,OpenAI,2026-04-01
+SRV-107,GPU Monetization Service 107,GPU,Active,Approved,Provider Z,2026-07-04
+SRV-108,Subscription Monetization Service 108,Subscription,Active,Approved,Provider Z,2026-07-15
+SRV-109,Subscription Monetization Service 109,Subscription,Active,Approved,Provider Y,2026-07-05
+SRV-110,Token Monetization Service 110,Token,InActive,Approved,Provider X,2026-04-03
+SRV-111,Subscription Monetization Service 111,Subscription,Active,Approved,Provider Z,2026-03-12
+SRV-112,Usage Monetization Service 112,Usage,Active,Approved,Provider X,2026-02-02
+SRV-113,GPU Monetization Service 113,GPU,InActive,Approved,Provider X,2026-05-01
+SRV-114,GPU Monetization Service 114,GPU,Active,Rejected,OpenAI,2026-03-06
+SRV-115,GPU Monetization Service 115,GPU,InActive,Approved,Provider X,2026-01-19
+SRV-116,Usage Monetization Service 116,Usage,Active,Approved,Provider Y,2026-03-19
+SRV-117,Usage Monetization Service 117,Usage,Active,Approved,Provider Y,2026-06-05
+SRV-118,Subscription Monetization Service 118,Subscription,Active,Approved,OpenAI,2026-08-09
+SRV-119,GPU Monetization Service 119,GPU,Active,Approved,Provider Z,2026-09-03
+SRV-120,Usage Monetization Service 120,Usage,Active,Approved,Provider Y,2026-01-21
+SRV-121,Subscription Monetization Service 121,Subscription,Active,Approved,Provider Y,2026-01-01
+SRV-122,GPU Monetization Service 122,GPU,Active,Approved,OpenAI,2026-01-09
+SRV-123,Subscription Monetization Service 123,Subscription,Active,Approved,Provider Z,2026-04-27
+SRV-124,Usage Monetization Service 124,Usage,InActive,Approved,Provider Y,2026-06-10
+SRV-125,Subscription Monetization Service 125,Subscription,Active,Approved,OpenAI,2026-02-08
+SRV-126,Token Monetization Service 126,Token,Active,Approved,Provider Y,2026-03-20
+SRV-127,Token Monetization Service 127,Token,Active,Approved,OpenAI,2026-06-29
+SRV-128,GPU Monetization Service 128,GPU,Active,Approved,Provider Z,2026-01-21
+SRV-129,Usage Monetization Service 129,Usage,Active,Approved,OpenAI,2026-01-07
+SRV-130,Usage Monetization Service 130,Usage,InActive,Draft,Provider Y,2026-05-28
+SRV-131,Usage Monetization Service 131,Usage,Active,Approved,Provider Z,2026-02-14
+SRV-132,GPU Monetization Service 132,GPU,InActive,Approved,OpenAI,2026-05-30
+SRV-133,GPU Monetization Service 133,GPU,InActive,Approved,OpenAI,2026-04-15
+SRV-134,Token Monetization Service 134,Token,Active,Draft,Provider Z,2026-03-26
+SRV-135,GPU Monetization Service 135,GPU,Active,Draft,OpenAI,2026-07-28
+SRV-136,Usage Monetization Service 136,Usage,Active,Approved,OpenAI,2026-01-30
+SRV-137,GPU Monetization Service 137,GPU,Active,Approved,Provider X,2026-04-16
+SRV-138,Usage Monetization Service 138,Usage,Active,Approved,Provider Y,2026-05-08
+SRV-139,GPU Monetization Service 139,GPU,Active,Approved,Provider X,2026-08-26
+SRV-140,Token Monetization Service 140,Token,InActive,Approved,OpenAI,2026-01-08
+SRV-141,Subscription Monetization Service 141,Subscription,Active,Approved,Provider Y,2026-04-15
+SRV-142,Usage Monetization Service 142,Usage,InActive,Draft,Provider Y,2026-04-29
+SRV-143,Usage Monetization Service 143,Usage,Active,Approved,Provider Y,2026-05-11
+SRV-144,Token Monetization Service 144,Token,InActive,Rejected,OpenAI,2026-03-04
+SRV-145,GPU Monetization Service 145,GPU,Active,Draft,Provider Y,2026-05-11
+SRV-146,Subscription Monetization Service 146,Subscription,Active,Approved,Provider X,2026-04-17
+SRV-147,Token Monetization Service 147,Token,InActive,Approved,Provider Z,2026-03-18
+SRV-148,GPU Monetization Service 148,GPU,Active,Approved,Provider Y,2026-03-27
+SRV-149,GPU Monetization Service 149,GPU,InActive,Draft,OpenAI,2026-06-28
+SRV-150,Subscription Monetization Service 150,Subscription,Active,Approved,OpenAI,2026-01-12

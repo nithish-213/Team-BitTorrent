@@ -1,0 +1,76 @@
+region,tier,period,revenue,deals,delivery_delay_days
+South Region,Enterprise,Q3 2024,115506,12,5.6
+South Region,Mid-Market,Q3 2024,62309,13,2.9
+South Region,SMB,Q3 2024,30927,20,5.5
+South Region,Enterprise,Q4 2024,119251,13,5.3
+South Region,Mid-Market,Q4 2024,63612,14,3.9
+South Region,SMB,Q4 2024,33081,22,3.1
+South Region,Enterprise,Q1 2025,122946,13,3.8
+South Region,Mid-Market,Q1 2025,66702,14,4.2
+South Region,SMB,Q1 2025,31595,21,5.2
+South Region,Enterprise,Q2 2025,52344,5,16.3
+South Region,Mid-Market,Q2 2025,68024,15,4.5
+South Region,SMB,Q2 2025,34708,23,2.1
+South Region,Enterprise,Q3 2025,128393,14,3.9
+South Region,Mid-Market,Q3 2025,69040,15,4.5
+South Region,SMB,Q3 2025,35440,23,4.0
+North Region,Enterprise,Q3 2024,140267,15,2.8
+North Region,Mid-Market,Q3 2024,75476,16,2.8
+North Region,SMB,Q3 2024,37740,25,2.0
+North Region,Enterprise,Q4 2024,152500,16,2.6
+North Region,Mid-Market,Q4 2024,79981,17,5.5
+North Region,SMB,Q4 2024,40272,26,5.4
+North Region,Enterprise,Q1 2025,152042,16,5.0
+North Region,Mid-Market,Q1 2025,77563,17,4.2
+North Region,SMB,Q1 2025,41537,27,5.5
+North Region,Enterprise,Q2 2025,168342,18,4.4
+North Region,Mid-Market,Q2 2025,80941,17,3.6
+North Region,SMB,Q2 2025,43491,28,2.6
+North Region,Enterprise,Q3 2025,164535,18,3.5
+North Region,Mid-Market,Q3 2025,89692,19,4.4
+North Region,SMB,Q3 2025,42499,28,4.6
+Karnataka,Enterprise,Q3 2024,91767,10,2.6
+Karnataka,Mid-Market,Q3 2024,48578,10,3.0
+Karnataka,SMB,Q3 2024,25300,16,2.4
+Karnataka,Enterprise,Q4 2024,100717,11,2.9
+Karnataka,Mid-Market,Q4 2024,50860,11,3.2
+Karnataka,SMB,Q4 2024,24172,16,4.6
+Karnataka,Enterprise,Q1 2025,98724,10,5.4
+Karnataka,Mid-Market,Q1 2025,55551,12,5.6
+Karnataka,SMB,Q1 2025,26631,17,2.6
+Karnataka,Enterprise,Q2 2025,108126,12,5.7
+Karnataka,Mid-Market,Q2 2025,54915,12,2.7
+Karnataka,SMB,Q2 2025,27661,18,4.6
+Karnataka,Enterprise,Q3 2025,100053,11,3.5
+Karnataka,Mid-Market,Q3 2025,56107,12,3.0
+Karnataka,SMB,Q3 2025,29306,19,5.5
+EMEA,Enterprise,Q3 2024,169411,18,4.2
+EMEA,Mid-Market,Q3 2024,93788,20,5.0
+EMEA,SMB,Q3 2024,46050,30,3.5
+EMEA,Enterprise,Q4 2024,172307,19,2.5
+EMEA,Mid-Market,Q4 2024,85153,18,4.6
+EMEA,SMB,Q4 2024,44682,29,4.1
+EMEA,Enterprise,Q1 2025,190604,21,3.4
+EMEA,Mid-Market,Q1 2025,93019,20,4.7
+EMEA,SMB,Q1 2025,48641,32,4.1
+EMEA,Enterprise,Q2 2025,178369,19,5.6
+EMEA,Mid-Market,Q2 2025,100140,22,5.7
+EMEA,SMB,Q2 2025,48895,32,5.0
+EMEA,Enterprise,Q3 2025,177005,19,2.5
+EMEA,Mid-Market,Q3 2025,97341,21,5.3
+EMEA,SMB,Q3 2025,50789,33,4.5
+APAC,Enterprise,Q3 2024,128879,14,4.1
+APAC,Mid-Market,Q3 2024,66246,14,2.9
+APAC,SMB,Q3 2024,36522,24,3.5
+APAC,Enterprise,Q4 2024,140564,15,3.4
+APAC,Mid-Market,Q4 2024,76405,16,4.3
+APAC,SMB,Q4 2024,38235,25,3.1
+APAC,Enterprise,Q1 2025,131319,14,3.8
+APAC,Mid-Market,Q1 2025,80721,17,4.1
+APAC,SMB,Q1 2025,37742,25,5.6
+APAC,Enterprise,Q2 2025,138268,15,4.3
+APAC,Mid-Market,Q2 2025,76776,17,5.5
+APAC,SMB,Q2 2025,37995,25,5.7
+APAC,Enterprise,Q3 2025,140284,15,3.7
+APAC,Mid-Market,Q3 2025,80143,17,5.8
+APAC,SMB,Q3 2025,40341,26,5.2
