@@ -39,6 +39,28 @@ export default function NoCodePlatform({
   const [selectedRecordModal, setSelectedRecordModal] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [collapsedDirs, setCollapsedDirs] = useState({});
+  const [customAtlasTerritories, setCustomAtlasTerritories] = useState([]);
+
+  const apiBase = import.meta.env.VITE_API_URL || "/api";
+
+  // Fetch newly provisioned territories from MongoDB Atlas
+  React.useEffect(() => {
+    async function loadCustomTerritories() {
+      try {
+        const res = await fetch(`${apiBase}/data/territories`);
+        if (res.ok) {
+          const data = await res.json();
+          setCustomAtlasTerritories(data.territories || []);
+        }
+      } catch (err) {
+        console.warn("Could not fetch custom territories:", err);
+      }
+    }
+    loadCustomTerritories();
+    // Poll every 5s so newly confirmed territories appear in real-time
+    const interval = setInterval(loadCustomTerritories, 4000);
+    return () => clearInterval(interval);
+  }, [apiBase]);
 
   const currentPage = catalogPages[activePageId] || catalogPages["dashboard"];
   const currentFilters = filtersByPage[activePageId] || {};
@@ -505,6 +527,32 @@ export default function NoCodePlatform({
                         </tr>
                       </thead>
                       <tbody>
+                        {/* Territories Provisioned via Copilot & MongoDB Atlas */}
+                        {customAtlasTerritories.map((t, idx) => (
+                          <tr key={`atlas-${t.territory_name}-${idx}`} style={{ background: "rgba(16, 185, 129, 0.07)" }}>
+                            <td style={{ fontFamily: "monospace", color: "#34d399", fontWeight: "700" }}>
+                              REG-M{idx + 1}
+                            </td>
+                            <td>
+                              <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                                <strong>{t.territory_name}</strong>
+                                <span className="badge-pill emerald" style={{ fontSize: "9.5px", padding: "1px 5px" }}>
+                                  Atlas Live
+                                </span>
+                              </div>
+                            </td>
+                            <td><span className="badge-pill indigo">{t.region}</span></td>
+                            <td><span style={{ color: "var(--accent-cyan)", fontSize: "11px" }}>Newly Active</span></td>
+                            <td><strong>$0 (New)</strong></td>
+                            <td>$0</td>
+                            <td><span className="badge-pill emerald">0.0%</span></td>
+                            <td style={{ fontSize: "12px", color: "var(--text-muted)" }}>
+                              Provisioned by {t.created_by || "admin"} via Copilot into MongoDB Atlas
+                            </td>
+                          </tr>
+                        ))}
+
+                        {/* Baseline Catalog Territories */}
                         {REGIONAL_SALES_DATASET.map((row) => (
                           <tr key={row.id}>
                             <td style={{ fontFamily: "monospace", color: "var(--accent-cyan)" }}>{row.id}</td>

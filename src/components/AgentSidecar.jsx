@@ -3,6 +3,12 @@ import { Bot, X, RefreshCw, CheckCircle2, ShieldAlert, ChevronRight } from "luci
 import { runAgent } from "../agent/agentEngine";
 import { useUIState } from "../context/UIStateContext";
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from "recharts";
+import { 
+  CUSTOMER_CHURN_DATASET, 
+  REGIONAL_SALES_DATASET, 
+  OPERATIONS_SUPPLY_DATASET, 
+  SALES_ANALYTICS_DATASET 
+} from "../data/metadataCatalog";
 
 const QUICK_ACTIONS = [
   "Why did South Region sales drop in Q2 2025 vs Q1?",
@@ -16,6 +22,8 @@ export default function AgentSidecar() {
   const {
     activePageId,
     setActivePageId,
+    filtersByPage,
+    sortByPage,
     setPageFilters,
     setPageSort,
     addTraceRecord,
@@ -34,6 +42,9 @@ export default function AgentSidecar() {
   ]);
 
   const apiBase = import.meta.env.VITE_API_URL || "/api";
+  const activePageTitle = catalogPages?.[activePageId]?.title || activePageId;
+  const currentFilters = filtersByPage[activePageId] || {};
+  const currentSort = sortByPage[activePageId] || null;
 
   const handleSendQuery = async (queryToRun) => {
     const query = queryToRun || inputText;
@@ -56,8 +67,28 @@ export default function AgentSidecar() {
       content: m.text || ""
     }));
 
+    // Extract visible rows on the current screen so the agent has direct entity awareness
+    let visibleScreenData = null;
+    if (activePageId === "customer_churn") {
+      visibleScreenData = CUSTOMER_CHURN_DATASET;
+    } else if (activePageId === "regional_sales") {
+      visibleScreenData = REGIONAL_SALES_DATASET;
+    } else if (activePageId === "operations_supply") {
+      visibleScreenData = OPERATIONS_SUPPLY_DATASET;
+    } else if (activePageId === "sales_analytics") {
+      visibleScreenData = SALES_ANALYTICS_DATASET.slice(0, 5);
+    }
+
     try {
-      const response = await runAgent(query, activePageId, historyPayload);
+      // Pass query, current_page, history, active_filters, active_sort, and visible on-screen records
+      const response = await runAgent(
+        query,
+        activePageId,
+        historyPayload,
+        currentFilters,
+        currentSort,
+        visibleScreenData
+      );
       clearTimeout(stepTimer1);
       clearTimeout(stepTimer2);
 
@@ -138,7 +169,14 @@ export default function AgentSidecar() {
 
   const handleConfirm = async (msgIndex, confirmationId) => {
     try {
-      const res = await fetch(`${apiBase}/confirm/${confirmationId}`, { method: "POST" });
+      const token = localStorage.getItem("aetheros_token");
+      const headers = {};
+      if (token) headers["Authorization"] = `Bearer ${token}`;
+
+      const res = await fetch(`${apiBase}/confirm/${confirmationId}`, {
+        method: "POST",
+        headers
+      });
       const data = await res.json();
       setMessages(prev =>
         prev.map((msg, idx) => {
@@ -159,7 +197,14 @@ export default function AgentSidecar() {
 
   const handleCancel = async (msgIndex, confirmationId) => {
     try {
-      await fetch(`${apiBase}/cancel/${confirmationId}`, { method: "POST" });
+      const token = localStorage.getItem("aetheros_token");
+      const headers = {};
+      if (token) headers["Authorization"] = `Bearer ${token}`;
+
+      await fetch(`${apiBase}/cancel/${confirmationId}`, {
+        method: "POST",
+        headers
+      });
       setMessages(prev =>
         prev.map((msg, idx) => {
           if (idx === msgIndex) {
@@ -201,22 +246,33 @@ export default function AgentSidecar() {
   return (
     <div className="glass-panel agent-sidecar" style={{ bottom: "36px" }}>
       {/* Header */}
-      <div className="agent-header">
-        <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <div style={{ background: "#10b981", width: "10px", height: "10px", borderRadius: "50%" }}></div>
-          <div>
-            <h4 style={{ fontSize: "13.5px", fontWeight: "700" }}>
-              Application Copilot
-            </h4>
+      <div className="agent-header" style={{ flexDirection: "column", alignItems: "stretch", gap: "6px", padding: "10px 14px" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <div style={{ background: "#10b981", width: "9px", height: "9px", borderRadius: "50%", boxShadow: "0 0 8px #10b981" }}></div>
+            <h4 style={{ fontSize: "13.5px", fontWeight: "700" }}>Application Copilot</h4>
           </div>
+
+          <button
+            onClick={() => setIsOpen(false)}
+            style={{ background: "transparent", border: "none", color: "var(--text-muted)", cursor: "pointer" }}
+            aria-label="Close Sidecar"
+          >
+            <X size={17} />
+          </button>
         </div>
 
-        <button
-          onClick={() => setIsOpen(false)}
-          style={{ background: "transparent", border: "none", color: "var(--text-muted)", cursor: "pointer" }}
-        >
-          <X size={18} />
-        </button>
+        {/* Live Active Context Badge */}
+        <div style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "11px", background: "rgba(255, 255, 255, 0.04)", padding: "3px 8px", borderRadius: "5px", border: "1px solid var(--border-color)", overflow: "hidden" }}>
+          <span style={{ color: "var(--accent-blue)", fontWeight: "600", whiteSpace: "nowrap" }}>
+            Screen: {activePageTitle}
+          </span>
+          {Object.keys(currentFilters).length > 0 && (
+            <span style={{ color: "var(--text-muted)", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+              • {Object.entries(currentFilters).map(([k, v]) => `${k}:${v}`).join(", ")}
+            </span>
+          )}
+        </div>
       </div>
 
       {/* Body */}

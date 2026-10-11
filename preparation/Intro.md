@@ -4,13 +4,13 @@
 
 In enterprise internal tools and BI platforms, business users often navigate complex metadata catalogs, multi-dimensional filters, and dynamic analytical dashboards across dozens of departments. Traditional interfaces force users to manually click through navigation trees, configure complex dropdowns, and decipher metric relationships.
 
-We built **Agentic Business Intelligence (Agentic BI)** to bridge the gap between natural language intent and operational UI execution. Rather than acting as a static QA chatbot in a side panel, our AI agent actively controls the host application—navigating pages, applying filters, updating sort orders, dynamically generating comparison charts, and rendering interactive KPI drilldowns directly in response to user queries.
+We built **AetherOS (Context-Aware Application Agent)** to bridge the gap between natural language intent and operational UI execution. Rather than acting as a static QA chatbot in a side panel, our AI agent actively controls the host application—navigating pages, applying filters, updating sort orders, dynamically generating comparison charts, and rendering interactive KPI drilldowns directly in response to user queries.
 
 ---
 
 ## What
 
-Agentic BI is a full-stack, autonomous analytics workspace combining a React 19 single-page application with a Python FastAPI reasoning backend. 
+AetherOS is a full-stack, autonomous analytics workspace combining a React 19 single-page application with a Python FastAPI reasoning backend. 
 
 The core user workflow allows a user to type high-level analytical requests (for example, *"Show me churn rate for enterprise clients sorted by ARR"* or *"Compare Q3 vs Q4 marketing ROI"*). The agent analyzes the user's current context, queries an indexed metadata catalog of 90+ enterprise views, formulates an execution plan, and returns structured UI state mutations alongside conversational explanations.
 
@@ -46,7 +46,7 @@ Our immediate next step is to introduce PostgreSQL with pgvector for persistent 
 
 ## Thirty-Second Version
 
-Agentic BI is a full-stack AI-driven business intelligence workspace that turns natural language queries into real-time operational UI execution. Combining a React 19 frontend with a FastAPI backend, the system uses a hybrid RAG retriever (vector + TF-IDF) and a multi-provider LLM fallback pipeline (Groq, Gemini, OpenRouter) to autonomously route pages, apply filters, render dynamic comparison charts, and trigger human-in-the-loop action confirmations. Built with staggered visual feedback and robust fallback mechanisms, it achieves 100% execution accuracy while keeping the user fully in control.
+AetherOS is a full-stack AI-driven enterprise workspace that turns natural language queries into real-time operational UI execution. Combining a React 19 frontend with a FastAPI backend, the system uses a hybrid RAG retriever (vector + TF-IDF) and a multi-provider LLM fallback pipeline (Groq, Gemini, OpenRouter) to autonomously route pages, apply filters, render dynamic comparison charts, and trigger human-in-the-loop action confirmations. Built with staggered visual feedback and robust fallback mechanisms, it achieves 100% execution accuracy while keeping the user fully in control.
 
 ---
 

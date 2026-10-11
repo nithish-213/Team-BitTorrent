@@ -29,11 +29,20 @@ class Retriever:
             except Exception as e:
                 print("[retrieval] embeddings unavailable, using TF-IDF only:", e)
 
-    def search(self, query, k=5):
+    def search(self, query, k=5, current_page=None):
         s = (self.mat @ self.vec.transform([query]).T).toarray().ravel()
         if self.emb is not None:
             e = self.emb @ self.model.encode([query], normalize_embeddings=True)[0]
             s = 0.7 * e + 0.3 * s
+        
+        # If user is currently on a specific page and query uses pronouns ("here", "this", "why") or implicit context,
+        # grant a context relevance boost to the currently viewed page
+        if current_page and current_page in self.ids:
+            idx = self.ids.index(current_page)
+            pronoun_triggers = ("here", "this", "current", "why", "what about", "filter", "show", "sort", "trend")
+            if any(w in query.lower() for w in pronoun_triggers):
+                s[idx] += 0.25
+                
         top = np.argsort(-s)[:k]
         return [{"page_id": self.ids[i], "score": round(float(s[i]), 4)} for i in top]
 

@@ -3,13 +3,27 @@ import pandas as pd
 from pathlib import Path
 
 DATA = Path(__file__).parent / "data"
-FRAMES = {f.stem: pd.read_csv(f) for f in DATA.glob("*.csv")}
+_CSV_FRAMES = {f.stem: pd.read_csv(f) for f in DATA.glob("*.csv")}
 FILTER_COLS = {"region": "region", "customer_tier": "tier", "date_range": "period",
                "deal_status": "deal_status", "delay_severity": "delay_severity", "risk_level": "risk_level"}
 MEAN_HINTS = ("pct", "score", "margin", "delay", "avg")
 
+def get_dataframe(page_id: str) -> pd.DataFrame:
+    """Retrieves dataset for a page from MongoDB Atlas collection, falling back to local CSV."""
+    import db
+    database = db.get_db()
+    if database is not None:
+        try:
+            # Query the dedicated collection for this page_id
+            docs = list(database[page_id].find({}, {"_id": 0, "_imported_at": 0}))
+            if docs:
+                return pd.DataFrame(docs)
+        except Exception:
+            pass
+    return _CSV_FRAMES.get(page_id)
+
 def describe(page_id):
-    df = FRAMES.get(page_id)
+    df = get_dataframe(page_id)
     if df is None:
         return None
     return {"metrics": [c for c in df.select_dtypes("number").columns],
@@ -27,7 +41,7 @@ def _filter(df, filters, skip=()):
     return df
 
 def _prep(page_id, metric):
-    df = FRAMES.get(page_id)
+    df = get_dataframe(page_id)
     if df is None:
         return None, {"error": f"No dataset is attached to page '{page_id}'. You can only navigate/filter it."}
     if metric not in df.columns or df[metric].dtype == object:
@@ -56,9 +70,9 @@ def compare_periods(page_id, metric, period_a, period_b, group_by=None, filters=
     if err: return err
     if "period" not in df.columns:
         return {"error": "This dataset has no period column; cannot compare periods."}
-    valid = sorted(df["period"].unique())
+    valid = sorted(str(p) for p in df["period"].dropna().unique() if p is not None and str(p) != "nan")
     for p in (period_a, period_b):
-        if p not in valid:
+        if str(p) not in valid:
             return {"error": f"Unknown period '{p}'. Valid periods: {valid}"}
     df = _filter(df, filters, skip=("date_range",))
     if df.empty:

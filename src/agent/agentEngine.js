@@ -1,13 +1,22 @@
 /**
  * Agent Client Engine
  * Connects directly to FastAPI agent backend at /api/agent (or VITE_API_URL).
+ * Passes Authorization Bearer token from localStorage when authenticated.
  */
 
-export async function runAgent(query, currentPageId = "dashboard", history = []) {
+export async function runAgent(
+  query,
+  currentPageId = "dashboard",
+  history = [],
+  activeFilters = {},
+  activeSort = null,
+  selectedRecord = null
+) {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 30000);
 
   const apiBase = import.meta.env.VITE_API_URL || "/api";
+  const token = localStorage.getItem("aetheros_token");
 
   const historySlice = (history || [])
     .slice(-6)
@@ -16,19 +25,31 @@ export async function runAgent(query, currentPageId = "dashboard", history = [])
       content: m.content || m.text || ""
     }));
 
+  const headers = { "Content-Type": "application/json" };
+  if (token) {
+    headers["Authorization"] = `Bearer ${token}`;
+  }
+
   try {
     const res = await fetch(`${apiBase}/agent`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers,
       body: JSON.stringify({
         query,
         current_page: currentPageId,
-        history: historySlice
+        history: historySlice,
+        active_filters: activeFilters || {},
+        active_sort: activeSort,
+        selected_record: selectedRecord
       }),
       signal: controller.signal
     });
 
     clearTimeout(timeoutId);
+
+    if (res.status === 401) {
+      return { error: "Authentication session expired. Please sign in again." };
+    }
 
     if (res.status === 500) {
       return { error: "Backend server error (HTTP 500)" };

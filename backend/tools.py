@@ -88,7 +88,11 @@ def execute(name, args, state):
     if name == "create_territory":
         cid = uuid.uuid4().hex[:8]
         desc = f"Create territory '{args.get('name')}' in region '{args.get('region')}'"
-        PENDING[cid] = desc
+        PENDING[cid] = {
+            "action": "create_territory",
+            "description": desc,
+            "args": args
+        }
         return {"status": "pending_user_confirmation", "confirmation_id": cid, "description": desc}, None
 
     return {"error": f"Unknown tool '{name}'"}, None

@@ -3,7 +3,7 @@
 ## 1. Product Problem and Scope
 
 ### Question
-What specific business problem does Agentic BI solve, and why did you choose to build an active UI-executing agent rather than a standard conversational chatbot?
+What specific business problem does AetherOS solve, and why did you choose to build an active UI-executing agent rather than a standard conversational chatbot?
 
 ### What the Interviewer Is Testing
 Product vision, user experience awareness, understanding of domain friction in enterprise analytics, and justification for autonomous UI control over passive text responses.
@@ -11,7 +11,7 @@ Product vision, user experience awareness, understanding of domain friction in e
 ### Strong Answer
 "In enterprise organizations, analytics tools often suffer from high operational friction. Business users know what questions they want to ask—such as 'What was our enterprise customer churn in Q3?'—but they have to navigate nested navigation trees, locate specific dashboards, configure multi-select filters, and set up sort parameters across dozens of pages. Standard chatbots only provide static text answers or embedded links, forcing the user to switch back and forth between conversation and dashboard configuration.
 
-I designed Agentic BI to bridge natural language intent with immediate UI state execution. In our application, when a user asks a question, the backend doesn't just return text; it analyzes our metadata catalog, formulates precise state updates (`SET_PAGE`, `SET_FILTERS`, `SET_SORT`), and executes them directly on the React frontend. As visible in [`src/components/AgentSidecar.jsx`](file:///c:/Users/Admin/Desktop/Hackfest/src/components/AgentSidecar.jsx#L95-L125) and [`src/context/UIStateContext.jsx`](file:///c:/Users/Admin/Desktop/Hackfest/src/context/UIStateContext.jsx#L40-L75), the UI updates dynamically while highlighting affected controls with glowing visual rings.
+I designed AetherOS to bridge natural language intent with immediate UI state execution. In our application, when a user asks a question, the backend doesn't just return text; it analyzes our metadata catalog, formulates precise state updates (`SET_PAGE`, `SET_FILTERS`, `SET_SORT`), and executes them directly on the React frontend. As visible in [`src/components/AgentSidecar.jsx`](file:///c:/Users/Admin/Desktop/Hackfest/src/components/AgentSidecar.jsx#L95-L125) and [`src/context/UIStateContext.jsx`](file:///c:/Users/Admin/Desktop/Hackfest/src/context/UIStateContext.jsx#L40-L75), the UI updates dynamically while highlighting affected controls with glowing visual rings.
 
 The main trade-off is that allowing an AI agent to mutate frontend state introduces risks of unexpected view transitions or filter overrides if the model misinterprets intent. To mitigate this, we implemented two-phase action guardrails for high-risk actions. At our current prototype scale, this active approach reduces user time-to-insight from minutes to seconds. If we were building for a purely read-only executive summary role without interactive filtering, a simpler static report generator would have sufficed."
 
@@ -272,7 +272,7 @@ What state consistency risks occur when a user manually interacts with filters w
 Concurrency control, state synchronization, handling race conditions between user input and background async processes.
 
 ### Strong Answer
-"In an agentic BI application, race conditions can occur if a user clicks a manual filter dropdown (e.g., changing 'Region' to 'EMEA') while an asynchronous request to `/agent` is inflight. If the agent returns an outdated action payload based on the old state, it risks overwriting the user's manual input upon arrival.
+"In an application like AetherOS that combines autonomous UI control with manual user interaction, race conditions can occur if a user clicks a manual filter dropdown (e.g., changing 'Region' to 'EMEA') while an asynchronous request to `/agent` is inflight. If the agent returns an outdated action payload based on the old state, it risks overwriting the user's manual input upon arrival.
 
 In our current code ([`src/context/UIStateContext.jsx`](file:///c:/Users/Admin/Desktop/Hackfest/src/context/UIStateContext.jsx#L50-L95)), state mutations are processed sequentially via React setter functions (`setFilters(prev => ...)`). When the agent dispatches `SET_FILTERS`, it merges new filters into the existing state object rather than replacing it outright.
 
@@ -565,7 +565,7 @@ Where do you see this project in six months if it evolved into a production-grad
 Strategic architectural vision, production readiness planning, scalability roadmap, and enterprise feature planning.
 
 ### Strong Answer
-"Over a six-month horizon, Agentic BI would evolve from a prototype into a scalable enterprise analytical platform across three distinct phases:
+"Over a six-month horizon, AetherOS would evolve from a prototype into a scalable enterprise analytical platform across three distinct phases:
 
 **Phase 1: Persistent Infrastructure & Multi-Tenancy (Months 1–2)**
 - Migrate metadata storage to PostgreSQL with `pgvector` for scalable RAG embeddings.
@@ -595,13 +595,13 @@ Unrealistic timelines, lacking structured phases, or ignoring real-world enterpr
 ## 20. Measuring Success and Impact
 
 ### Question
-How would you measure whether this Agentic BI application is actually successful and providing real value to its users?
+How would you measure whether this AetherOS application is actually successful and providing real value to its users?
 
 ### What the Interviewer Is Testing
 Data-driven decision making, product analytics, business metrics alignment, and evaluation of user satisfaction.
 
 ### Strong Answer
-"Evaluating the success of Agentic BI requires measuring both system technical performance and user workflow efficiency. I would track metrics across three distinct categories:
+"Evaluating the success of AetherOS requires measuring both system technical performance and user workflow efficiency. I would track metrics across three distinct categories:
 
 **1. Product & Efficiency Metrics (User Value)**
 - **Time to Insight (TTI):** Average time taken for a user to complete an analytical task (e.g., finding churn by region) compared to manual dashboard clicking. Goal: $\ge 60\%$ reduction in TTI.
